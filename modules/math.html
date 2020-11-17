@@ -1,0 +1,3026 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>math | baggie - v0.1.5-alpha.0</title>
+	<meta name="description" content="Documentation for baggie - v0.1.5-alpha.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">baggie - v0.1.5-alpha.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="math.html">math</a>
+				</li>
+			</ul>
+			<h1>Package math</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<img alt="Baggie logo" src="https://github.com/bag-of-tricks/baggie/raw/master/media/baggie.svg" height="100" />
+					<h1>@baggie/math</h1>
+					<p>Math tools from <a href="https://github.com/bag-of-tricks/baggie#readme">the little bag-of-tricks</a>.</p>
+					<p>Tools for doing math because it&#39;s hard. Calculate percentages, angles, coordinates, time differences, geometry etc.</p>
+					<hr>
+					<br>
+					<a href="#🚀-installation" id="🚀-installation" style="color: inherit; text-decoration: none;">
+						<h2>🚀 Installation</h2>
+					</a>
+					<pre><code class="language-bash"><span class="hljs-comment">#npm</span>
+npm install @baggie/math --save
+
+<span class="hljs-comment">#yarn</span>
+yarn add @baggie/math</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section">
+							<h3>Arithmetic</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#addnumbers" class="tsd-kind-icon">add<wbr>Numbers</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Average</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getmean" class="tsd-kind-icon">get<wbr>Mean</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getmedian" class="tsd-kind-icon">get<wbr>Median</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getmode" class="tsd-kind-icon">get<wbr>Mode</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Coordinate - Distance</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getalldistances" class="tsd-kind-icon">get<wbr>All<wbr>Distances</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getdistance" class="tsd-kind-icon">get<wbr>Distance</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getdistanceonearth" class="tsd-kind-icon">get<wbr>Distance<wbr>OnEarth</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getdistanceonsphere" class="tsd-kind-icon">get<wbr>Distance<wbr>OnSphere</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getpointbetween" class="tsd-kind-icon">get<wbr>Point<wbr>Between</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Coordinates - Angle</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getangle" class="tsd-kind-icon">get<wbr>Angle</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getclosestangles" class="tsd-kind-icon">get<wbr>Closest<wbr>Angles</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#isangleinrange" class="tsd-kind-icon">is<wbr>Angle<wbr>InRange</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Coordinates - Bounds</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getbounds" class="tsd-kind-icon">get<wbr>Bounds</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Coordinates - Radius</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#isinsideradius" class="tsd-kind-icon">is<wbr>Inside<wbr>Radius</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#keepinsideradius" class="tsd-kind-icon">keep<wbr>Inside<wbr>Radius</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Coordinates - Slope</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getslope" class="tsd-kind-icon">get<wbr>Slope</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Geometry - Circle</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getcirclecircumference" class="tsd-kind-icon">get<wbr>Circle<wbr>Circumference</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getcirclesurface" class="tsd-kind-icon">get<wbr>Circle<wbr>Surface</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getpointsoncircle" class="tsd-kind-icon">get<wbr>Points<wbr>OnCircle</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Geometry - Cone</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getconesurface" class="tsd-kind-icon">get<wbr>Cone<wbr>Surface</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getconevolume" class="tsd-kind-icon">get<wbr>Cone<wbr>Volume</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Geometry - Cuboid</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getcuboidsurface" class="tsd-kind-icon">get<wbr>Cuboid<wbr>Surface</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getcuboidvolume" class="tsd-kind-icon">get<wbr>Cuboid<wbr>Volume</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Geometry - Cylinder</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getcylindersurface" class="tsd-kind-icon">get<wbr>Cylinder<wbr>Surface</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getcylindervolume" class="tsd-kind-icon">get<wbr>Cylinder<wbr>Volume</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Geometry - Rectangle</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getrectangleperimeter" class="tsd-kind-icon">get<wbr>Rectangle<wbr>Perimeter</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getrectanglesurface" class="tsd-kind-icon">get<wbr>Rectangle<wbr>Surface</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Geometry - Sphere</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getspheresurface" class="tsd-kind-icon">get<wbr>Sphere<wbr>Surface</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getspherevolume" class="tsd-kind-icon">get<wbr>Sphere<wbr>Volume</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Geometry - Triangle</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#gettriangleperimeter" class="tsd-kind-icon">get<wbr>Triangle<wbr>Perimeter</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#gettrianglesurface" class="tsd-kind-icon">get<wbr>Triangle<wbr>Surface</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Percentage</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getpercentage" class="tsd-kind-icon">get<wbr>Percentage</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getpercentageincrease" class="tsd-kind-icon">get<wbr>Percentage<wbr>Increase</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Radians</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#degreestoradians" class="tsd-kind-icon">degrees<wbr>ToRadians</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#radianstodegrees" class="tsd-kind-icon">radians<wbr>ToDegrees</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Range</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#clamp" class="tsd-kind-icon">clamp</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getrange" class="tsd-kind-icon">get<wbr>Range</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#isinrange" class="tsd-kind-icon">is<wbr>InRange</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#keepoutsiderange" class="tsd-kind-icon">keep<wbr>Outside<wbr>Range</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Temperature</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#celsiustodelisle" class="tsd-kind-icon">celsius<wbr>ToDelisle</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#celsiustofahrenheit" class="tsd-kind-icon">celsius<wbr>ToFahrenheit</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#celsiustokelvin" class="tsd-kind-icon">celsius<wbr>ToKelvin</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#celsiustonewton" class="tsd-kind-icon">celsius<wbr>ToNewton</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#celsiustorankine" class="tsd-kind-icon">celsius<wbr>ToRankine</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#celsiustoreaumur" class="tsd-kind-icon">celsius<wbr>ToReaumur</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#celsiustoroemer" class="tsd-kind-icon">celsius<wbr>ToRoemer</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#delisletocelsius" class="tsd-kind-icon">delisle<wbr>ToCelsius</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#fahrenheittocelsius" class="tsd-kind-icon">fahrenheit<wbr>ToCelsius</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#kelvintocelsius" class="tsd-kind-icon">kelvin<wbr>ToCelsius</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#newtontocelsius" class="tsd-kind-icon">newton<wbr>ToCelsius</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#rankinetocelsius" class="tsd-kind-icon">rankine<wbr>ToCelsius</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#reaumurtocelsius" class="tsd-kind-icon">reaumur<wbr>ToCelsius</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#roemertocelsius" class="tsd-kind-icon">roemer<wbr>ToCelsius</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Time</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getduration" class="tsd-kind-icon">get<wbr>Duration</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#gettimedifference" class="tsd-kind-icon">get<wbr>Time<wbr>Difference</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Arithmetic</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="addnumbers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Numbers</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Numbers<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/arithmetic/addNumbers.ts#L19">math/src/arithmetic/addNumbers.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add an array of numbers together.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { addNumbers } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
+<span class="hljs-keyword">const</span> total = addNumbers(numbers);
+<span class="hljs-comment">// total = 45</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>An array of numbers to add together</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Average</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getmean" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Mean</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Mean<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/average/getMean.ts#L22">math/src/average/getMean.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the mean value of an array of numbers.
+									This is what is most often referred to as &quot;average&quot;.</p>
+								</div>
+								<p>All the values are added together and divided by the amount of numbers.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getMean } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">42</span>];
+<span class="hljs-keyword">const</span> mean = getMean(numbers);
+<span class="hljs-comment">// mean = 18</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getmedian" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Median</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Median<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/average/getMedian.ts#L22">math/src/average/getMedian.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the median from an array of numbers.</p>
+								</div>
+								<p>The median is the middle value or, if two middle values,
+								the mean of those two with the numbers in ascending order.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getMedian } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">42</span>];
+<span class="hljs-keyword">const</span> median = getMedian(numbers);
+<span class="hljs-comment">// median = 16</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getmode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Mode</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Mode<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>frequency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>mode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/average/getMode.ts#L22">math/src/average/getMode.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the mode from an array of numbers.
+									The mode is the most frequent value in a data set</p>
+								</div>
+								<p>There can be more than one mode if multiple values
+								are repeated an equal amount of times.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getMode } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">8</span>, <span class="hljs-number">8</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">42</span>, <span class="hljs-number">42</span>, <span class="hljs-number">42</span>];
+<span class="hljs-keyword">const</span> mode = getMode(numbers);
+<span class="hljs-comment">// mode = { mode: [8, 42], frequency: 3 }</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>frequency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>mode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Coordinate - Distance</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getalldistances" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>All<wbr>Distances</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Distances<span class="tsd-signature-symbol">(</span>fromCoordinates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, <span class="tsd-signature-symbol">...</span>toCoordinates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetAllDistancesReturn</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/distance/getAllDistances.ts#L89">math/src/coordinates/distance/getAllDistances.ts:89</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the all the distances between multiple sets of coordinates sorted from shortest to longest.</p>
+								</div>
+								<p>The coordinates are given as objects like <code>{ x: 100, y: 100 }</code>.
+									You can add other values and properties as long as the the
+								objects have the properties <code>x</code> and <code>y</code>.</p>
+								<p>The first argument <code>fromCoordinates</code> is the base from where the distances are
+									measured. If this is set to <code>null</code>, distances will be measured between all of
+								the following coordinates.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Find all the distances from <code>{ x: 9, y: 30 }</code> to other coordinates:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getAllDistances } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> results = getAllDistances({ <span class="hljs-attr">x</span>: <span class="hljs-number">9</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span> }, { <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">2</span> }, { <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span> }, { <span class="hljs-attr">x</span>: -<span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span> });
+<span class="hljs-comment">/*
+results = [
+    {
+        &quot;distance&quot;: 14.866068747318506,
+        &quot;coordinates&quot;: [{ x: 9, y: 30 }, { x: 20, y: 20 }]
+    }, {
+        &quot;distance&quot;: 28.0178514522438,
+        &quot;coordinates&quot;: [{ x: 9, y: 30 }, { x: 10, y: 2 }]
+    },
+    {
+        &quot;distance&quot;: 30.675723300355934,
+        &quot;coordinates&quot;: [{ x: 9, y: 30 }, { x: -20, y: 20 }]
+    }
+]
+*\/</span></code></pre>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Find all the distances between all the coordinates:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getAllDistances } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> results = getAllDistances(<span class="hljs-literal">null</span>,
+    { <span class="hljs-attr">x</span>: -<span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: -<span class="hljs-number">10</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;a&quot;</span> },
+    { <span class="hljs-attr">x</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;b&quot;</span> },
+    { <span class="hljs-attr">x</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;c&quot;</span> },
+    { <span class="hljs-attr">x</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;d&quot;</span> }
+);
+<span class="hljs-comment">/*
+results = [
+    {
+        &quot;distance&quot;: 1.4142135623730951,
+        &quot;coordinates&quot;: [{ &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;name&quot;: &quot;b&quot; }, { &quot;x&quot;: 2, &quot;y&quot;: 2, &quot;name&quot;: &quot;c&quot; }]
+    },
+    {
+        &quot;distance&quot;: 15.556349186104045,
+        &quot;coordinates&quot;: [{ &quot;x&quot;: -10, &quot;y&quot;: -10, &quot;name&quot;: &quot;a&quot; }, { &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;name&quot;: &quot;b&quot; }]
+    },
+    {
+        &quot;distance&quot;: 16.97056274847714,
+        &quot;coordinates&quot;: [{ &quot;x&quot;: -10, &quot;y&quot;: -10, &quot;name&quot;: &quot;a&quot; }, { &quot;x&quot;: 2, &quot;y&quot;: 2, &quot;name&quot;: &quot;c&quot; }]
+    },
+    {
+        &quot;distance&quot;: 55.569775957799216,
+        &quot;coordinates&quot;: [{ &quot;x&quot;: 2, &quot;y&quot;: 2, &quot;name&quot;: &quot;c&quot; }, { &quot;x&quot;: 30, &quot;y&quot;: 50, &quot;name&quot;: &quot;d&quot; }]
+    },
+    {
+        &quot;distance&quot;: 56.938563381947034,
+        &quot;coordinates&quot;: [{ &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;name&quot;: &quot;b&quot; }, { &quot;x&quot;: 30, &quot;y&quot;: 50, &quot;name&quot;: &quot;d&quot; }]
+    },
+    {
+        &quot;distance&quot;: 72.11102550927978,
+        &quot;coordinates&quot;: [{ &quot;x&quot;: -10, &quot;y&quot;: -10, &quot;name&quot;: &quot;a&quot; }, { &quot;x&quot;: 30, &quot;y&quot;: 50, &quot;name&quot;: &quot;d&quot; }]
+    }
+]
+*\/</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromCoordinates: <span class="tsd-signature-type">CoordinatesXY</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>toCoordinates: <span class="tsd-signature-type">CoordinatesXY</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GetAllDistancesReturn</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getdistance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Distance</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Distance<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/distance/getDistance.ts#L20">math/src/coordinates/distance/getDistance.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the distance between two sets of coordinates.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getDistance } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">from</span> = { <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span> };
+<span class="hljs-keyword">const</span> to = { <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span> };
+
+<span class="hljs-keyword">const</span> distance = getDistance(<span class="hljs-keyword">from</span>, to);
+<span class="hljs-comment">// distance = 10</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getdistanceonearth" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Distance<wbr>OnEarth</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Distance<wbr>OnEarth<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesLatLng</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesLatLng</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/distance/getDistanceOnEarth.ts#L21">math/src/coordinates/distance/getDistanceOnEarth.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get distance between two sets of coordinates on Earth in kilometers using the Haversine Distance Formula.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getDistanceOnEarth } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">from</span> = { <span class="hljs-attr">lat</span>: <span class="hljs-number">56.15674</span>, <span class="hljs-attr">lng</span>: <span class="hljs-number">10.21076</span> };
+<span class="hljs-keyword">const</span> to = { <span class="hljs-attr">lat</span>: <span class="hljs-number">57.048</span>, <span class="hljs-attr">lng</span>: <span class="hljs-number">9.9187</span> };
+
+<span class="hljs-keyword">const</span> distance = getDistanceOnEarth(<span class="hljs-keyword">from</span>, to);
+<span class="hljs-comment">// distance = 100.70265108699398</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">CoordinatesLatLng</span></h5>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">CoordinatesLatLng</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getdistanceonsphere" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Distance<wbr>OnSphere</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Distance<wbr>OnSphere<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesLatLng</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesLatLng</span>, diameter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/distance/getDistanceOnSphere.ts#L22">math/src/coordinates/distance/getDistanceOnSphere.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get distance between two sets of coordinates on a sphere using the Haversine
+									Distance Formula.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getDistanceOnSphere } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">from</span> = { <span class="hljs-attr">lat</span>: <span class="hljs-number">56.15674</span>, <span class="hljs-attr">lng</span>: <span class="hljs-number">10.21076</span> };
+<span class="hljs-keyword">const</span> to = { <span class="hljs-attr">lat</span>: <span class="hljs-number">57.048</span>, <span class="hljs-attr">lng</span>: <span class="hljs-number">9.9187</span> };
+
+<span class="hljs-keyword">const</span> distance = getDistanceOnSphere(<span class="hljs-keyword">from</span>, to, <span class="hljs-number">12742</span>);
+<span class="hljs-comment">// distance = 100.70265108699398</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">CoordinatesLatLng</span></h5>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">CoordinatesLatLng</span></h5>
+								</li>
+								<li>
+									<h5>diameter: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getpointbetween" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Point<wbr>Between</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Point<wbr>Between<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span>, progress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/distance/getPointBetween.ts#L21">math/src/coordinates/distance/getPointBetween.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a point between two sets of coordinates.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getPointBetween } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">from</span> = { <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span> };
+<span class="hljs-keyword">const</span> to = { <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span> };
+<span class="hljs-keyword">const</span> progress = <span class="hljs-number">.5</span>;
+
+<span class="hljs-keyword">const</span> point = getPointBetween(<span class="hljs-keyword">from</span>, to, progress);
+<span class="hljs-comment">// point = { x: 15, y: 15 }</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> progress: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0.5</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CoordinatesXY</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Coordinates - Angle</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getangle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Angle</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Angle<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>clockwise<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/angle/getAngle.ts#L32">math/src/coordinates/angle/getAngle.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the angle from one set of coordinates to another.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><ul>
+											<li><strong>Be aware</strong> that angles in coordinate systems move counter clockwise,
+												hence this is the default setting. But you can change that in the options
+											argument by setting <code>clockwise: true</code>.</li>
+										</ul>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getAngle } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">from</span> = { <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span> };
+<span class="hljs-keyword">const</span> to = { <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span> };
+
+<span class="hljs-keyword">const</span> angle = getAngle(<span class="hljs-keyword">from</span>, to);
+<span class="hljs-comment">// angle = 135</span>
+
+<span class="hljs-keyword">const</span> angleWithOffset = getAngle(<span class="hljs-keyword">from</span>, to, { <span class="hljs-attr">offset</span>: <span class="hljs-number">400</span> });
+<span class="hljs-comment">// angle = 175</span>
+
+<span class="hljs-keyword">const</span> angleClockwise = getAngle(<span class="hljs-keyword">from</span>, to, { <span class="hljs-attr">clockwise</span>: <span class="hljs-literal">true</span> });
+<span class="hljs-comment">// angle = 225</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>clockwise<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getclosestangles" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Closest<wbr>Angles</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<wbr>Angles<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, angles<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/angle/getClosestAngles.ts#L25">math/src/coordinates/angle/getClosestAngles.ts:25</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get an array of angles sorted by which is closest to the target.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getClosestAngles } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> target = <span class="hljs-number">350</span>;
+<span class="hljs-keyword">const</span> angles = [
+    <span class="hljs-number">0</span>,
+    <span class="hljs-number">10</span>,
+    <span class="hljs-number">100</span>,
+    <span class="hljs-number">200</span>,
+    <span class="hljs-number">300</span>,
+];
+<span class="hljs-keyword">const</span> sorted = getClosestAngles(target, angles);
+<span class="hljs-comment">// sorted = [0, 10, 300, 100, 200]</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>angles: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isangleinrange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Angle<wbr>InRange</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Angle<wbr>InRange<span class="tsd-signature-symbol">(</span>angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, <span class="tsd-signature-symbol">...</span>ranges<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/angle/isAngleInRange.ts#L24">math/src/coordinates/angle/isAngleInRange.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if an angle is within one or multiple ranges of angles.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isAngleInRange } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> checkA = isAngleInRange(<span class="hljs-number">10</span>, [<span class="hljs-number">5</span>, <span class="hljs-number">15</span>]);
+<span class="hljs-comment">// checkA = true</span>
+
+<span class="hljs-keyword">const</span> checkB = isAngleInRange(<span class="hljs-number">300</span>, [<span class="hljs-number">100</span>, <span class="hljs-number">200</span>]);
+<span class="hljs-comment">// checkB = false</span>
+
+<span class="hljs-keyword">const</span> checkC = isAngleInRange(<span class="hljs-number">360</span>, [<span class="hljs-number">100</span>, <span class="hljs-number">1</span>]);
+<span class="hljs-comment">// checkC = true</span>
+
+<span class="hljs-keyword">const</span> checkD = isAngleInRange(<span class="hljs-number">360</span>, [<span class="hljs-number">100</span>, -<span class="hljs-number">1</span>]);
+<span class="hljs-comment">// checkD = false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ranges: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Coordinates - Bounds</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getbounds" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Bounds</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Bounds<span class="tsd-signature-symbol">(</span>coordinates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bounds</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/bounds/getBounds.ts#L24">math/src/coordinates/bounds/getBounds.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the boundaries from an array of coordinates.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getBounds } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> coordinates = [
+    { <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">5</span> },
+    { <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span> },
+    { <span class="hljs-attr">x</span>: -<span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: -<span class="hljs-number">10</span> },
+];
+
+<span class="hljs-keyword">const</span> bounds = getBounds(coordinates);
+<span class="hljs-comment">// bounds = { min: { x: -10, y: -10 }, max: { x: 10, y: 10 }}</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>coordinates: <span class="tsd-signature-type">CoordinatesXY</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bounds</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Coordinates - Radius</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isinsideradius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Inside<wbr>Radius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Inside<wbr>Radius<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span>, radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/radius/isInsideRadius.ts#L24">math/src/coordinates/radius/isInsideRadius.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if a set of coordinates is inside a radius from the origin (0,0)</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isInsideRadius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> position = { <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span> };
+
+<span class="hljs-keyword">const</span> radiusA = <span class="hljs-number">100</span>;
+<span class="hljs-keyword">const</span> checkA = isInsideRadius(position, radiusA);
+<span class="hljs-comment">// checkA = true</span>
+
+<span class="hljs-keyword">const</span> radiusB = <span class="hljs-number">35</span>;
+<span class="hljs-keyword">const</span> checkB = isInsideRadius(position, radiusB);
+<span class="hljs-comment">// checkB = false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="keepinsideradius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> keep<wbr>Inside<wbr>Radius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">keep<wbr>Inside<wbr>Radius<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span>, radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/radius/keepInsideRadius.ts#L26">math/src/coordinates/radius/keepInsideRadius.ts:26</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>If a set of coordinates are outside a specified radius from the origin (0,0),
+									return the nearest set of coordinates inside the radius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { keepInsideRadius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> position = { <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span> };
+
+<span class="hljs-keyword">const</span> radiusA = <span class="hljs-number">100</span>;
+<span class="hljs-keyword">const</span> newPositionA = keepInsideRadius(position, radiusA);
+<span class="hljs-comment">// newPositionA = { x: 20, y: 0 }</span>
+
+<span class="hljs-keyword">const</span> radiusB = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> newPositionB = keepInsideRadius(position, radiusB);
+<span class="hljs-comment">// newPositionB = { x: 10, y: 0 }</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CoordinatesXY</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Coordinates - Slope</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getslope" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Slope</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Slope<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/coordinates/slope/getSlope.ts#L23">math/src/coordinates/slope/getSlope.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the slope of a line (also called a gradient).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>The slope of a line is a number that measures its &quot;steepness&quot;,
+										usually denoted by the letter m.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getSlope } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">from</span> = { <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span> };
+<span class="hljs-keyword">const</span> to = { <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span> };
+<span class="hljs-keyword">const</span> slope = getSlope(<span class="hljs-keyword">from</span>, to);
+<span class="hljs-comment">// slope = 1.5</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Geometry - Circle</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getcirclecircumference" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Circle<wbr>Circumference</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Circle<wbr>Circumference<span class="tsd-signature-symbol">(</span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/circle/getCircleCircumference.ts#L15">math/src/geometry/circle/getCircleCircumference.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get circumference (perimeter) of a circle from its radius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCircleCircumference } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> circumference = getCircleCircumference(<span class="hljs-number">100</span>);
+<span class="hljs-comment">// circumference = 628.3185307179587</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getcirclesurface" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Circle<wbr>Surface</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Circle<wbr>Surface<span class="tsd-signature-symbol">(</span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/circle/getCircleSurface.ts#L15">math/src/geometry/circle/getCircleSurface.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get surface area of a circle from its radius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCircleSurface } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> surface = getCircleSurface(<span class="hljs-number">10</span>);
+<span class="hljs-comment">// surface = 314.1592653589793</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getpointsoncircle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Points<wbr>OnCircle</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Points<wbr>OnCircle<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>numberOfPoints<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetPointsOnCircleReturn</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/circle/getPointsOnCircle.ts#L46">math/src/geometry/circle/getPointsOnCircle.ts:46</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get an array of equally distanced points on the perimeter of a circle.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getPointsOnCircle } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> points = getPointsOnCircle({ <span class="hljs-attr">radius</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">numberOfPoints</span>: <span class="hljs-number">3</span> });
+<span class="hljs-comment">/*
+points = [
+    {
+        degrees: 0,
+        x: 6.123233995736766e-15,
+        y: -100,
+    },
+    {
+        degrees: 119.99999999999999,
+        x: 86.60254037844388,
+        y: 49.99999999999998,
+    },
+    {
+        degrees: 240,
+        x: -86.60254037844388,
+        y: 49.99999999999999,
+    },
+]</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>numberOfPoints<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>number<wbr>OfPoints<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>offset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GetPointsOnCircleReturn</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Geometry - Cone</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getconesurface" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Cone<wbr>Surface</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cone<wbr>Surface<span class="tsd-signature-symbol">(</span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, excludeBottom<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/cone/getConeSurface.ts#L22">math/src/geometry/cone/getConeSurface.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get surface area of a cone.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getConeSurface } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> radius = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> height = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> surface = getConeSurface(radius, height);
+<span class="hljs-comment">// surface = 942.4777960769379</span>
+
+<span class="hljs-keyword">const</span> surfaceWithoutBottom = getConeSurface(radius, height, <span class="hljs-literal">true</span>);
+<span class="hljs-comment">// surface = 628.3185307179587</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> excludeBottom: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getconevolume" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Cone<wbr>Volume</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cone<wbr>Volume<span class="tsd-signature-symbol">(</span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/cone/getConeVolume.ts#L19">math/src/geometry/cone/getConeVolume.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get volume of a cone.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getConeVolume } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> radius = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> height = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> volume = getConeVolume(radius, height);
+<span class="hljs-comment">// volume = 2094.3951023931954</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Geometry - Cuboid</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getcuboidsurface" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Cuboid<wbr>Surface</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cuboid<wbr>Surface<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/cuboid/getCuboidSurface.ts#L18">math/src/geometry/cuboid/getCuboidSurface.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get surface area of a cuboid.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCuboidSurface } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> z = <span class="hljs-number">30</span>;
+<span class="hljs-keyword">const</span> surface = getCuboidSurface(x, y, z);
+<span class="hljs-comment">// surface = 2200</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getcuboidvolume" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Cuboid<wbr>Volume</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cuboid<wbr>Volume<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/cuboid/getCuboidVolume.ts#L18">math/src/geometry/cuboid/getCuboidVolume.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get volume of a cuboid.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCuboidVolume } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> z = <span class="hljs-number">30</span>;
+<span class="hljs-keyword">const</span> surface = getCuboidVolume(x, y, z);
+<span class="hljs-comment">// surface = 6000</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Geometry - Cylinder</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getcylindersurface" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Cylinder<wbr>Surface</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cylinder<wbr>Surface<span class="tsd-signature-symbol">(</span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, excludeEnds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/cylinder/getCylinderSurface.ts#L22">math/src/geometry/cylinder/getCylinderSurface.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get surface area of a cylinder.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCylinderSurface } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> radius = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> height = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> volume = getCylinderSurface(radius, height);
+<span class="hljs-comment">// volume = 1884.9555921538758</span>
+
+<span class="hljs-keyword">const</span> volumeWithoutEnds = getCylinderSurface(radius, height, <span class="hljs-literal">true</span>);
+<span class="hljs-comment">// volume = 1256.6370614359173</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> excludeEnds: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getcylindervolume" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Cylinder<wbr>Volume</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cylinder<wbr>Volume<span class="tsd-signature-symbol">(</span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/cylinder/getCylinderVolume.ts#L17">math/src/geometry/cylinder/getCylinderVolume.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get volume of a cylinder.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCylinderVolume } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> radius = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> height = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> volume = getCylinderVolume(radius, height);
+<span class="hljs-comment">// volume = 6283.185307179587</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Geometry - Rectangle</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getrectangleperimeter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Rectangle<wbr>Perimeter</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Rectangle<wbr>Perimeter<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/rectangle/getRectanglePerimeter.ts#L17">math/src/geometry/rectangle/getRectanglePerimeter.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get perimeter of a rectangle.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getRectanglePerimeter } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> perimeter = getRectanglePerimeter(x, y);
+<span class="hljs-comment">// perimeter = 60</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getrectanglesurface" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Rectangle<wbr>Surface</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Rectangle<wbr>Surface<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/rectangle/getRectangleSurface.ts#L17">math/src/geometry/rectangle/getRectangleSurface.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get surface of a rectangle.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getRectangleSurface } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> surface = getRectangleSurface(x, y);
+<span class="hljs-comment">// surface = 200</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Geometry - Sphere</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getspheresurface" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Sphere<wbr>Surface</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sphere<wbr>Surface<span class="tsd-signature-symbol">(</span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/sphere/getSphereSurface.ts#L15">math/src/geometry/sphere/getSphereSurface.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get surface of a sphere.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getSphereSurface } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> surface = getSphereSurface(<span class="hljs-number">10</span>);
+<span class="hljs-comment">// surface = 1256.6370614359173</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getspherevolume" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Sphere<wbr>Volume</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Sphere<wbr>Volume<span class="tsd-signature-symbol">(</span>radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/sphere/getSphereVolume.ts#L15">math/src/geometry/sphere/getSphereVolume.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get volume of a sphere.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getSphereVolume } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> volume = getSphereVolume(<span class="hljs-number">10</span>);
+<span class="hljs-comment">// volume = 4188.790204786391</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>radius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Geometry - Triangle</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="gettriangleperimeter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Triangle<wbr>Perimeter</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Triangle<wbr>Perimeter<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, c<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/triangle/getTrianglePerimeter.ts#L18">math/src/geometry/triangle/getTrianglePerimeter.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get perimeter of a triangle.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getTrianglePerimeter } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> a = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> b = <span class="hljs-number">15</span>;
+<span class="hljs-keyword">const</span> c = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> perimeter = getTrianglePerimeter(a, b, c);
+<span class="hljs-comment">// perimeter = 45</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>b: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>c: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="gettrianglesurface" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Triangle<wbr>Surface</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Triangle<wbr>Surface<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, c<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/geometry/triangle/getTriangleSurface.ts#L20">math/src/geometry/triangle/getTriangleSurface.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get surface area of a triangle.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getTriangleSurface } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> a = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> b = <span class="hljs-number">15</span>;
+<span class="hljs-keyword">const</span> c = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> surface = getTriangleSurface(a, b, c);
+<span class="hljs-comment">// surface = 205.3959590644373getTrianglePerimeter</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>b: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>c: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Percentage</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getpercentage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Percentage</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Percentage<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>part<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>percentage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>whole<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/percentage/getPercentage.ts#L60">math/src/percentage/getPercentage.ts:60</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Perform calculations with percentage.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Get percentage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getPercentage } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> part = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">const</span> whole = <span class="hljs-number">50</span>;
+
+<span class="hljs-keyword">const</span> percentage = getPercentage({ part, whole });
+<span class="hljs-comment">// percentage = 10</span></code></pre>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Get part:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getPercentage } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> whole = <span class="hljs-number">50</span>;
+<span class="hljs-keyword">const</span> percentage = <span class="hljs-number">10</span>;
+
+<span class="hljs-keyword">const</span> part = getPercentage({ whole, percentage });
+<span class="hljs-comment">// part = 5</span></code></pre>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Get whole:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getPercentage } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> part = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">const</span> percentage = <span class="hljs-number">10</span>;
+
+<span class="hljs-keyword">const</span> whole = getPercentage({ part, percentage });
+<span class="hljs-comment">// whole = 50</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>part<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>percentage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>whole<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>part<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>percentage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>whole<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getpercentageincrease" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Percentage<wbr>Increase</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Percentage<wbr>Increase<span class="tsd-signature-symbol">(</span>startingValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, finalValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/percentage/getPercentageIncrease.ts#L30">math/src/percentage/getPercentageIncrease.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the increase from one value to another in percentage.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getPercentageIncrease } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> startingValue = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> finalValue = <span class="hljs-number">100</span>;
+
+<span class="hljs-keyword">const</span> increase = getPercentageIncrease(startingValue, finalValue);
+<span class="hljs-comment">// increase = 900</span></code></pre>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Percentage decrease:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getPercentageIncrease } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> startingValue = <span class="hljs-number">100</span>;
+<span class="hljs-keyword">const</span> finalValue = <span class="hljs-number">10</span>;
+
+<span class="hljs-keyword">const</span> increase = getPercentageIncrease(startingValue, finalValue);
+<span class="hljs-comment">// increase = -90</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>startingValue: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>finalValue: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Radians</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="degreestoradians" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> degrees<wbr>ToRadians</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">degrees<wbr>ToRadians<span class="tsd-signature-symbol">(</span>degrees<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/radians/degreesToRadians.ts#L16">math/src/radians/degreesToRadians.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert degrees to radians.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { degreesToRadians } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> degrees = <span class="hljs-number">360</span>;
+<span class="hljs-keyword">const</span> radians = degreesToRadians(degrees);
+<span class="hljs-comment">// radians = 6.283185307179586</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>degrees: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="radianstodegrees" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> radians<wbr>ToDegrees</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">radians<wbr>ToDegrees<span class="tsd-signature-symbol">(</span>radians<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/radians/radiansToDegrees.ts#L16">math/src/radians/radiansToDegrees.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert radians to degrees.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { radiansToDegrees } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> radians = <span class="hljs-number">100</span>;
+<span class="hljs-keyword">const</span> degrees = radiansToDegrees(degrees);
+<span class="hljs-comment">// degrees = 5729.5779513082325</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>radians: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Range</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="clamp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> clamp</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">clamp<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/range/clamp.ts#L24">math/src/range/clamp.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Make sure a number is within the range of a minimum and maximum value.</p>
+								</div>
+								<p>If the number is smaller or larger, the nearest accepted value will be
+								returned.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { clamp } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> smallNumber = clamp(<span class="hljs-number">1</span>, <span class="hljs-number">25</span>, <span class="hljs-number">75</span>);
+<span class="hljs-comment">// smallNumber = 25</span>
+
+<span class="hljs-keyword">const</span> largeNumber = clamp(<span class="hljs-number">100</span>, <span class="hljs-number">25</span>, <span class="hljs-number">75</span>);
+<span class="hljs-comment">// largeNumber = 75</span>
+
+<span class="hljs-keyword">const</span> mediumNumber = clamp(<span class="hljs-number">50</span>, <span class="hljs-number">25</span>, <span class="hljs-number">75</span>);
+<span class="hljs-comment">// mediumNumber = 50</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>min: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>max: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getrange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Range<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/range/getRange.ts#L19">math/src/range/getRange.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the range from an array of numbers.
+									This is the largest value minus the smallest value.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getRange } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">42</span>];
+<span class="hljs-keyword">const</span> range = getRange(numbers);
+<span class="hljs-comment">// range = 38</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isinrange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>InRange</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>InRange<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, <span class="tsd-signature-symbol">...</span>ranges<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/range/isInRange.ts#L32">math/src/range/isInRange.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if a number is within the range of a minimum and maximum value.</p>
+								</div>
+								<p>The function accepts multiple ranges to check the number against, and
+								returns <code>true</code> if it is within the bounds of at least one of them.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isInRange } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> smallNumber = isInRange(<span class="hljs-number">1</span>, [<span class="hljs-number">25</span>, <span class="hljs-number">75</span>]);
+<span class="hljs-comment">// smallNumber = false</span>
+
+<span class="hljs-keyword">const</span> largeNumber = isInRange(<span class="hljs-number">100</span>, [<span class="hljs-number">25</span>, <span class="hljs-number">75</span>]);
+<span class="hljs-comment">// largeNumber = false</span>
+
+<span class="hljs-keyword">const</span> mediumNumber = isInRange(<span class="hljs-number">50</span>, [<span class="hljs-number">25</span>, <span class="hljs-number">75</span>]);
+<span class="hljs-comment">// mediumNumber = true</span>
+
+<span class="hljs-keyword">const</span> multiRangeNumber1 = isInRange(<span class="hljs-number">10</span>, [<span class="hljs-number">0</span>, <span class="hljs-number">9</span>], [<span class="hljs-number">11</span>, <span class="hljs-number">20</span>]);
+<span class="hljs-comment">// multiRangeNumber1 = false</span>
+
+<span class="hljs-keyword">const</span> multiRangeNumber2 = isInRange(<span class="hljs-number">10</span>, [<span class="hljs-number">5</span>, <span class="hljs-number">15</span>], [<span class="hljs-number">20</span>, <span class="hljs-number">30</span>]);
+<span class="hljs-comment">// multiRangeNumber2 = true</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ranges: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="keepoutsiderange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> keep<wbr>Outside<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">keep<wbr>Outside<wbr>Range<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, rangeStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, rangeStop<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, roundDownMidpoint<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/range/keepOutsideRange.ts#L39">math/src/range/keepOutsideRange.ts:39</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Make sure a number is outside the range of a minimum and maximum value.</p>
+								</div>
+								<p>If the number is inside the range, the nearest accepted value will be
+								returned.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { keepOutsideRange } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> smallNumber = keepOutsideRange(<span class="hljs-number">30</span>, <span class="hljs-number">25</span>, <span class="hljs-number">75</span>);
+<span class="hljs-comment">// smallNumber = 25</span>
+
+<span class="hljs-keyword">const</span> largeNumber = keepOutsideRange(<span class="hljs-number">70</span>, <span class="hljs-number">25</span>, <span class="hljs-number">75</span>);
+<span class="hljs-comment">// largeNumber = 75</span>
+
+<span class="hljs-keyword">const</span> smallOutsideNumber = keepOutsideRange(<span class="hljs-number">1</span>, <span class="hljs-number">25</span>, <span class="hljs-number">75</span>);
+<span class="hljs-comment">// smallOutsideNumber = 1</span>
+
+<span class="hljs-keyword">const</span> largeOutsideNumber = keepOutsideRange(<span class="hljs-number">100</span>, <span class="hljs-number">25</span>, <span class="hljs-number">75</span>);
+<span class="hljs-comment">// largeOutsideNumber = 100</span></code></pre>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>When the number is the midpoint in the range:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { keepOutsideRange } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> roundUp = keepOutsideRange(<span class="hljs-number">5</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// roundUp = 10</span>
+
+<span class="hljs-keyword">const</span> roundDown = keepOutsideRange(<span class="hljs-number">5</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-literal">true</span>);
+<span class="hljs-comment">// roundDown = 0</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>rangeStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>rangeStop: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> roundDownMidpoint: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Temperature</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="celsiustodelisle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> celsius<wbr>ToDelisle</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">celsius<wbr>ToDelisle<span class="tsd-signature-symbol">(</span>celsius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/celsiusToDelisle.ts#L15">math/src/temperature/celsiusToDelisle.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Celsius to Delisle.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToDelisle } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> delisle = celsiusToDelisle(<span class="hljs-number">100</span>);
+<span class="hljs-comment">// delisle = 0</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>celsius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="celsiustofahrenheit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> celsius<wbr>ToFahrenheit</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">celsius<wbr>ToFahrenheit<span class="tsd-signature-symbol">(</span>celsius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/celsiusToFahrenheit.ts#L15">math/src/temperature/celsiusToFahrenheit.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Celsius to Fahrenheit.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToFahrenheit } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> fahrenheit = celsiusToFahrenheit(<span class="hljs-number">100</span>);
+<span class="hljs-comment">// fahrenheit = 212</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>celsius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="celsiustokelvin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> celsius<wbr>ToKelvin</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">celsius<wbr>ToKelvin<span class="tsd-signature-symbol">(</span>celsius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/celsiusToKelvin.ts#L15">math/src/temperature/celsiusToKelvin.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Celsius to Kelvin.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToKelvin } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> kelvin = celsiusToKelvin(<span class="hljs-number">100</span>);
+<span class="hljs-comment">// kelvin = 373.15</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>celsius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="celsiustonewton" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> celsius<wbr>ToNewton</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">celsius<wbr>ToNewton<span class="tsd-signature-symbol">(</span>celsius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/celsiusToNewton.ts#L15">math/src/temperature/celsiusToNewton.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Celsius to Newton.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToNewton } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> newton = celsiusToNewton(<span class="hljs-number">100</span>);
+<span class="hljs-comment">// newton = 33</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>celsius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="celsiustorankine" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> celsius<wbr>ToRankine</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">celsius<wbr>ToRankine<span class="tsd-signature-symbol">(</span>celsius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/celsiusToRankine.ts#L17">math/src/temperature/celsiusToRankine.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Celsius to Rankine.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToRankine } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> rankine = celsiusToRankine(<span class="hljs-number">10</span>);
+<span class="hljs-comment">// rankine = 509.67</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>celsius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="celsiustoreaumur" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> celsius<wbr>ToReaumur</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">celsius<wbr>ToReaumur<span class="tsd-signature-symbol">(</span>celsius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/celsiusToReaumur.ts#L15">math/src/temperature/celsiusToReaumur.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Celsius to Reaumur.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToReaumur } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> reaumur = celsiusToReaumur(<span class="hljs-number">100</span>);
+<span class="hljs-comment">// reaumur = 80</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>celsius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="celsiustoroemer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> celsius<wbr>ToRoemer</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">celsius<wbr>ToRoemer<span class="tsd-signature-symbol">(</span>celsius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/celsiusToRoemer.ts#L15">math/src/temperature/celsiusToRoemer.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Celsius to Roemer.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToRoemer } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> roemer = celsiusToRoemer(<span class="hljs-number">100</span>);
+<span class="hljs-comment">// roemer = 60</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>celsius: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="delisletocelsius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> delisle<wbr>ToCelsius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">delisle<wbr>ToCelsius<span class="tsd-signature-symbol">(</span>delisle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/delisleToCelsius.ts#L15">math/src/temperature/delisleToCelsius.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Delisle to Celsius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { delisleToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> celsius = delisleToCelsius(<span class="hljs-number">0</span>);
+<span class="hljs-comment">// celsius = 100</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>delisle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="fahrenheittocelsius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> fahrenheit<wbr>ToCelsius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">fahrenheit<wbr>ToCelsius<span class="tsd-signature-symbol">(</span>fahrenheit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/fahrenheitToCelsius.ts#L15">math/src/temperature/fahrenheitToCelsius.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Fahrenheit to Celsius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { fahrenheitToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> celsius = fahrenheitToCelsius(<span class="hljs-number">212</span>);
+<span class="hljs-comment">// celsius = 100</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fahrenheit: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="kelvintocelsius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> kelvin<wbr>ToCelsius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">kelvin<wbr>ToCelsius<span class="tsd-signature-symbol">(</span>kelvin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/kelvinToCelsius.ts#L15">math/src/temperature/kelvinToCelsius.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Kelvin to Celsius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { kelvinToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> celsius = kelvinToCelsius(<span class="hljs-number">373.15</span>);
+<span class="hljs-comment">// celsius = 100</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>kelvin: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="newtontocelsius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> newton<wbr>ToCelsius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">newton<wbr>ToCelsius<span class="tsd-signature-symbol">(</span>newton<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/newtonToCelsius.ts#L15">math/src/temperature/newtonToCelsius.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Newton to Celsius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { newtonToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> celsius = newtonToCelsius(<span class="hljs-number">33</span>);
+<span class="hljs-comment">// celsius = 100</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newton: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="rankinetocelsius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> rankine<wbr>ToCelsius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">rankine<wbr>ToCelsius<span class="tsd-signature-symbol">(</span>rankine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/rankineToCelsius.ts#L17">math/src/temperature/rankineToCelsius.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Rankine to Celsius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { rankineToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> celsius = rankineToCelsius(<span class="hljs-number">509.67</span>);
+<span class="hljs-comment">// celsius = 10</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rankine: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="reaumurtocelsius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> reaumur<wbr>ToCelsius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">reaumur<wbr>ToCelsius<span class="tsd-signature-symbol">(</span>reaumur<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/reaumurToCelsius.ts#L15">math/src/temperature/reaumurToCelsius.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Reaumur to Celsius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { reaumurToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> celsius = reaumurToCelsius(<span class="hljs-number">80</span>);
+<span class="hljs-comment">// celsius = 100</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>reaumur: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="roemertocelsius" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> roemer<wbr>ToCelsius</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">roemer<wbr>ToCelsius<span class="tsd-signature-symbol">(</span>roemer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/temperature/roemerToCelsius.ts#L15">math/src/temperature/roemerToCelsius.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert Roemer to Celsius.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { roemerToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> celsius = roemerToCelsius(<span class="hljs-number">60</span>);
+<span class="hljs-comment">// celsius = 100</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>roemer: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Time</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getduration" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Duration</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Duration<span class="tsd-signature-symbol">(</span>speed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, distance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/time/getDuration.ts#L18">math/src/time/getDuration.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the duration when supplying speed and distance.</p>
+								</div>
+								<p>If speed is 100 (meters per minute) and distance is 10 (meters),
+								then the duration will be 10 (minutes).</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getDuration } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> duration = getDuration(<span class="hljs-number">10</span>, <span class="hljs-number">100</span>);
+<span class="hljs-comment">// duration = 10</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>speed: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>distance: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="gettimedifference" class="tsd-anchor"></a>
+					<h3>get<wbr>Time<wbr>Difference</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Time<wbr>Difference<span class="tsd-signature-symbol">(</span>fromTimestampMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toTimestampMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetTimeDifferenceReturn</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/math/src/time/getTimeDifference.ts#L47">math/src/time/getTimeDifference.ts:47</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculate the difference between two timestamps.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { timeDifference } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> data = timeDifference(<span class="hljs-number">1523607256543</span>, <span class="hljs-number">1533906712955</span>);
+<span class="hljs-comment">/*
+data = {
+    &quot;days&quot;: 119,
+    &quot;hours&quot;: 4,
+    &quot;minutes&quot;: 57,
+    &quot;seconds&quot;: 36,
+    &quot;milliseconds&quot;: 412,
+    &quot;singleUnit&quot;: {
+        &quot;onlyDays&quot;: 119.20667143518519,
+        &quot;onlyHours&quot;: 2860.9601144444446,
+        &quot;onlyMinutes&quot;: 171657.60686666667,
+        &quot;onlySeconds&quot;: 10299456.412,
+        &quot;onlyMilliseconds&quot;: 10299456412
+    }
+}
+*\/</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromTimestampMs: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A timestamp in milliseconds</p>
+									</div>
+								</li>
+								<li>
+									<h5>toTimestampMs: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A timestamp in milliseconds</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GetTimeDifferenceReturn</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="color.html">color</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="detection.html">detection</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="dom.html">dom</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions.html">functions</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="math.html">math</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="string.html">string</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="typescript.html">typescript</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-module">
+						<a href="color.html" class="tsd-kind-icon">color</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="detection.html" class="tsd-kind-icon">detection</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="dom.html" class="tsd-kind-icon">dom</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions.html" class="tsd-kind-icon">functions</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-module">
+						<a href="math.html" class="tsd-kind-icon">math</a>
+						<ul>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#addnumbers" class="tsd-kind-icon">add<wbr>Numbers</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#celsiustodelisle" class="tsd-kind-icon">celsius<wbr>ToDelisle</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#celsiustofahrenheit" class="tsd-kind-icon">celsius<wbr>ToFahrenheit</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#celsiustokelvin" class="tsd-kind-icon">celsius<wbr>ToKelvin</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#celsiustonewton" class="tsd-kind-icon">celsius<wbr>ToNewton</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#celsiustorankine" class="tsd-kind-icon">celsius<wbr>ToRankine</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#celsiustoreaumur" class="tsd-kind-icon">celsius<wbr>ToReaumur</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#celsiustoroemer" class="tsd-kind-icon">celsius<wbr>ToRoemer</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#clamp" class="tsd-kind-icon">clamp</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#degreestoradians" class="tsd-kind-icon">degrees<wbr>ToRadians</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#delisletocelsius" class="tsd-kind-icon">delisle<wbr>ToCelsius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#fahrenheittocelsius" class="tsd-kind-icon">fahrenheit<wbr>ToCelsius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getalldistances" class="tsd-kind-icon">get<wbr>All<wbr>Distances</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getangle" class="tsd-kind-icon">get<wbr>Angle</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getbounds" class="tsd-kind-icon">get<wbr>Bounds</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getcirclecircumference" class="tsd-kind-icon">get<wbr>Circle<wbr>Circumference</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getcirclesurface" class="tsd-kind-icon">get<wbr>Circle<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getclosestangles" class="tsd-kind-icon">get<wbr>Closest<wbr>Angles</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getconesurface" class="tsd-kind-icon">get<wbr>Cone<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getconevolume" class="tsd-kind-icon">get<wbr>Cone<wbr>Volume</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getcuboidsurface" class="tsd-kind-icon">get<wbr>Cuboid<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getcuboidvolume" class="tsd-kind-icon">get<wbr>Cuboid<wbr>Volume</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getcylindersurface" class="tsd-kind-icon">get<wbr>Cylinder<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getcylindervolume" class="tsd-kind-icon">get<wbr>Cylinder<wbr>Volume</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getdistance" class="tsd-kind-icon">get<wbr>Distance</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getdistanceonearth" class="tsd-kind-icon">get<wbr>Distance<wbr>OnEarth</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getdistanceonsphere" class="tsd-kind-icon">get<wbr>Distance<wbr>OnSphere</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getduration" class="tsd-kind-icon">get<wbr>Duration</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getmean" class="tsd-kind-icon">get<wbr>Mean</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getmedian" class="tsd-kind-icon">get<wbr>Median</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getmode" class="tsd-kind-icon">get<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getpercentage" class="tsd-kind-icon">get<wbr>Percentage</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getpercentageincrease" class="tsd-kind-icon">get<wbr>Percentage<wbr>Increase</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getpointbetween" class="tsd-kind-icon">get<wbr>Point<wbr>Between</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getpointsoncircle" class="tsd-kind-icon">get<wbr>Points<wbr>OnCircle</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getrange" class="tsd-kind-icon">get<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getrectangleperimeter" class="tsd-kind-icon">get<wbr>Rectangle<wbr>Perimeter</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getrectanglesurface" class="tsd-kind-icon">get<wbr>Rectangle<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getslope" class="tsd-kind-icon">get<wbr>Slope</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getspheresurface" class="tsd-kind-icon">get<wbr>Sphere<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getspherevolume" class="tsd-kind-icon">get<wbr>Sphere<wbr>Volume</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#gettimedifference" class="tsd-kind-icon">get<wbr>Time<wbr>Difference</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#gettriangleperimeter" class="tsd-kind-icon">get<wbr>Triangle<wbr>Perimeter</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#gettrianglesurface" class="tsd-kind-icon">get<wbr>Triangle<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#isangleinrange" class="tsd-kind-icon">is<wbr>Angle<wbr>InRange</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#isinrange" class="tsd-kind-icon">is<wbr>InRange</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#isinsideradius" class="tsd-kind-icon">is<wbr>Inside<wbr>Radius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#keepinsideradius" class="tsd-kind-icon">keep<wbr>Inside<wbr>Radius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#keepoutsiderange" class="tsd-kind-icon">keep<wbr>Outside<wbr>Range</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#kelvintocelsius" class="tsd-kind-icon">kelvin<wbr>ToCelsius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#newtontocelsius" class="tsd-kind-icon">newton<wbr>ToCelsius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#radianstodegrees" class="tsd-kind-icon">radians<wbr>ToDegrees</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#rankinetocelsius" class="tsd-kind-icon">rankine<wbr>ToCelsius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#reaumurtocelsius" class="tsd-kind-icon">reaumur<wbr>ToCelsius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#roemertocelsius" class="tsd-kind-icon">roemer<wbr>ToCelsius</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-module">
+						<a href="string.html" class="tsd-kind-icon">string</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="typescript.html" class="tsd-kind-icon">typescript</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

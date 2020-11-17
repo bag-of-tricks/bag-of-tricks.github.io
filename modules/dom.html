@@ -1,0 +1,1115 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>dom | baggie - v0.1.5-alpha.0</title>
+	<meta name="description" content="Documentation for baggie - v0.1.5-alpha.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">baggie - v0.1.5-alpha.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="dom.html">dom</a>
+				</li>
+			</ul>
+			<h1>Package dom</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<img alt="Baggie logo" src="https://github.com/bag-of-tricks/baggie/raw/master/media/baggie.svg" height="100" />
+					<h1>@baggie/dom</h1>
+					<p>DOM tools from <a href="https://github.com/bag-of-tricks/baggie#readme">the little bag-of-tricks</a>.</p>
+					<p>Get element properties, related elements, handle scroll etc.</p>
+					<hr>
+					<br>
+					<a href="#🚀-installation" id="🚀-installation" style="color: inherit; text-decoration: none;">
+						<h2>🚀 Installation</h2>
+					</a>
+					<pre><code class="language-bash"><span class="hljs-comment">#npm</span>
+npm install @baggie/dom --save
+
+<span class="hljs-comment">#yarn</span>
+yarn add @baggie/dom</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section">
+							<h3>Actions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#blurfocusedelement" class="tsd-kind-icon">blur<wbr>Focused<wbr>Element</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getfocusedelement" class="tsd-kind-icon">get<wbr>Focused<wbr>Element</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getclassbyprefix" class="tsd-kind-icon">get<wbr>Class<wbr>ByPrefix</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#removeclassbyprefix" class="tsd-kind-icon">remove<wbr>Class<wbr>ByPrefix</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Parents</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getallparents" class="tsd-kind-icon">get<wbr>All<wbr>Parents</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getclosestparent" class="tsd-kind-icon">get<wbr>Closest<wbr>Parent</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#iselementchildof" class="tsd-kind-icon">is<wbr>Element<wbr>Child<wbr>Of</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#iselementparentto" class="tsd-kind-icon">is<wbr>Element<wbr>Parent<wbr>To</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getelementposition" class="tsd-kind-icon">get<wbr>Element<wbr>Position</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#iselementempty" class="tsd-kind-icon">is<wbr>Element<wbr>Empty</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#iselementhidden" class="tsd-kind-icon">is<wbr>Element<wbr>Hidden</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#iselementvisible" class="tsd-kind-icon">is<wbr>Element<wbr>Visible</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Scroll</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getscrollposition" class="tsd-kind-icon">get<wbr>Scroll<wbr>Position</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#scrolltoelement" class="tsd-kind-icon">scroll<wbr>ToElement</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#scrolltotop" class="tsd-kind-icon">scroll<wbr>ToTop</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Scroll - Scroll Lock</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#disablescrolllock" class="tsd-kind-icon">disable<wbr>Scroll<wbr>Lock</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#enablescrolllock" class="tsd-kind-icon">enable<wbr>Scroll<wbr>Lock</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#isscrolllocked" class="tsd-kind-icon">is<wbr>Scroll<wbr>Locked</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#setscrolllocksettings" class="tsd-kind-icon">set<wbr>Scroll<wbr>Lock<wbr>Settings</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#togglescrolllock" class="tsd-kind-icon">toggle<wbr>Scroll<wbr>Lock</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Siblings</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#areelementssiblings" class="tsd-kind-icon">are<wbr>Elements<wbr>Siblings</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getnextsiblings" class="tsd-kind-icon">get<wbr>Next<wbr>Siblings</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getprevioussiblings" class="tsd-kind-icon">get<wbr>Previous<wbr>Siblings</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getsiblings" class="tsd-kind-icon">get<wbr>Siblings</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Actions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="blurfocusedelement" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> blur<wbr>Focused<wbr>Element</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">blur<wbr>Focused<wbr>Element<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/actions/blurFocusedElement.ts#L8">dom/src/actions/blurFocusedElement.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>If an element is focused, this will blur it.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getfocusedelement" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Focused<wbr>Element</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Focused<wbr>Element<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/actions/getFocusedElement.ts#L8">dom/src/actions/getFocusedElement.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>If an element is focused, return it.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Classes</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getclassbyprefix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Class<wbr>ByPrefix</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Class<wbr>ByPrefix<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/classes/getClassByPrefix.ts#L6">dom/src/classes/getClassByPrefix.ts:6</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get all classes of an element that starts with a specified string.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> element: <span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> = document.body</span></h5>
+								</li>
+								<li>
+									<h5>prefix: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="removeclassbyprefix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> remove<wbr>Class<wbr>ByPrefix</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Class<wbr>ByPrefix<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/classes/removeClassByPrefix.ts#L8">dom/src/classes/removeClassByPrefix.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove all classes of an element that starts with a specified string.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> element: <span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> = document.body</span></h5>
+								</li>
+								<li>
+									<h5>prefix: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Parents</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getallparents" class="tsd-anchor"></a>
+					<h3>get<wbr>All<wbr>Parents</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Parents<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>limit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>maxDistance<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/parents/getAllParents.ts#L33">dom/src/parents/getAllParents.ts:33</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get all parents of an element.</p>
+								</div>
+								<table>
+									<thead>
+										<tr>
+											<th>Option</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody><tr>
+											<td><code>matchSelector</code></td>
+											<td>A selector which the returned parents must match.</td>
+										</tr>
+										<tr>
+											<td><code>limit</code></td>
+											<td>Set a max number of returned parents.</td>
+										</tr>
+										<tr>
+											<td><code>maxDistance</code></td>
+											<td>Set a max distance. This can be a <code>number</code>, a <code>string</code> (selector) to match or an <code>HTMLElement</code>.</td>
+										</tr>
+								</tbody></table>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getAllParents } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/dom&quot;</span>;
+
+<span class="hljs-keyword">const</span> childElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;.start&quot;</span>);
+
+<span class="hljs-keyword">const</span> allParents = getAllParents(childElement);
+<span class="hljs-comment">// allParents = all the parents of childElement</span>
+
+<span class="hljs-keyword">const</span> nearParents = getAllParents(childElement, { <span class="hljs-attr">limit</span>: <span class="hljs-number">3</span> });
+<span class="hljs-comment">// nearParents = the three nearest parents of childElement</span>
+
+<span class="hljs-keyword">const</span> twoDivParents = getAllParents(childElement, { <span class="hljs-attr">limit</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">matchSelector</span>: <span class="hljs-string">&quot;div&quot;</span> });
+<span class="hljs-comment">// twoDivParents = the two nearest parents of childElement of the type DIV</span>
+
+<span class="hljs-keyword">const</span> parentsUntilMain = getAllParents(childElement, { <span class="hljs-attr">maxDistance</span>: <span class="hljs-string">&quot;.main&quot;</span> });
+<span class="hljs-comment">// parentsUntilMain = all the parents of childElement until (and including)</span>
+<span class="hljs-comment">// a parent matching the selector &quot;.main&quot;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>limit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>maxDistance<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> }</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getclosestparent" class="tsd-anchor"></a>
+					<h3>get<wbr>Closest<wbr>Parent</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<wbr>Parent<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/parents/getClosestParent.ts#L12">dom/src/parents/getClosestParent.ts:12</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the closest parent of an element that matches a selector.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>Unless you&#39;re supporting <strong>IE11</strong>, you should really use the native method
+										<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/closest"><code>Element.closest()</code></a>.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> matchSelector: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;*&quot;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="iselementchildof" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Element<wbr>Child<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Element<wbr>Child<wbr>Of<span class="tsd-signature-symbol">(</span>child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, immediateChild<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/parents/isElementChildOf.ts#L8">dom/src/parents/isElementChildOf.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find out if an element is a child to another element.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>child: <span class="tsd-signature-type">Element</span></h5>
+								</li>
+								<li>
+									<h5>parent: <span class="tsd-signature-type">Element</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> immediateChild: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="iselementparentto" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Element<wbr>Parent<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Element<wbr>Parent<wbr>To<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, immediateParent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/parents/isElementParentTo.ts#L6">dom/src/parents/isElementParentTo.ts:6</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find out if an element is a parent to another element.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parent: <span class="tsd-signature-type">Element</span></h5>
+								</li>
+								<li>
+									<h5>child: <span class="tsd-signature-type">Element</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> immediateParent: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getelementposition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Element<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Element<wbr>Position<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">OffsetObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/properties/getElementPosition.ts#L13">dom/src/properties/getElementPosition.ts:13</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the position of an element on the page.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">Element</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> offset: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">OffsetObject</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="iselementempty" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Element<wbr>Empty</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Element<wbr>Empty<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, trimWhitespace<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/properties/isElementEmpty.ts#L8">dom/src/properties/isElementEmpty.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if an element is empty.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Element to check</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> trimWhitespace: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Set this to <code>true</code> to trim whitespace before checking if element is empty</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="iselementhidden" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Element<wbr>Hidden</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Element<wbr>Hidden<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/properties/isElementHidden.ts#L6">dom/src/properties/isElementHidden.ts:6</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if an element is hidden in the DOM with <code>display: none;</code></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="iselementvisible" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Element<wbr>Visible</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Element<wbr>Visible<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/properties/isElementVisible.ts#L8">dom/src/properties/isElementVisible.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if an element is visible in the DOM (doesn&#39;t have <code>display: none;</code>)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Scroll</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getscrollposition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Scroll<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Scroll<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ScrollPosition</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/scroll/getScrollPosition.ts#L11">dom/src/scroll/getScrollPosition.ts:11</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the scroll position.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ScrollPosition</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="scrolltoelement" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> scroll<wbr>ToElement</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>ToElement<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, offset<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/scroll/scrollToElement.ts#L14">dom/src/scroll/scrollToElement.ts:14</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll to an element.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> offset: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="scrolltotop" class="tsd-anchor"></a>
+					<h3>scroll<wbr>ToTop</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">scroll<wbr>ToTop<span class="tsd-signature-symbol">(</span>smooth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/scroll/scrollToTop.ts#L13">dom/src/scroll/scrollToTop.ts:13</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Scroll to the top of the page.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> smooth: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Scroll - Scroll Lock</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="disablescrolllock" class="tsd-anchor"></a>
+					<h3>disable<wbr>Scroll<wbr>Lock</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">disable<wbr>Scroll<wbr>Lock<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/scroll/scrollLock/index.ts#L71">dom/src/scroll/scrollLock/index.ts:71</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Disable scroll lock.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="enablescrolllock" class="tsd-anchor"></a>
+					<h3>enable<wbr>Scroll<wbr>Lock</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">enable<wbr>Scroll<wbr>Lock<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/scroll/scrollLock/index.ts#L40">dom/src/scroll/scrollLock/index.ts:40</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Enable scroll lock.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isscrolllocked" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Scroll<wbr>Locked</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Scroll<wbr>Locked<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/scroll/scrollLock/index.ts#L20">dom/src/scroll/scrollLock/index.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get to know if scroll is locked.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="setscrolllocksettings" class="tsd-anchor"></a>
+					<h3>set<wbr>Scroll<wbr>Lock<wbr>Settings</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Scroll<wbr>Lock<wbr>Settings<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ScrollLockSettings</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/scroll/scrollLock/index.ts#L28">dom/src/scroll/scrollLock/index.ts:28</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set scroll lock settings.
+									Probably just the class name that is set on the HTML element.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <span class="tsd-signature-type">ScrollLockSettings</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="togglescrolllock" class="tsd-anchor"></a>
+					<h3>toggle<wbr>Scroll<wbr>Lock</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">toggle<wbr>Scroll<wbr>Lock<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/scroll/scrollLock/index.ts#L100">dom/src/scroll/scrollLock/index.ts:100</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Toggle scroll lock.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Siblings</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="areelementssiblings" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> are<wbr>Elements<wbr>Siblings</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">are<wbr>Elements<wbr>Siblings<span class="tsd-signature-symbol">(</span>element1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, element2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, adjacentOnly<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/siblings/areElementsSiblings.ts#L11">dom/src/siblings/areElementsSiblings.ts:11</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if two elements are siblings.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element1: <span class="tsd-signature-type">Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>An element to check</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>element2: <span class="tsd-signature-type">Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Another element to check</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> adjacentOnly: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Set to <code>true</code> if elements have to be right next to each other</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getnextsiblings" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Next<wbr>Siblings</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Siblings<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/siblings/getNextSiblings.ts#L8">dom/src/siblings/getNextSiblings.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get all siblings following an element.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">Element</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeOriginalElement: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getprevioussiblings" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Previous<wbr>Siblings</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Previous<wbr>Siblings<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/siblings/getPreviousSiblings.ts#L8">dom/src/siblings/getPreviousSiblings.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get all siblings preceding an element.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">Element</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeOriginalElement: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getsiblings" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Siblings</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Siblings<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, fromElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span>, untilElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/dom/src/siblings/getSiblings.ts#L10">dom/src/siblings/getSiblings.ts:10</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get all siblings of an element.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>element: <span class="tsd-signature-type">Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The element which siblings you need</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeOriginalElement: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Set to <code>true</code> to include the original element in the returned set of elements.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fromElement: <span class="tsd-signature-type">Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>If set, siblings prier to this element won&#39;t be captured.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> untilElement: <span class="tsd-signature-type">Element</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>If set, siblings past this element won&#39;t be captured.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="color.html">color</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="detection.html">detection</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="dom.html">dom</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions.html">functions</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="math.html">math</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="string.html">string</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="typescript.html">typescript</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-module">
+						<a href="color.html" class="tsd-kind-icon">color</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="detection.html" class="tsd-kind-icon">detection</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-module">
+						<a href="dom.html" class="tsd-kind-icon">dom</a>
+						<ul>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#areelementssiblings" class="tsd-kind-icon">are<wbr>Elements<wbr>Siblings</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#blurfocusedelement" class="tsd-kind-icon">blur<wbr>Focused<wbr>Element</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#disablescrolllock" class="tsd-kind-icon">disable<wbr>Scroll<wbr>Lock</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#enablescrolllock" class="tsd-kind-icon">enable<wbr>Scroll<wbr>Lock</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getallparents" class="tsd-kind-icon">get<wbr>All<wbr>Parents</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getclassbyprefix" class="tsd-kind-icon">get<wbr>Class<wbr>ByPrefix</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getclosestparent" class="tsd-kind-icon">get<wbr>Closest<wbr>Parent</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getelementposition" class="tsd-kind-icon">get<wbr>Element<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getfocusedelement" class="tsd-kind-icon">get<wbr>Focused<wbr>Element</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getnextsiblings" class="tsd-kind-icon">get<wbr>Next<wbr>Siblings</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getprevioussiblings" class="tsd-kind-icon">get<wbr>Previous<wbr>Siblings</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getscrollposition" class="tsd-kind-icon">get<wbr>Scroll<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getsiblings" class="tsd-kind-icon">get<wbr>Siblings</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#iselementchildof" class="tsd-kind-icon">is<wbr>Element<wbr>Child<wbr>Of</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#iselementempty" class="tsd-kind-icon">is<wbr>Element<wbr>Empty</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#iselementhidden" class="tsd-kind-icon">is<wbr>Element<wbr>Hidden</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#iselementparentto" class="tsd-kind-icon">is<wbr>Element<wbr>Parent<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#iselementvisible" class="tsd-kind-icon">is<wbr>Element<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#isscrolllocked" class="tsd-kind-icon">is<wbr>Scroll<wbr>Locked</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#removeclassbyprefix" class="tsd-kind-icon">remove<wbr>Class<wbr>ByPrefix</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#scrolltoelement" class="tsd-kind-icon">scroll<wbr>ToElement</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#scrolltotop" class="tsd-kind-icon">scroll<wbr>ToTop</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#setscrolllocksettings" class="tsd-kind-icon">set<wbr>Scroll<wbr>Lock<wbr>Settings</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#togglescrolllock" class="tsd-kind-icon">toggle<wbr>Scroll<wbr>Lock</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-module">
+						<a href="functions.html" class="tsd-kind-icon">functions</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="math.html" class="tsd-kind-icon">math</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="string.html" class="tsd-kind-icon">string</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="typescript.html" class="tsd-kind-icon">typescript</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

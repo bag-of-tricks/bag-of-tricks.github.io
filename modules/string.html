@@ -1,0 +1,1024 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>string | baggie - v0.1.5-alpha.0</title>
+	<meta name="description" content="Documentation for baggie - v0.1.5-alpha.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">baggie - v0.1.5-alpha.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="string.html">string</a>
+				</li>
+			</ul>
+			<h1>Package string</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<img alt="Baggie logo" src="https://github.com/bag-of-tricks/baggie/raw/master/media/baggie.svg" height="100" />
+					<h1>@baggie/string</h1>
+					<p>String tools from <a href="https://github.com/bag-of-tricks/baggie#readme">the little bag-of-tricks</a>.</p>
+					<p>Find emails in strings, strip html tags, validate password etc.</p>
+					<hr>
+					<br>
+					<a href="#🚀-installation" id="🚀-installation" style="color: inherit; text-decoration: none;">
+						<h2>🚀 Installation</h2>
+					</a>
+					<pre><code class="language-bash"><span class="hljs-comment">#npm</span>
+npm install @baggie/string --save
+
+<span class="hljs-comment">#yarn</span>
+yarn add @baggie/string</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section">
+							<h3>Convert</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#convertemailstolinks" class="tsd-kind-icon">convert<wbr>Emails<wbr>ToLinks</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#converttodate" class="tsd-kind-icon">convert<wbr>ToDate</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#getemailsfromstring" class="tsd-kind-icon">get<wbr>Emails<wbr>From<wbr>String</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#getvimeoid" class="tsd-kind-icon">get<wbr>Vimeo<wbr>Id</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#getyoutubeid" class="tsd-kind-icon">get<wbr>You<wbr>Tube<wbr>Id</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#striptagsfromstring" class="tsd-kind-icon">strip<wbr>Tags<wbr>From<wbr>String</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/string.passwordoptions.html" class="tsd-kind-icon">Password<wbr>Options</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Other</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#getcprregex" class="tsd-kind-icon">get<wbr>Cpr<wbr>Regex</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#iscprvalid" class="tsd-kind-icon">is<wbr>Cpr<wbr>Valid</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Regex</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="string.html#passwordspecialcharactersdefault" class="tsd-kind-icon">password<wbr>Special<wbr>Characters<wbr>Default</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#getemailregex" class="tsd-kind-icon">get<wbr>Email<wbr>Regex</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#getnewlineregex" class="tsd-kind-icon">get<wbr>New<wbr>Line<wbr>Regex</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#getpasswordregex" class="tsd-kind-icon">get<wbr>Password<wbr>Regex</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#gettagsregex" class="tsd-kind-icon">get<wbr>Tags<wbr>Regex</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#getvimeoidregex" class="tsd-kind-icon">get<wbr>Vimeo<wbr>IdRegex</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#getyoutubeidregex" class="tsd-kind-icon">get<wbr>You<wbr>Tube<wbr>IdRegex</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Replace</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#convertnewlinestobreaks" class="tsd-kind-icon">convert<wbr>New<wbr>Lines<wbr>ToBreaks</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Validation</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#isemailvalid" class="tsd-kind-icon">is<wbr>Email<wbr>Valid</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="string.html#ispasswordvalid" class="tsd-kind-icon">is<wbr>Password<wbr>Valid</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Convert</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="convertemailstolinks" class="tsd-anchor"></a>
+					<h3>convert<wbr>Emails<wbr>ToLinks</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Emails<wbr>ToLinks<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, subject<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/convert/convertEmailsToLinks.ts#L8">string/src/convert/convertEmailsToLinks.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find email addresses in a string and convert them to links.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>string: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> subject: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="converttodate" class="tsd-anchor"></a>
+					<h3>convert<wbr>ToDate</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>ToDate<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DateObject</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/convert/convertToDate.ts#L48">string/src/convert/convertToDate.ts:48</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert a string (or an object) to a date.</p>
+								</div>
+								<p>Returns <code>false</code> if given an invalid date.</p>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>If you provide a year with only two digits, it&#39;s up to the browser to decide
+										which decade you meant, so you might want to be more specific.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { convertToDate } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> stringDate = convertToDate(<span class="hljs-string">&quot;31-01-2020&quot;</span>);
+<span class="hljs-comment">// stringDate = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
+
+<span class="hljs-keyword">const</span> objectDate = convertToDate({
+    <span class="hljs-attr">day</span>: <span class="hljs-number">31</span>,
+    <span class="hljs-attr">month</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-attr">year</span>: <span class="hljs-number">2020</span>
+});
+<span class="hljs-comment">// objectDate = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
+
+<span class="hljs-keyword">const</span> invalidDate = convertToDate(<span class="hljs-string">&quot;99-01-2020&quot;</span>);
+<span class="hljs-comment">// invalidDate = false</span>
+
+<span class="hljs-keyword">const</span> monthBeforeDay = convertToDate(<span class="hljs-string">&quot;01/31/2020&quot;</span>, { <span class="hljs-attr">monthBeforeDay</span>: <span class="hljs-literal">true</span> });
+<span class="hljs-comment">// invalidDate = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
+
+<span class="hljs-keyword">const</span> zeroBasedMonth = convertToDate(<span class="hljs-string">&quot;31/00/2020&quot;</span>, { <span class="hljs-attr">zeroBasedMonth</span>: <span class="hljs-literal">true</span> });
+<span class="hljs-comment">// zeroBasedMonth = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>date: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DateObject</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">Options</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getemailsfromstring" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Emails<wbr>From<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Emails<wbr>From<wbr>String<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/convert/getEmailsFromString.ts#L19">string/src/convert/getEmailsFromString.ts:19</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns email addresses in a string.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getEmailsFromString } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span> = <span class="hljs-string">&quot;My private email is mail@private.com, but my business email is mail@business.com.&quot;</span>;
+
+<span class="hljs-keyword">const</span> foundEmails = getEmailsFromString(<span class="hljs-built_in">string</span>);
+<span class="hljs-comment">// foundEmails = [&quot;mail@private.com&quot;, &quot;mail@business.com&quot;]</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>string: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getvimeoid" class="tsd-anchor"></a>
+					<h3>get<wbr>Vimeo<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Vimeo<wbr>Id<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/convert/getVimeoId.ts#L21">string/src/convert/getVimeoId.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert a YouTube URL to a video ID.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getVimeoId } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> vimeoUrl = <span class="hljs-string">&quot;https://vimeo.com/265700921&quot;</span>;
+<span class="hljs-keyword">const</span> vimeoId = getVimeoId(vimeoUrl);
+<span class="hljs-comment">// vimeoId = &quot;265700921&quot;</span>
+
+<span class="hljs-keyword">const</span> noVimeoId = getVimeoId(<span class="hljs-string">&quot;http://google.com&quot;</span>);
+<span class="hljs-comment">// noYouTubeId = &quot;&quot;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getyoutubeid" class="tsd-anchor"></a>
+					<h3>get<wbr>You<wbr>Tube<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>You<wbr>Tube<wbr>Id<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/convert/getYouTubeId.ts#L21">string/src/convert/getYouTubeId.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert a YouTube URL to a video ID.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getYouTubeId } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> youTubeUrl = <span class="hljs-string">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>;
+<span class="hljs-keyword">const</span> youTubeId = getYouTubeId(youTubeUrl);
+<span class="hljs-comment">// youTubeId = &quot;dQw4w9WgXcQ&quot;</span>
+
+<span class="hljs-keyword">const</span> noYouTubeId = getYouTubeId(<span class="hljs-string">&quot;http://google.com&quot;</span>);
+<span class="hljs-comment">// noYouTubeId = &quot;&quot;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="striptagsfromstring" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> strip<wbr>Tags<wbr>From<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">strip<wbr>Tags<wbr>From<wbr>String<span class="tsd-signature-symbol">(</span>markup<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, replaceWith<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/convert/stripTagsFromString.ts#L22">string/src/convert/stripTagsFromString.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Strip HTML and XML tags from a string. Tags are replaced with a space unless .</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { stripTagsFromString } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> markup = <span class="hljs-string">&quot;&lt;p&gt;&lt;b&gt;Bold move.&lt;/b&gt;&lt;br/&gt;Paragraph.&lt;/p&gt;&lt;!-- comment --&gt;:)&quot;</span>;
+
+<span class="hljs-keyword">const</span> stripped = stripTagsFromString(markup);
+<span class="hljs-comment">// stripped = &quot;Bold move.Paragraph.:)&quot;</span>
+
+<span class="hljs-keyword">const</span> spacedAndTrimmed = stripTagsFromString(markup, <span class="hljs-string">&quot; &quot;</span>).trim();
+<span class="hljs-comment">// spacedAndTrimmed = &quot;Bold move. Paragraph. :)&quot;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>markup: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> replaceWith: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot; &quot;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Other</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getcprregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Cpr<wbr>Regex</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Cpr<wbr>Regex<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/regex/getCprRegex.ts#L21">string/src/regex/getCprRegex.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A regular expression for validating the format of a Danish CPR number
+									(personal identification number).</p>
+								</div>
+								<p>Works with the birth date and the four control digits combined or separated
+								by a anything that&#39;s not a number.</p>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p><strong>Be aware</strong> that this does not check if the date is valid.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCprRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> cpr = <span class="hljs-string">&quot;1706862134&quot;</span>;
+<span class="hljs-keyword">const</span> isCprValid = cprRegex.test(cpr);
+<span class="hljs-comment">// isCprValid = true</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="iscprvalid" class="tsd-anchor"></a>
+					<h3>is<wbr>Cpr<wbr>Valid</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Cpr<wbr>Valid<span class="tsd-signature-symbol">(</span>cprNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span>, gender<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"f"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"female"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"m"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"male"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/validation/isCprValid.ts#L35">string/src/validation/isCprValid.ts:35</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if a CPR number is valid.</p>
+								</div>
+								<p>Works with the birth date and the four control digits combined or separated
+								by a anything that isn&#39;t a number.</p>
+								<p>Gender can be provided as</p>
+								<ul>
+									<li><code>&quot;f&quot;</code></li>
+									<li><code>&quot;female&quot;</code></li>
+									<li><code>&quot;m&quot;</code></li>
+									<li><code>&quot;male&quot;</code></li>
+								</ul>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p><strong>This also checks if the date is valid,</strong> using JavaScript&#39;s Date object.</p>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isCprValid } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> cprWithValidDate = <span class="hljs-string">&quot;300186-2134&quot;</span>;
+<span class="hljs-keyword">const</span> cprWithInvalidDate = <span class="hljs-string">&quot;300286-2134&quot;</span>;
+<span class="hljs-keyword">const</span> gender = <span class="hljs-string">&quot;female&quot;</span>;
+
+<span class="hljs-keyword">const</span> validCpr = isCprValid(cprWithValidDate, gender);
+<span class="hljs-comment">// validCpr = false</span>
+
+<span class="hljs-keyword">const</span> invalidCpr = isCprValid(cprWithInvalidDate, gender);
+<span class="hljs-comment">// invalidCpr = false</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cprNumber: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> gender: <span class="tsd-signature-type">"f"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"female"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"m"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"male"</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Regex</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="passwordspecialcharactersdefault" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> password<wbr>Special<wbr>Characters<wbr>Default</h3>
+					<div class="tsd-signature tsd-kind-icon">password<wbr>Special<wbr>Characters<wbr>Default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">" !&quot;#$%&amp;&#x27;()*+,./:;&lt;&#x3D;&gt;?@[]\^_&#x60;{|}~¨-"</span><span class="tsd-signature-symbol"> = &quot; !&quot;#$%&amp;&#x27;()*+,./:;&lt;&#x3D;&gt;?@[]\^_&#x60;{|}~¨-&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/regex/getPasswordRegex.ts#L9">string/src/regex/getPasswordRegex.ts:9</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A string with the default accepted special character used by
+							<code>getPasswordRegex</code>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getemailregex" class="tsd-anchor"></a>
+					<h3>get<wbr>Email<wbr>Regex</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Email<wbr>Regex<span class="tsd-signature-symbol">(</span>global<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/regex/getEmailRegex.ts#L17">string/src/regex/getEmailRegex.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a RegExp for finding email addresses.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getEmailRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span> = <span class="hljs-string">&quot;My private email is mail@private.com, but my business email is mail@business.com.&quot;</span>;
+
+<span class="hljs-keyword">const</span> emails = <span class="hljs-built_in">string</span>.match(getEmailRegex());
+<span class="hljs-comment">// emails = [&quot;mail@private.com&quot;, &quot;mail@business.com&quot;]</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> global: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getnewlineregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>New<wbr>Line<wbr>Regex</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>New<wbr>Line<wbr>Regex<span class="tsd-signature-symbol">(</span>includeWhitespace<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/regex/getNewLineRegex.ts#L6">string/src/regex/getNewLineRegex.ts:6</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a RegExp for finding new lines.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeWhitespace: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getpasswordregex" class="tsd-anchor"></a>
+					<h3>get<wbr>Password<wbr>Regex</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Password<wbr>Regex<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type">PasswordOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/regex/getPasswordRegex.ts#L32">string/src/regex/getPasswordRegex.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a regular expression to validate passwords with.</p>
+								</div>
+								<p>Define your requirements for a valid password by setting the following parameters.</p>
+								<ul>
+									<li>minLength - defaults to <code>8</code></li>
+									<li>maxLength</li>
+									<li>minDigits - defaults to <code>1</code></li>
+									<li>maxDigits</li>
+									<li>minLowercase - defaults to <code>1</code></li>
+									<li>maxLowercase</li>
+									<li>minUppercase - defaults to <code>1</code></li>
+									<li>maxUppercase</li>
+									<li>minSpecial - defaults to <code>1</code></li>
+									<li>maxSpecial</li>
+									<li>specialChars - defaults to <a href="string.html#passwordspecialcharactersdefault">passwordSpecialCharactersDefault</a></li>
+									<li>forbiddenChars - default to <code>&quot; &quot;</code></li>
+									<li>acceptUnicode - defaults to <code>false</code></li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type">PasswordOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="gettagsregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Tags<wbr>Regex</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Tags<wbr>Regex<span class="tsd-signature-symbol">(</span>groupSequentialTags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/regex/getTagsRegex.ts#L16">string/src/regex/getTagsRegex.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a regular expression for matching all HTML and XML tags in a string.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getTagsRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> markup = <span class="hljs-string">&quot;&lt;p&gt;&lt;b&gt;Bold move.&lt;/b&gt;&lt;br/&gt;Paragraph.&lt;/p&gt;&lt;!-- comment --&gt; :)&quot;</span>;
+<span class="hljs-keyword">const</span> stripped = markup.replace(getTagsRegex(), <span class="hljs-string">&quot;&quot;</span>);
+<span class="hljs-comment">// stripped = &quot;Bold move.Paragraph. :)&quot;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> groupSequentialTags: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getvimeoidregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Vimeo<wbr>IdRegex</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Vimeo<wbr>IdRegex<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/regex/getVimeoIdRegex.ts#L16">string/src/regex/getVimeoIdRegex.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns regular expression for extracting the ID of a Vimeo video from a URL.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getVimeoIdRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> vimeoUrl = <span class="hljs-string">&quot;https://vimeo.com/265700921&quot;</span>;
+<span class="hljs-keyword">const</span> vimeoId = vimeoUrl.match(getVimeoIdRegex())[<span class="hljs-number">1</span>];
+<span class="hljs-comment">// vimeoId = &quot;265700921&quot;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getyoutubeidregex" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>You<wbr>Tube<wbr>IdRegex</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>You<wbr>Tube<wbr>IdRegex<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/regex/getYouTubeIdRegex.ts#L20">string/src/regex/getYouTubeIdRegex.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns regular expression for extracting the ID of a YouTube video from a
+									URL.</p>
+								</div>
+								<p>This works with both the URLs of normal links, embedded videos and the
+								shorter <code>youtu.be/{ID}</code></p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getYouTubeIdRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> youTubeUrl = <span class="hljs-string">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>;
+<span class="hljs-keyword">const</span> youTubeId = youTubeUrl.match(getYouTubeIdRegex())[<span class="hljs-number">1</span>];
+<span class="hljs-comment">// youTubeId = &quot;dQw4w9WgXcQ&quot;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Replace</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="convertnewlinestobreaks" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>New<wbr>Lines<wbr>ToBreaks</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>New<wbr>Lines<wbr>ToBreaks<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, keepWhitespace<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/convert/convertNewLinesToBreaks.ts#L23">string/src/convert/convertNewLinesToBreaks.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Replace new lines with break elements.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { convertNewLinesToBreaks } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> original = <span class="hljs-string">`hello
+    friend`</span>;
+
+<span class="hljs-keyword">const</span> parsed = convertNewLinesToBreaks(original);
+<span class="hljs-comment">// parsed1 = &quot;hello&lt;br /&gt;friend&quot;;</span>
+
+<span class="hljs-keyword">const</span> keepWhitespace = convertNewLinesToBreaks(original, <span class="hljs-literal">true</span>);
+<span class="hljs-comment">// keepWhitespace = &quot;hello&lt;br /&gt;    friend&quot;;</span></code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> keepWhitespace: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Validation</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isemailvalid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Email<wbr>Valid</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Email<wbr>Valid<span class="tsd-signature-symbol">(</span>email<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/validation/isEmailValid.ts#L24">string/src/validation/isEmailValid.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if an email address is valid.</p>
+								</div>
+								<p>Accept a string or an input element.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isEmailValid } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> checkString = isEmailValid(<span class="hljs-string">&quot;test@test.com&quot;</span>);
+<span class="hljs-comment">// checkString = true</span>
+
+<span class="hljs-keyword">const</span> emailInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;form input.email&quot;</span>);
+<span class="hljs-keyword">if</span> (isEmailValid(emailInput)) {
+    <span class="hljs-comment">// The entered email address is valid</span>
+}</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>email: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="ispasswordvalid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Password<wbr>Valid</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Password<wbr>Valid<span class="tsd-signature-symbol">(</span>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type">PasswordOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d3138e6/packages/string/src/validation/isPasswordValid.ts#L28">string/src/validation/isPasswordValid.ts:28</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if a password is valid.</p>
+								</div>
+								<p>Accept a string or an input element.</p>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isPasswordValid } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+
+<span class="hljs-keyword">const</span> validPassword = isPasswordValid(<span class="hljs-string">&quot;abcABC_123&quot;</span>);
+<span class="hljs-comment">// validPassword = true</span>
+
+<span class="hljs-keyword">const</span> invalidPassword = isPasswordValid(<span class="hljs-string">&quot;hey&quot;</span>);
+<span class="hljs-comment">// invalidPassword = false</span>
+
+<span class="hljs-keyword">const</span> passwordInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;form input.password&quot;</span>);
+<span class="hljs-keyword">if</span> (isPasswordValid(passwordInput)) {
+    <span class="hljs-comment">// The entered password is valid</span>
+}</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>password: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span></h5>
+								</li>
+								<li>
+									<h5>options: <a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type">PasswordOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="color.html">color</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="detection.html">detection</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="dom.html">dom</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions.html">functions</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="math.html">math</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="string.html">string</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="typescript.html">typescript</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-module">
+						<a href="color.html" class="tsd-kind-icon">color</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="detection.html" class="tsd-kind-icon">detection</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="dom.html" class="tsd-kind-icon">dom</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="functions.html" class="tsd-kind-icon">functions</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="math.html" class="tsd-kind-icon">math</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-module">
+						<a href="string.html" class="tsd-kind-icon">string</a>
+						<ul>
+							<li class=" tsd-kind-interface tsd-parent-kind-module">
+								<a href="../interfaces/string.passwordoptions.html" class="tsd-kind-icon">Password<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-variable tsd-parent-kind-module">
+								<a href="string.html#passwordspecialcharactersdefault" class="tsd-kind-icon">password<wbr>Special<wbr>Characters<wbr>Default</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#convertemailstolinks" class="tsd-kind-icon">convert<wbr>Emails<wbr>ToLinks</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#convertnewlinestobreaks" class="tsd-kind-icon">convert<wbr>New<wbr>Lines<wbr>ToBreaks</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#converttodate" class="tsd-kind-icon">convert<wbr>ToDate</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#getcprregex" class="tsd-kind-icon">get<wbr>Cpr<wbr>Regex</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#getemailregex" class="tsd-kind-icon">get<wbr>Email<wbr>Regex</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#getemailsfromstring" class="tsd-kind-icon">get<wbr>Emails<wbr>From<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#getnewlineregex" class="tsd-kind-icon">get<wbr>New<wbr>Line<wbr>Regex</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#getpasswordregex" class="tsd-kind-icon">get<wbr>Password<wbr>Regex</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#gettagsregex" class="tsd-kind-icon">get<wbr>Tags<wbr>Regex</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#getvimeoid" class="tsd-kind-icon">get<wbr>Vimeo<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#getvimeoidregex" class="tsd-kind-icon">get<wbr>Vimeo<wbr>IdRegex</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#getyoutubeid" class="tsd-kind-icon">get<wbr>You<wbr>Tube<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#getyoutubeidregex" class="tsd-kind-icon">get<wbr>You<wbr>Tube<wbr>IdRegex</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#iscprvalid" class="tsd-kind-icon">is<wbr>Cpr<wbr>Valid</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#isemailvalid" class="tsd-kind-icon">is<wbr>Email<wbr>Valid</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#ispasswordvalid" class="tsd-kind-icon">is<wbr>Password<wbr>Valid</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="string.html#striptagsfromstring" class="tsd-kind-icon">strip<wbr>Tags<wbr>From<wbr>String</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-module">
+						<a href="typescript.html" class="tsd-kind-icon">typescript</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
