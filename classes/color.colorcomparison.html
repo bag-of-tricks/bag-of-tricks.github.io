@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ColorComparison | baggie - v0.1.7-alpha.0</title>
-	<meta name="description" content="Documentation for baggie - v0.1.7-alpha.0">
+	<title>ColorComparison | baggie - v0.1.7-alpha.1</title>
+	<meta name="description" content="Documentation for baggie - v0.1.7-alpha.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v0.1.7-alpha.0</a>
+					<a href="../index.html" class="title">baggie - v0.1.7-alpha.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -83,31 +83,31 @@
 							<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ColorComparison } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/colors&quot;</span>;
 
 <span class="hljs-keyword">const</span> colors = <span class="hljs-keyword">new</span> ColorComparison([
-    <span class="hljs-string">&quot;#FF0000&quot;</span>,
-    <span class="hljs-string">&quot;#FFFF00&quot;</span>,
-    <span class="hljs-string">&quot;#FF00FF&quot;</span>,
-    <span class="hljs-string">&quot;#00FFFF&quot;</span>,
-    <span class="hljs-string">&quot;#00FF00&quot;</span>,
+    { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> },
+    { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> },
+    { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">255</span> },
+    { <span class="hljs-attr">red</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">255</span> },
+    { <span class="hljs-attr">red</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> },
 ]);
 
-<span class="hljs-comment">// This will return [&quot;#FF0000&quot;], since that&#x27;s the nearest color in the set.</span>
-colors.near(<span class="hljs-string">&quot;#FF1111&quot;</span>);
+colors.nearest({ <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">60</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">10</span> });
+<span class="hljs-comment">// = [{ red: 255, green: 0, blue: 0 }]</span>
 
-<span class="hljs-comment">// Add a new color to the set.</span>
-colors.add(<span class="hljs-string">&quot;#FF1100&quot;</span>);
+colors.add({ <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> });
 
-<span class="hljs-comment">// Now, the same execution as before will return [&quot;#FF1100&quot;].</span>
-colors.near(<span class="hljs-string">&quot;#FF1111&quot;</span>);
+colors.near({ <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">60</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">10</span> });
+<span class="hljs-comment">// = { red: 255, green: 50, blue: 0 }</span>
 
-<span class="hljs-comment">// Let&#x27;s find the two colors least matching #FF1111.</span>
-<span class="hljs-comment">// That&#x27;ll be [&quot;#00FF00&quot;, &quot;#00FFFF&quot;].</span>
-colors.far(<span class="hljs-string">&quot;#FF1111&quot;</span>, <span class="hljs-number">2</span>);
+colors.farthest({ <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">50</span> }, <span class="hljs-number">2</span>);
+<span class="hljs-comment">// = [{ red: 0, green: 255, blue: 0 }, { red: 0, green: 255, blue: 255 }]</span>
 
 <span class="hljs-comment">// We can also remove all the colors and add new ones to it.</span>
-colors.flush().add([<span class="hljs-string">&quot;#FF0&quot;</span>, <span class="hljs-string">&quot;#F00&quot;</span>]);
-
-<span class="hljs-comment">// If we have no further use for this, we can clean up.</span>
-colors.destroy();</code></pre>
+colors
+    .reset()
+    .add([
+        { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">50</span> },
+        { <span class="hljs-attr">red</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> }
+    ]);</code></pre>
 						</dd>
 					</dl>
 				</div>
@@ -136,7 +136,6 @@ colors.destroy();</code></pre>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="color.colorcomparison.html#add" class="tsd-kind-icon">add</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="color.colorcomparison.html#compare" class="tsd-kind-icon">compare</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="color.colorcomparison.html#farthest" class="tsd-kind-icon">farthest</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="color.colorcomparison.html#flush" class="tsd-kind-icon">flush</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="color.colorcomparison.html#nearest" class="tsd-kind-icon">nearest</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="color.colorcomparison.html#reset" class="tsd-kind-icon">reset</a></li>
 							</ul>
@@ -156,7 +155,7 @@ colors.destroy();</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/comparison/colorComparison.ts#L55">color/src/comparison/colorComparison.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/comparison/colorComparison.ts#L55">color/src/comparison/colorComparison.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -187,7 +186,7 @@ colors.destroy();</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/comparison/colorComparison.ts#L82">color/src/comparison/colorComparison.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/comparison/colorComparison.ts#L82">color/src/comparison/colorComparison.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -204,13 +203,13 @@ colors.destroy();</code></pre>
 					<a name="compare" class="tsd-anchor"></a>
 					<h3>compare</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sortFarthestToNearest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sortFarthestToNearest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/comparison/colorComparison.ts#L94">color/src/comparison/colorComparison.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/comparison/colorComparison.ts#L94">color/src/comparison/colorComparison.ts:94</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -225,7 +224,7 @@ colors.destroy();</code></pre>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> sortFarthestToNearest: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -233,13 +232,13 @@ colors.destroy();</code></pre>
 					<a name="farthest" class="tsd-anchor"></a>
 					<h3>farthest</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">farthest<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">farthest<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/comparison/colorComparison.ts#L233">color/src/comparison/colorComparison.ts:233</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/comparison/colorComparison.ts#L233">color/src/comparison/colorComparison.ts:233</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -251,24 +250,7 @@ colors.destroy();</code></pre>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> amount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="flush" class="tsd-anchor"></a>
-					<h3>flush</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">flush<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/comparison/colorComparison.ts#L77">color/src/comparison/colorComparison.ts:77</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -276,13 +258,13 @@ colors.destroy();</code></pre>
 					<a name="nearest" class="tsd-anchor"></a>
 					<h3>nearest</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">nearest<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">nearest<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/comparison/colorComparison.ts#L229">color/src/comparison/colorComparison.ts:229</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/comparison/colorComparison.ts#L229">color/src/comparison/colorComparison.ts:229</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -294,7 +276,7 @@ colors.destroy();</code></pre>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> amount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -308,7 +290,7 @@ colors.destroy();</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/comparison/colorComparison.ts#L237">color/src/comparison/colorComparison.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/comparison/colorComparison.ts#L77">color/src/comparison/colorComparison.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
@@ -369,9 +351,6 @@ colors.destroy();</code></pre>
 										<a href="color.colorcomparison.html#farthest" class="tsd-kind-icon">farthest</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
-										<a href="color.colorcomparison.html#flush" class="tsd-kind-icon">flush</a>
-									</li>
-									<li class=" tsd-kind-method tsd-parent-kind-class">
 										<a href="color.colorcomparison.html#nearest" class="tsd-kind-icon">nearest</a>
 									</li>
 									<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -392,7 +371,7 @@ colors.destroy();</code></pre>
 								<a href="../modules/color.html#convertcolornametohex" class="tsd-kind-icon">convert<wbr>Color<wbr>Name<wbr>ToHex</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="../modules/color.html#converthextorgba" class="tsd-kind-icon">convert<wbr>Hex<wbr>ToRgba</a>
+								<a href="../modules/color.html#converthextorgb" class="tsd-kind-icon">convert<wbr>Hex<wbr>ToRgb</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="../modules/color.html#converthsltorgb" class="tsd-kind-icon">convert<wbr>Hsl<wbr>ToRgb</a>

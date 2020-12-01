@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>color | baggie - v0.1.7-alpha.0</title>
-	<meta name="description" content="Documentation for baggie - v0.1.7-alpha.0">
+	<title>color | baggie - v0.1.7-alpha.1</title>
+	<meta name="description" content="Documentation for baggie - v0.1.7-alpha.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v0.1.7-alpha.0</a>
+					<a href="../index.html" class="title">baggie - v0.1.7-alpha.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -116,7 +116,7 @@ yarn add @baggie/color</code></pre>
 							<h3>Convert</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#convertcolornametohex" class="tsd-kind-icon">convert<wbr>Color<wbr>Name<wbr>ToHex</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#converthextorgba" class="tsd-kind-icon">convert<wbr>Hex<wbr>ToRgba</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#converthextorgb" class="tsd-kind-icon">convert<wbr>Hex<wbr>ToRgb</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#converthsltorgb" class="tsd-kind-icon">convert<wbr>Hsl<wbr>ToRgb</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#convertrgbtohex" class="tsd-kind-icon">convert<wbr>Rgb<wbr>ToHex</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#convertrgbtohsl" class="tsd-kind-icon">convert<wbr>Rgb<wbr>ToHsl</a></li>
@@ -149,29 +149,40 @@ yarn add @baggie/color</code></pre>
 					<a name="getbrightness" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Brightness</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Brightness<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Brightness<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>blue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>green<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>red<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/brightness/getBrightness.ts#L8">color/src/brightness/getBrightness.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/brightness/getBrightness.ts#L12">color/src/brightness/getBrightness.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Get the perceived brightness of a color as percentage in decimal form.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="http://alienryderflex.com/hsp.html">http://alienryderflex.com/hsp.html</a></p>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>color: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Color in hex-format</p>
-										</div>
-									</div>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>blue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>green<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>red<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>blue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>green<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>red<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -183,13 +194,13 @@ yarn add @baggie/color</code></pre>
 					<a name="iscolorbrighterthan" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Color<wbr>Brighter<wbr>Than</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Color<wbr>Brighter<wbr>Than<span class="tsd-signature-symbol">(</span>colorA<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, colorB<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Color<wbr>Brighter<wbr>Than<span class="tsd-signature-symbol">(</span>colorA<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a>, colorB<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/brightness/isColorBrighterThan.ts#L11">color/src/brightness/isColorBrighterThan.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/brightness/isColorBrighterThan.ts#L12">color/src/brightness/isColorBrighterThan.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,7 +211,7 @@ yarn add @baggie/color</code></pre>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>colorA: <span class="tsd-signature-type">string</span></h5>
+									<h5>colorA: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Color in hex-format</p>
@@ -208,7 +219,7 @@ yarn add @baggie/color</code></pre>
 									</div>
 								</li>
 								<li>
-									<h5>colorB: <span class="tsd-signature-type">string</span></h5>
+									<h5>colorB: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Color in hex-format</p>
@@ -225,13 +236,13 @@ yarn add @baggie/color</code></pre>
 					<a name="iscolordarkerthan" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Color<wbr>Darker<wbr>Than</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Color<wbr>Darker<wbr>Than<span class="tsd-signature-symbol">(</span>colorA<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, colorB<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Color<wbr>Darker<wbr>Than<span class="tsd-signature-symbol">(</span>colorA<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a>, colorB<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/brightness/isColorDarkerThan.ts#L11">color/src/brightness/isColorDarkerThan.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/brightness/isColorDarkerThan.ts#L12">color/src/brightness/isColorDarkerThan.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -242,7 +253,7 @@ yarn add @baggie/color</code></pre>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>colorA: <span class="tsd-signature-type">string</span></h5>
+									<h5>colorA: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Color in hex-format</p>
@@ -250,7 +261,7 @@ yarn add @baggie/color</code></pre>
 									</div>
 								</li>
 								<li>
-									<h5>colorB: <span class="tsd-signature-type">string</span></h5>
+									<h5>colorB: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Color in hex-format</p>
@@ -276,7 +287,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/combinations/getAnalogousColorScheme.ts#L13">color/src/combinations/getAnalogousColorScheme.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/combinations/getAnalogousColorScheme.ts#L13">color/src/combinations/getAnalogousColorScheme.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -321,13 +332,13 @@ yarn add @baggie/color</code></pre>
 					<a name="getcomplementarycolorscheme" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Complementary<wbr>Color<wbr>Scheme</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Complementary<wbr>Color<wbr>Scheme<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Complementary<wbr>Color<wbr>Scheme<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/combinations/getComplementaryColorScheme.ts#L11">color/src/combinations/getComplementaryColorScheme.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/combinations/getComplementaryColorScheme.ts#L11">color/src/combinations/getComplementaryColorScheme.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,7 +358,7 @@ yarn add @baggie/color</code></pre>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">]</span></h4>
 							<p>An array of two RGBA color objects.</p>
 						</li>
 					</ul>
@@ -356,13 +367,13 @@ yarn add @baggie/color</code></pre>
 					<a name="getsplitcomplementarycolorscheme" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Split<wbr>Complementary<wbr>Color<wbr>Scheme</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Split<wbr>Complementary<wbr>Color<wbr>Scheme<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Split<wbr>Complementary<wbr>Color<wbr>Scheme<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/combinations/getSplitComplementaryColorScheme.ts#L10">color/src/combinations/getSplitComplementaryColorScheme.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/combinations/getSplitComplementaryColorScheme.ts#L10">color/src/combinations/getSplitComplementaryColorScheme.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -381,7 +392,7 @@ yarn add @baggie/color</code></pre>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">]</span></h4>
 							<p>An array of three RGBA color objects.</p>
 						</li>
 					</ul>
@@ -390,13 +401,13 @@ yarn add @baggie/color</code></pre>
 					<a name="gettetradiccolorscheme" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Tetradic<wbr>Color<wbr>Scheme</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Tetradic<wbr>Color<wbr>Scheme<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Tetradic<wbr>Color<wbr>Scheme<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/combinations/getTetradicColorScheme.ts#L12">color/src/combinations/getTetradicColorScheme.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/combinations/getTetradicColorScheme.ts#L12">color/src/combinations/getTetradicColorScheme.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -417,7 +428,7 @@ yarn add @baggie/color</code></pre>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">]</span></h4>
 							<p>An array of four RGBA color objects.</p>
 						</li>
 					</ul>
@@ -426,13 +437,13 @@ yarn add @baggie/color</code></pre>
 					<a name="gettriadiccolorscheme" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Triadic<wbr>Color<wbr>Scheme</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Triadic<wbr>Color<wbr>Scheme<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Triadic<wbr>Color<wbr>Scheme<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/combinations/getTriadicColorScheme.ts#L12">color/src/combinations/getTriadicColorScheme.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/combinations/getTriadicColorScheme.ts#L12">color/src/combinations/getTriadicColorScheme.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -453,7 +464,7 @@ yarn add @baggie/color</code></pre>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">]</span></h4>
 							<p>An array of three RGBA color objects.</p>
 						</li>
 					</ul>
@@ -465,13 +476,13 @@ yarn add @baggie/color</code></pre>
 					<a name="convertcolornametohex" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>Color<wbr>Name<wbr>ToHex</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">convert<wbr>Color<wbr>Name<wbr>ToHex<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Color<wbr>Name<wbr>ToHex<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/convert/convertColorNameToHex.ts#L164">color/src/convert/convertColorNameToHex.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/convert/convertColorNameToHex.ts#L164">color/src/convert/convertColorNameToHex.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -490,21 +501,21 @@ yarn add @baggie/color</code></pre>
 									<h5>input: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="converthextorgba" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>Hex<wbr>ToRgba</h3>
+					<a name="converthextorgb" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>Hex<wbr>ToRgb</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">convert<wbr>Hex<wbr>ToRgba<span class="tsd-signature-symbol">(</span>hex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Hex<wbr>ToRgb<span class="tsd-signature-symbol">(</span>hex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/convert/convertHexToRgba.ts#L8">color/src/convert/convertHexToRgba.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/convert/convertHexToRgb.ts#L8">color/src/convert/convertHexToRgb.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -518,7 +529,7 @@ yarn add @baggie/color</code></pre>
 									<h5>hex: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -526,13 +537,13 @@ yarn add @baggie/color</code></pre>
 					<a name="converthsltorgb" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>Hsl<wbr>ToRgb</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">convert<wbr>Hsl<wbr>ToRgb<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>hue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lightness<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>saturation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></li>
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Hsl<wbr>ToRgb<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>hue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lightness<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>saturation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/convert/convertHslToRgb.ts#L8">color/src/convert/convertHslToRgb.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/convert/convertHslToRgb.ts#L8">color/src/convert/convertHslToRgb.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -543,10 +554,10 @@ yarn add @baggie/color</code></pre>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>hue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lightness<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>saturation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>hue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lightness<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>saturation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+											<h5>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>hue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
@@ -568,13 +579,13 @@ yarn add @baggie/color</code></pre>
 					<a name="convertrgbtohex" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>Rgb<wbr>ToHex</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">convert<wbr>Rgb<wbr>ToHex<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>blue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>green<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>red<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, includeAlpha<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Rgb<wbr>ToHex<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>blue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>green<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>red<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, includeAlpha<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/convert/convertRgbToHex.ts#L8">color/src/convert/convertRgbToHex.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/convert/convertRgbToHex.ts#L8">color/src/convert/convertRgbToHex.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -585,10 +596,10 @@ yarn add @baggie/color</code></pre>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>blue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>green<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>red<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>blue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>green<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>red<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+											<h5>alpha<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>blue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
@@ -602,7 +613,7 @@ yarn add @baggie/color</code></pre>
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeAlpha: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> includeAlpha: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -619,7 +630,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/convert/convertRgbToHsl.ts#L8">color/src/convert/convertRgbToHsl.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/convert/convertRgbToHsl.ts#L8">color/src/convert/convertRgbToHsl.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -661,7 +672,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/convert/convertRgbToLab.ts#L12">color/src/convert/convertRgbToLab.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/convert/convertRgbToLab.ts#L12">color/src/convert/convertRgbToLab.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -710,7 +721,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/convert/parseColor.ts#L14">color/src/convert/parseColor.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/convert/parseColor.ts#L14">color/src/convert/parseColor.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -742,7 +753,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/manipulate/mixColors.ts#L20">color/src/manipulate/mixColors.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/manipulate/mixColors.ts#L22">color/src/manipulate/mixColors.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -753,11 +764,13 @@ yarn add @baggie/color</code></pre>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { mixColors, convertRgbToHex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/color&quot;</span>;
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { mixColors } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/color&quot;</span>;
 
-<span class="hljs-keyword">const</span> color = mixColors(<span class="hljs-string">&quot;#FFFFFF&quot;</span>, <span class="hljs-string">&quot;#F3F9FA&quot;</span>, <span class="hljs-number">.91</span>);
-<span class="hljs-keyword">const</span> hex = convertRgbToHex(color);
-<span class="hljs-comment">// hex = &quot;#FEFEFF&quot;</span></code></pre>
+<span class="hljs-keyword">const</span> colorA = { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">255</span> };
+<span class="hljs-keyword">const</span> colorB = { <span class="hljs-attr">red</span>: <span class="hljs-number">95</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">98</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">98</span> };
+
+<span class="hljs-keyword">const</span> newColor = mixColors(colorA, colorB, <span class="hljs-number">.91</span>);
+<span class="hljs-comment">// newColor = { red: 241, green: 241, blue: 241, alpha: 1 }</span></code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -787,7 +800,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/manipulate/multiplyColors.ts#L23">color/src/manipulate/multiplyColors.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/manipulate/multiplyColors.ts#L25">color/src/manipulate/multiplyColors.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -799,11 +812,13 @@ yarn add @baggie/color</code></pre>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { multiplyColors, convertRgbToHex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/color&quot;</span>;
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { multiplyColors } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/color&quot;</span>;
 
-<span class="hljs-keyword">const</span> color = multiplyColors(<span class="hljs-string">&quot;#FF1100&quot;</span>, <span class="hljs-string">&quot;#88FF00&quot;</span>);
-<span class="hljs-keyword">const</span> hex = convertRgbToHex(color);
-<span class="hljs-comment">// hex = &quot;#881100&quot;</span></code></pre>
+<span class="hljs-keyword">const</span> colorA = { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">255</span> };
+<span class="hljs-keyword">const</span> colorB = { <span class="hljs-attr">red</span>: <span class="hljs-number">90</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">98</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">98</span> };
+
+<span class="hljs-keyword">const</span> newColor = multiplyColors(colorA, colorB);
+<span class="hljs-comment">// newColor = { red: 90, green: 98, blue: 98, alpha: 1 }</span></code></pre>
 									</dd>
 									<dt>see</dt>
 									<dd><p><a href="https://en.wikipedia.org/wiki/Blend_modes">https://en.wikipedia.org/wiki/Blend_modes</a></p>
@@ -833,7 +848,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/color/src/manipulate/screenColors.ts#L23">color/src/manipulate/screenColors.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/color/src/manipulate/screenColors.ts#L25">color/src/manipulate/screenColors.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -845,11 +860,13 @@ yarn add @baggie/color</code></pre>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { convertRgbToHex, screenColors } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/color&quot;</span>;
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { screenColors } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/color&quot;</span>;
 
-<span class="hljs-keyword">const</span> color = screenColors(<span class="hljs-string">&quot;#FF0000&quot;</span>, <span class="hljs-string">&quot;#00FF00&quot;</span>);
-<span class="hljs-keyword">const</span> hex = convertRgbToHex(color);
-<span class="hljs-comment">// hex = &quot;#FFFF00&quot;</span></code></pre>
+<span class="hljs-keyword">const</span> colorA = { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> };
+<span class="hljs-keyword">const</span> colorB = { <span class="hljs-attr">red</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> };
+
+<span class="hljs-keyword">const</span> newColor = screenColors(colorA, colorB);
+<span class="hljs-comment">// newColor = { red: 255, green: 255, blue: 0 }</span></code></pre>
 									</dd>
 									<dt>see</dt>
 									<dd><p><a href="https://en.wikipedia.org/wiki/Blend_modes">https://en.wikipedia.org/wiki/Blend_modes</a></p>
@@ -923,7 +940,7 @@ yarn add @baggie/color</code></pre>
 								<a href="color.html#convertcolornametohex" class="tsd-kind-icon">convert<wbr>Color<wbr>Name<wbr>ToHex</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="color.html#converthextorgba" class="tsd-kind-icon">convert<wbr>Hex<wbr>ToRgba</a>
+								<a href="color.html#converthextorgb" class="tsd-kind-icon">convert<wbr>Hex<wbr>ToRgb</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="color.html#converthsltorgb" class="tsd-kind-icon">convert<wbr>Hsl<wbr>ToRgb</a>

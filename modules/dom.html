@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>dom | baggie - v0.1.7-alpha.0</title>
-	<meta name="description" content="Documentation for baggie - v0.1.7-alpha.0">
+	<title>dom | baggie - v0.1.7-alpha.1</title>
+	<meta name="description" content="Documentation for baggie - v0.1.7-alpha.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v0.1.7-alpha.0</a>
+					<a href="../index.html" class="title">baggie - v0.1.7-alpha.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -98,7 +98,9 @@ yarn add @baggie/dom</code></pre>
 						<section class="tsd-index-section">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getclassbypostfix" class="tsd-kind-icon">get<wbr>Class<wbr>ByPostfix</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#getclassbyprefix" class="tsd-kind-icon">get<wbr>Class<wbr>ByPrefix</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#removeclassbypostfix" class="tsd-kind-icon">remove<wbr>Class<wbr>ByPostfix</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="dom.html#removeclassbyprefix" class="tsd-kind-icon">remove<wbr>Class<wbr>ByPrefix</a></li>
 							</ul>
 						</section>
@@ -162,7 +164,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/actions/blurFocusedElement.ts#L8">dom/src/actions/blurFocusedElement.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/actions/blurFocusedElement.ts#L8">dom/src/actions/blurFocusedElement.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -184,7 +186,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/actions/getFocusedElement.ts#L8">dom/src/actions/getFocusedElement.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/actions/getFocusedElement.ts#L8">dom/src/actions/getFocusedElement.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,16 +202,47 @@ yarn add @baggie/dom</code></pre>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Classes</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getclassbyprefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Class<wbr>ByPrefix</h3>
+					<a name="getclassbypostfix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Class<wbr>ByPostfix</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Class<wbr>ByPrefix<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Class<wbr>ByPostfix<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span>, postfix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/classes/getClassByPrefix.ts#L6">dom/src/classes/getClassByPrefix.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/classes/getClassByPostfix.ts#L6">dom/src/classes/getClassByPostfix.ts:6</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get all classes of an element that ends with a specified string.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> element: <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> = document.body</span></h5>
+								</li>
+								<li>
+									<h5>postfix: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getclassbyprefix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Class<wbr>ByPrefix</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Class<wbr>ByPrefix<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/classes/getClassByPrefix.ts#L6">dom/src/classes/getClassByPrefix.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -220,7 +253,7 @@ yarn add @baggie/dom</code></pre>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> element: <span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> = document.body</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> element: <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> = document.body</span></h5>
 								</li>
 								<li>
 									<h5>prefix: <span class="tsd-signature-type">string</span></h5>
@@ -231,16 +264,47 @@ yarn add @baggie/dom</code></pre>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="removeclassbyprefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> remove<wbr>Class<wbr>ByPrefix</h3>
+					<a name="removeclassbypostfix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> remove<wbr>Class<wbr>ByPostfix</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Class<wbr>ByPrefix<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Class<wbr>ByPostfix<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/classes/removeClassByPrefix.ts#L8">dom/src/classes/removeClassByPrefix.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/classes/removeClassByPostfix.ts#L8">dom/src/classes/removeClassByPostfix.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove all classes of an element that ends with a specified string.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> element: <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> = document.body</span></h5>
+								</li>
+								<li>
+									<h5>prefix: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="removeclassbyprefix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> remove<wbr>Class<wbr>ByPrefix</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Class<wbr>ByPrefix<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span>, prefix<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/classes/removeClassByPrefix.ts#L8">dom/src/classes/removeClassByPrefix.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -251,7 +315,7 @@ yarn add @baggie/dom</code></pre>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> element: <span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol"> = document.body</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> element: <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> = document.body</span></h5>
 								</li>
 								<li>
 									<h5>prefix: <span class="tsd-signature-type">string</span></h5>
@@ -274,7 +338,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/parents/getAllParents.ts#L33">dom/src/parents/getAllParents.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/parents/getAllParents.ts#L33">dom/src/parents/getAllParents.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -340,13 +404,13 @@ yarn add @baggie/dom</code></pre>
 					<a name="getclosestparent" class="tsd-anchor"></a>
 					<h3>get<wbr>Closest<wbr>Parent</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<wbr>Parent<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<wbr>Parent<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span>, matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/parents/getClosestParent.ts#L12">dom/src/parents/getClosestParent.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/parents/getClosestParent.ts#L14">dom/src/parents/getClosestParent.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -356,7 +420,9 @@ yarn add @baggie/dom</code></pre>
 								<dl class="tsd-comment-tags">
 									<dt>remarks</dt>
 									<dd><p>Unless you&#39;re supporting <strong>IE11</strong>, you should really use the native method
-										<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/closest"><code>Element.closest()</code></a>.</p>
+											<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/closest"><code>Element.closest()</code></a>.
+											However, be aware that these two methods don&#39;t function the exact same way,
+										and thus aren&#39;t interchangeable.</p>
 									</dd>
 								</dl>
 							</div>
@@ -369,7 +435,7 @@ yarn add @baggie/dom</code></pre>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> matchSelector: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;*&quot;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -383,7 +449,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/parents/isElementChildOf.ts#L8">dom/src/parents/isElementChildOf.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/parents/isElementChildOf.ts#L8">dom/src/parents/isElementChildOf.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -417,7 +483,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/parents/isElementParentTo.ts#L6">dom/src/parents/isElementParentTo.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/parents/isElementParentTo.ts#L6">dom/src/parents/isElementParentTo.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -454,7 +520,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/properties/getElementPosition.ts#L13">dom/src/properties/getElementPosition.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/properties/getElementPosition.ts#L13">dom/src/properties/getElementPosition.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -493,7 +559,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/properties/isElementEmpty.ts#L8">dom/src/properties/isElementEmpty.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/properties/isElementEmpty.ts#L8">dom/src/properties/isElementEmpty.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -534,7 +600,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/properties/isElementHidden.ts#L6">dom/src/properties/isElementHidden.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/properties/isElementHidden.ts#L6">dom/src/properties/isElementHidden.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -562,7 +628,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/properties/isElementVisible.ts#L8">dom/src/properties/isElementVisible.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/properties/isElementVisible.ts#L8">dom/src/properties/isElementVisible.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -593,7 +659,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/scroll/getScrollPosition.ts#L11">dom/src/scroll/getScrollPosition.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/scroll/getScrollPosition.ts#L11">dom/src/scroll/getScrollPosition.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -615,7 +681,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/scroll/scrollToElement.ts#L14">dom/src/scroll/scrollToElement.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/scroll/scrollToElement.ts#L14">dom/src/scroll/scrollToElement.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -646,7 +712,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/scroll/scrollToTop.ts#L13">dom/src/scroll/scrollToTop.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/scroll/scrollToTop.ts#L13">dom/src/scroll/scrollToTop.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -677,7 +743,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/scroll/scrollLock/index.ts#L71">dom/src/scroll/scrollLock/index.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/scroll/scrollLock/index.ts#L71">dom/src/scroll/scrollLock/index.ts:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -699,7 +765,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/scroll/scrollLock/index.ts#L40">dom/src/scroll/scrollLock/index.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/scroll/scrollLock/index.ts#L40">dom/src/scroll/scrollLock/index.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -721,7 +787,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/scroll/scrollLock/index.ts#L20">dom/src/scroll/scrollLock/index.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/scroll/scrollLock/index.ts#L20">dom/src/scroll/scrollLock/index.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -743,7 +809,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/scroll/scrollLock/index.ts#L28">dom/src/scroll/scrollLock/index.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/scroll/scrollLock/index.ts#L28">dom/src/scroll/scrollLock/index.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -772,7 +838,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/scroll/scrollLock/index.ts#L100">dom/src/scroll/scrollLock/index.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/scroll/scrollLock/index.ts#L100">dom/src/scroll/scrollLock/index.ts:100</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -797,7 +863,7 @@ yarn add @baggie/dom</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/siblings/areElementsSiblings.ts#L11">dom/src/siblings/areElementsSiblings.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/siblings/areElementsSiblings.ts#L11">dom/src/siblings/areElementsSiblings.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -840,13 +906,13 @@ yarn add @baggie/dom</code></pre>
 					<a name="getnextsiblings" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Next<wbr>Siblings</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Siblings<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Siblings<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/siblings/getNextSiblings.ts#L8">dom/src/siblings/getNextSiblings.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/siblings/getNextSiblings.ts#L8">dom/src/siblings/getNextSiblings.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -860,7 +926,7 @@ yarn add @baggie/dom</code></pre>
 									<h5>element: <span class="tsd-signature-type">Element</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeOriginalElement: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -871,13 +937,13 @@ yarn add @baggie/dom</code></pre>
 					<a name="getprevioussiblings" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Previous<wbr>Siblings</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Previous<wbr>Siblings<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Previous<wbr>Siblings<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/siblings/getPreviousSiblings.ts#L8">dom/src/siblings/getPreviousSiblings.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/siblings/getPreviousSiblings.ts#L8">dom/src/siblings/getPreviousSiblings.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -891,7 +957,7 @@ yarn add @baggie/dom</code></pre>
 									<h5>element: <span class="tsd-signature-type">Element</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeOriginalElement: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -902,13 +968,13 @@ yarn add @baggie/dom</code></pre>
 					<a name="getsiblings" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Siblings</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Siblings<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, fromElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span>, untilElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Siblings<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>fromElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">; </span>includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>untilElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/5e39edd/packages/dom/src/siblings/getSiblings.ts#L10">dom/src/siblings/getSiblings.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/82a657d/packages/dom/src/siblings/getSiblings.ts#L6">dom/src/siblings/getSiblings.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -920,35 +986,9 @@ yarn add @baggie/dom</code></pre>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>element: <span class="tsd-signature-type">Element</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The element which siblings you need</p>
-										</div>
-									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeOriginalElement: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Set to <code>true</code> to include the original element in the returned set of elements.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fromElement: <span class="tsd-signature-type">Element</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>If set, siblings prier to this element won&#39;t be captured.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> untilElement: <span class="tsd-signature-type">Element</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>If set, siblings past this element won&#39;t be captured.</p>
-										</div>
-									</div>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>fromElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">; </span>includeOriginalElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>matchSelector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>untilElement<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol"> }</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -1015,6 +1055,9 @@ yarn add @baggie/dom</code></pre>
 								<a href="dom.html#getallparents" class="tsd-kind-icon">get<wbr>All<wbr>Parents</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#getclassbypostfix" class="tsd-kind-icon">get<wbr>Class<wbr>ByPostfix</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="dom.html#getclassbyprefix" class="tsd-kind-icon">get<wbr>Class<wbr>ByPrefix</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -1055,6 +1098,9 @@ yarn add @baggie/dom</code></pre>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="dom.html#isscrolllocked" class="tsd-kind-icon">is<wbr>Scroll<wbr>Locked</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="dom.html#removeclassbypostfix" class="tsd-kind-icon">remove<wbr>Class<wbr>ByPostfix</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="dom.html#removeclassbyprefix" class="tsd-kind-icon">remove<wbr>Class<wbr>ByPrefix</a>
