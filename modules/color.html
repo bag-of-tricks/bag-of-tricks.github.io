@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>color | baggie - v1.0.0</title>
-	<meta name="description" content="Documentation for baggie - v1.0.0">
+	<title>color | baggie - v1.1.0</title>
+	<meta name="description" content="Documentation for baggie - v1.1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v1.0.0</a>
+					<a href="../index.html" class="title">baggie - v1.1.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -92,6 +92,7 @@ yarn add @baggie/color</code></pre>
 							<h3>Brightness</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#getbrightness" class="tsd-kind-icon">get<wbr>Brightness</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#getdarkness" class="tsd-kind-icon">get<wbr>Darkness</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#iscolorbrighterthan" class="tsd-kind-icon">is<wbr>Color<wbr>Brighter<wbr>Than</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="color.html#iscolordarkerthan" class="tsd-kind-icon">is<wbr>Color<wbr>Darker<wbr>Than</a></li>
 							</ul>
@@ -155,7 +156,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/brightness/getBrightness.ts#L12">color/src/brightness/getBrightness.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/brightness/getBrightness.ts#L11">color/src/brightness/getBrightness.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -191,6 +192,40 @@ yarn add @baggie/color</code></pre>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getdarkness" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Darkness</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Darkness<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/brightness/getDarkness.ts#L11">color/src/brightness/getDarkness.ts:11</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the perceived darkness of a color as percentage in decimal form.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p><a href="http://alienryderflex.com/hsp.html">http://alienryderflex.com/hsp.html</a></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>color: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>A number from 0 to 1, 1 being the darkest and 0 being not dark at all.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="iscolorbrighterthan" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Color<wbr>Brighter<wbr>Than</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -200,7 +235,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/brightness/isColorBrighterThan.ts#L12">color/src/brightness/isColorBrighterThan.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/brightness/isColorBrighterThan.ts#L9">color/src/brightness/isColorBrighterThan.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,23 +247,12 @@ yarn add @baggie/color</code></pre>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>colorA: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Color in hex-format</p>
-										</div>
-									</div>
 								</li>
 								<li>
 									<h5>colorB: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Color in hex-format</p>
-										</div>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p><code>true</code> if color1 is brighter than color2.</p>
 						</li>
 					</ul>
 				</section>
@@ -242,7 +266,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/brightness/isColorDarkerThan.ts#L12">color/src/brightness/isColorDarkerThan.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/brightness/isColorDarkerThan.ts#L9">color/src/brightness/isColorDarkerThan.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,23 +278,12 @@ yarn add @baggie/color</code></pre>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>colorA: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Color in hex-format</p>
-										</div>
-									</div>
 								</li>
 								<li>
 									<h5>colorB: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Color in hex-format</p>
-										</div>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p><code>true</code> if color1 is darker than color2.</p>
 						</li>
 					</ul>
 				</section>
@@ -287,7 +300,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/combinations/getAnalogousColorScheme.ts#L13">color/src/combinations/getAnalogousColorScheme.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/combinations/getAnalogousColorScheme.ts#L13">color/src/combinations/getAnalogousColorScheme.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -338,7 +351,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/combinations/getComplementaryColorScheme.ts#L11">color/src/combinations/getComplementaryColorScheme.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/combinations/getComplementaryColorScheme.ts#L11">color/src/combinations/getComplementaryColorScheme.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,7 +386,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/combinations/getSplitComplementaryColorScheme.ts#L10">color/src/combinations/getSplitComplementaryColorScheme.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/combinations/getSplitComplementaryColorScheme.ts#L10">color/src/combinations/getSplitComplementaryColorScheme.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -407,7 +420,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/combinations/getTetradicColorScheme.ts#L12">color/src/combinations/getTetradicColorScheme.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/combinations/getTetradicColorScheme.ts#L12">color/src/combinations/getTetradicColorScheme.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -443,7 +456,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/combinations/getTriadicColorScheme.ts#L12">color/src/combinations/getTriadicColorScheme.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/combinations/getTriadicColorScheme.ts#L12">color/src/combinations/getTriadicColorScheme.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -482,7 +495,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/convert/convertColorNameToHex.ts#L164">color/src/convert/convertColorNameToHex.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/convert/convertColorNameToHex.ts#L164">color/src/convert/convertColorNameToHex.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -515,7 +528,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/convert/convertHexToRgb.ts#L8">color/src/convert/convertHexToRgb.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/convert/convertHexToRgb.ts#L8">color/src/convert/convertHexToRgb.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -543,7 +556,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/convert/convertHslToRgb.ts#L8">color/src/convert/convertHslToRgb.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/convert/convertHslToRgb.ts#L8">color/src/convert/convertHslToRgb.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -585,7 +598,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/convert/convertRgbToHex.ts#L8">color/src/convert/convertRgbToHex.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/convert/convertRgbToHex.ts#L8">color/src/convert/convertRgbToHex.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -630,7 +643,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/convert/convertRgbToHsl.ts#L8">color/src/convert/convertRgbToHsl.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/convert/convertRgbToHsl.ts#L8">color/src/convert/convertRgbToHsl.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -672,7 +685,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/convert/convertRgbToLab.ts#L12">color/src/convert/convertRgbToLab.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/convert/convertRgbToLab.ts#L13">color/src/convert/convertRgbToLab.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -721,7 +734,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/convert/parseColor.ts#L14">color/src/convert/parseColor.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/convert/parseColor.ts#L14">color/src/convert/parseColor.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -753,7 +766,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/manipulate/mixColors.ts#L22">color/src/manipulate/mixColors.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/manipulate/mixColors.ts#L22">color/src/manipulate/mixColors.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -800,7 +813,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/manipulate/multiplyColors.ts#L25">color/src/manipulate/multiplyColors.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/manipulate/multiplyColors.ts#L25">color/src/manipulate/multiplyColors.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -848,7 +861,7 @@ yarn add @baggie/color</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/ed3d018/packages/color/src/manipulate/screenColors.ts#L25">color/src/manipulate/screenColors.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/color/src/manipulate/screenColors.ts#L25">color/src/manipulate/screenColors.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -962,6 +975,9 @@ yarn add @baggie/color</code></pre>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="color.html#getcomplementarycolorscheme" class="tsd-kind-icon">get<wbr>Complementary<wbr>Color<wbr>Scheme</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="color.html#getdarkness" class="tsd-kind-icon">get<wbr>Darkness</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="color.html#getsplitcomplementarycolorscheme" class="tsd-kind-icon">get<wbr>Split<wbr>Complementary<wbr>Color<wbr>Scheme</a>
