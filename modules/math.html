@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>math | baggie - v1.1.0</title>
-	<meta name="description" content="Documentation for baggie - v1.1.0">
+	<title>math | baggie - v1.2.1</title>
+	<meta name="description" content="Documentation for baggie - v1.2.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v1.1.0</a>
+					<a href="../index.html" class="title">baggie - v1.2.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -55,7 +55,7 @@
 					<a href="math.html">math</a>
 				</li>
 			</ul>
-			<h1>Package math</h1>
+			<h1>Module math</h1>
 		</div>
 	</div>
 </header>
@@ -81,7 +81,8 @@
 npm install @baggie/math --save
 
 <span class="hljs-comment">#yarn</span>
-yarn add @baggie/math</code></pre>
+yarn add @baggie/math
+</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -92,6 +93,8 @@ yarn add @baggie/math</code></pre>
 							<h3>Arithmetic</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#addnumbers" class="tsd-kind-icon">add<wbr>Numbers</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#countdecimals" class="tsd-kind-icon">count<wbr>Decimals</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getclosest" class="tsd-kind-icon">get<wbr>Closest</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section">
@@ -110,6 +113,12 @@ yarn add @baggie/math</code></pre>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getdistanceonearth" class="tsd-kind-icon">get<wbr>Distance<wbr>OnEarth</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getdistanceonsphere" class="tsd-kind-icon">get<wbr>Distance<wbr>OnSphere</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getpointbetween" class="tsd-kind-icon">get<wbr>Point<wbr>Between</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
+							<h3>Coordinates</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#converttocoordinates" class="tsd-kind-icon">convert<wbr>ToCoordinates</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section">
@@ -137,18 +146,6 @@ yarn add @baggie/math</code></pre>
 							<h3>Coordinates - Slope</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getslope" class="tsd-kind-icon">get<wbr>Slope</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section">
-							<h3>Decimals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#decimaladjust" class="tsd-kind-icon">decimal<wbr>Adjust</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#decimalceil" class="tsd-kind-icon">decimal<wbr>Ceil</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#decimalfloor" class="tsd-kind-icon">decimal<wbr>Floor</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#decimalround" class="tsd-kind-icon">decimal<wbr>Round</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#decimaltrunc" class="tsd-kind-icon">decimal<wbr>Trunc</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#isnumberround" class="tsd-kind-icon">is<wbr>Number<wbr>Round</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#truncnumber" class="tsd-kind-icon">trunc<wbr>Number</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section">
@@ -225,6 +222,20 @@ yarn add @baggie/math</code></pre>
 							</ul>
 						</section>
 						<section class="tsd-index-section">
+							<h3>Rounding</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#ceildecimals" class="tsd-kind-icon">ceil<wbr>Decimals</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#ceiltomultipleof" class="tsd-kind-icon">ceil<wbr>ToMultiple<wbr>Of</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#floordecimals" class="tsd-kind-icon">floor<wbr>Decimals</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#floortomultipleof" class="tsd-kind-icon">floor<wbr>ToMultiple<wbr>Of</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#isnumberround" class="tsd-kind-icon">is<wbr>Number<wbr>Round</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#rounddecimals" class="tsd-kind-icon">round<wbr>Decimals</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#roundtomultipleof" class="tsd-kind-icon">round<wbr>ToMultiple<wbr>Of</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#truncdecimals" class="tsd-kind-icon">trunc<wbr>Decimals</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#truncnumber" class="tsd-kind-icon">trunc<wbr>Number</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section">
 							<h3>Temperature</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#celsiustodelisle" class="tsd-kind-icon">celsius<wbr>ToDelisle</a></li>
@@ -265,7 +276,7 @@ yarn add @baggie/math</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/arithmetic/addNumbers.ts#L19">math/src/arithmetic/addNumbers.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/arithmetic/addNumbers.ts#L19">math/src/arithmetic/addNumbers.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -279,7 +290,8 @@ yarn add @baggie/math</code></pre>
 
 <span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>];
 <span class="hljs-keyword">const</span> total = addNumbers(numbers);
-<span class="hljs-comment">// total = 45</span></code></pre>
+<span class="hljs-comment">// total = 45</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -298,6 +310,92 @@ yarn add @baggie/math</code></pre>
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="countdecimals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> count<wbr>Decimals</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">count<wbr>Decimals<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/arithmetic/countDecimals.ts#L15">math/src/arithmetic/countDecimals.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Count the number of decimals in a number.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { countDecimals } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> decimalCount = countDecimals(<span class="hljs-number">1.0000000001</span>);
+<span class="hljs-comment">// decimalCount = 10</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getclosest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Closest</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/arithmetic/getClosest.ts#L24">math/src/arithmetic/getClosest.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get an array of angles sorted by which is closest to the target.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getClosest } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> target = <span class="hljs-number">8</span>;
+<span class="hljs-keyword">const</span> numbers = [
+    <span class="hljs-number">5</span>,
+    <span class="hljs-number">10</span>,
+    <span class="hljs-number">15</span>,
+    <span class="hljs-number">20</span>,
+];
+<span class="hljs-keyword">const</span> sorted = getClosest(target, numbers);
+<span class="hljs-comment">// sorted = [10, 8, 15, 20]</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>array: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Average</h2>
@@ -311,7 +409,7 @@ yarn add @baggie/math</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/average/getMean.ts#L22">math/src/average/getMean.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/average/getMean.ts#L22">math/src/average/getMean.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -327,7 +425,8 @@ yarn add @baggie/math</code></pre>
 
 <span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">42</span>];
 <span class="hljs-keyword">const</span> mean = getMean(numbers);
-<span class="hljs-comment">// mean = 18</span></code></pre>
+<span class="hljs-comment">// mean = 18</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -351,7 +450,7 @@ yarn add @baggie/math</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/average/getMedian.ts#L22">math/src/average/getMedian.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/average/getMedian.ts#L22">math/src/average/getMedian.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -367,7 +466,8 @@ yarn add @baggie/math</code></pre>
 
 <span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">42</span>];
 <span class="hljs-keyword">const</span> median = getMedian(numbers);
-<span class="hljs-comment">// median = 16</span></code></pre>
+<span class="hljs-comment">// median = 16</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -391,7 +491,7 @@ yarn add @baggie/math</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/average/getMode.ts#L22">math/src/average/getMode.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/average/getMode.ts#L22">math/src/average/getMode.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +508,8 @@ yarn add @baggie/math</code></pre>
 
 <span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">8</span>, <span class="hljs-number">8</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">42</span>, <span class="hljs-number">42</span>, <span class="hljs-number">42</span>];
 <span class="hljs-keyword">const</span> mode = getMode(numbers);
-<span class="hljs-comment">// mode = { mode: [8, 42], frequency: 3 }</span></code></pre>
+<span class="hljs-comment">// mode = { mode: [8, 42], frequency: 3 }</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -435,7 +536,7 @@ yarn add @baggie/math</code></pre>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/distance/getAllDistances.ts#L89">math/src/coordinates/distance/getAllDistances.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/distance/getAllDistances.ts#L89">math/src/coordinates/distance/getAllDistances.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -468,7 +569,8 @@ results = [
         &quot;coordinates&quot;: { from: { x: 9, y: 30 }, to: { x: -20, y: 20 } }
     }
 ]
-*\/</span></code></pre>
+*\/</span>
+</code></pre>
 									</dd>
 									<dt>example</dt>
 									<dd><p><strong>Find all the distances between all the coordinates:</strong></p>
@@ -507,7 +609,8 @@ results = [
         &quot;coordinates&quot;: { from: { &quot;x&quot;: -10, &quot;y&quot;: -10, &quot;name&quot;: &quot;a&quot; }, to: { &quot;x&quot;: 30, &quot;y&quot;: 50, &quot;name&quot;: &quot;d&quot; } }
     }
 ]
-*\/</span></code></pre>
+*\/</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -534,7 +637,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/distance/getDistance.ts#L20">math/src/coordinates/distance/getDistance.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/distance/getDistance.ts#L20">math/src/coordinates/distance/getDistance.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -550,7 +653,8 @@ results = [
 <span class="hljs-keyword">const</span> to = { <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span> };
 
 <span class="hljs-keyword">const</span> distance = getDistance(<span class="hljs-keyword">from</span>, to);
-<span class="hljs-comment">// distance = 10</span></code></pre>
+<span class="hljs-comment">// distance = 10</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -577,7 +681,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/distance/getDistanceOnEarth.ts#L21">math/src/coordinates/distance/getDistanceOnEarth.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/distance/getDistanceOnEarth.ts#L21">math/src/coordinates/distance/getDistanceOnEarth.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -593,7 +697,8 @@ results = [
 <span class="hljs-keyword">const</span> to = { <span class="hljs-attr">lat</span>: <span class="hljs-number">57.048</span>, <span class="hljs-attr">lng</span>: <span class="hljs-number">9.9187</span> };
 
 <span class="hljs-keyword">const</span> distance = getDistanceOnEarth(<span class="hljs-keyword">from</span>, to);
-<span class="hljs-comment">// distance = 100.70265108699398</span></code></pre>
+<span class="hljs-comment">// distance = 100.70265108699398</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -620,7 +725,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/distance/getDistanceOnSphere.ts#L22">math/src/coordinates/distance/getDistanceOnSphere.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/distance/getDistanceOnSphere.ts#L22">math/src/coordinates/distance/getDistanceOnSphere.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -637,7 +742,8 @@ results = [
 <span class="hljs-keyword">const</span> to = { <span class="hljs-attr">lat</span>: <span class="hljs-number">57.048</span>, <span class="hljs-attr">lng</span>: <span class="hljs-number">9.9187</span> };
 
 <span class="hljs-keyword">const</span> distance = getDistanceOnSphere(<span class="hljs-keyword">from</span>, to, <span class="hljs-number">12742</span>);
-<span class="hljs-comment">// distance = 100.70265108699398</span></code></pre>
+<span class="hljs-comment">// distance = 100.70265108699398</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -667,7 +773,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/distance/getPointBetween.ts#L21">math/src/coordinates/distance/getPointBetween.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/distance/getPointBetween.ts#L21">math/src/coordinates/distance/getPointBetween.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -684,7 +790,8 @@ results = [
 <span class="hljs-keyword">const</span> progress = <span class="hljs-number">.5</span>;
 
 <span class="hljs-keyword">const</span> point = getPointBetween(<span class="hljs-keyword">from</span>, to, progress);
-<span class="hljs-comment">// point = { x: 15, y: 15 }</span></code></pre>
+<span class="hljs-comment">// point = { x: 15, y: 15 }</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -706,6 +813,56 @@ results = [
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Coordinates</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="converttocoordinates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>ToCoordinates</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>ToCoordinates<span class="tsd-signature-symbol">(</span>coordinates<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">CoordinatesXY</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinatesXY</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/convertToCoordinates.ts#L34">math/src/coordinates/convertToCoordinates.ts:34</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert a single number or an array with two numbers to a set of coordinates.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { convertToCoordinates } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-built_in">number</span> = convertToCoordinates(<span class="hljs-number">10</span>);
+<span class="hljs-comment">// number = { x: 10, y: 10 }</span>
+
+<span class="hljs-keyword">const</span> array = convertToCoordinates([<span class="hljs-number">10</span>, <span class="hljs-number">20</span>]);
+<span class="hljs-comment">// array = { x: 10, y: 20 }</span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-built_in">object</span> = convertToCoordinates({ <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">20</span> });
+<span class="hljs-comment">// object = { x: 10, y: 20 }</span>
+
+<span class="hljs-keyword">const</span> nothing = convertToCoordinates();
+<span class="hljs-comment">// nothing = { x: 0, y: 0 }</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> coordinates: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">CoordinatesXY</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CoordinatesXY</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Coordinates - Angle</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="getangle" class="tsd-anchor"></a>
@@ -717,7 +874,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/angle/getAngle.ts#L32">math/src/coordinates/angle/getAngle.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/angle/getAngle.ts#L32">math/src/coordinates/angle/getAngle.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -746,7 +903,8 @@ results = [
 <span class="hljs-comment">// angle = 175</span>
 
 <span class="hljs-keyword">const</span> angleClockwise = getAngle(<span class="hljs-keyword">from</span>, to, { <span class="hljs-attr">clockwise</span>: <span class="hljs-literal">true</span> });
-<span class="hljs-comment">// angle = 225</span></code></pre>
+<span class="hljs-comment">// angle = 225</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -776,7 +934,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/angle/getClosestAngles.ts#L25">math/src/coordinates/angle/getClosestAngles.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/angle/getClosestAngles.ts#L25">math/src/coordinates/angle/getClosestAngles.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -797,7 +955,8 @@ results = [
     <span class="hljs-number">300</span>,
 ];
 <span class="hljs-keyword">const</span> sorted = getClosestAngles(target, angles);
-<span class="hljs-comment">// sorted = [0, 10, 300, 100, 200]</span></code></pre>
+<span class="hljs-comment">// sorted = [0, 10, 300, 100, 200]</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -824,7 +983,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/angle/isAngleInRange.ts#L26">math/src/coordinates/angle/isAngleInRange.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/angle/isAngleInRange.ts#L26">math/src/coordinates/angle/isAngleInRange.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -846,7 +1005,8 @@ results = [
 <span class="hljs-comment">// checkC = true</span>
 
 <span class="hljs-keyword">const</span> checkD = isAngleInRange(<span class="hljs-number">360</span>, [<span class="hljs-number">100</span>, -<span class="hljs-number">1</span>]);
-<span class="hljs-comment">// checkD = false</span></code></pre>
+<span class="hljs-comment">// checkD = false</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -876,7 +1036,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/bounds/getBounds.ts#L24">math/src/coordinates/bounds/getBounds.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/bounds/getBounds.ts#L24">math/src/coordinates/bounds/getBounds.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -895,7 +1055,8 @@ results = [
 ];
 
 <span class="hljs-keyword">const</span> bounds = getBounds(coordinates);
-<span class="hljs-comment">// bounds = { min: { x: -10, y: -10 }, max: { x: 10, y: 10 }}</span></code></pre>
+<span class="hljs-comment">// bounds = { min: { x: -10, y: -10 }, max: { x: 10, y: 10 }}</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -922,7 +1083,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/radius/isInsideRadius.ts#L24">math/src/coordinates/radius/isInsideRadius.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/radius/isInsideRadius.ts#L24">math/src/coordinates/radius/isInsideRadius.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -942,7 +1103,8 @@ results = [
 
 <span class="hljs-keyword">const</span> radiusB = <span class="hljs-number">35</span>;
 <span class="hljs-keyword">const</span> checkB = isInsideRadius(position, radiusB);
-<span class="hljs-comment">// checkB = false</span></code></pre>
+<span class="hljs-comment">// checkB = false</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -969,7 +1131,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/radius/keepInsideRadius.ts#L26">math/src/coordinates/radius/keepInsideRadius.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/radius/keepInsideRadius.ts#L26">math/src/coordinates/radius/keepInsideRadius.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -990,7 +1152,8 @@ results = [
 
 <span class="hljs-keyword">const</span> radiusB = <span class="hljs-number">10</span>;
 <span class="hljs-keyword">const</span> newPositionB = keepInsideRadius(position, radiusB);
-<span class="hljs-comment">// newPositionB = { x: 10, y: 0 }</span></code></pre>
+<span class="hljs-comment">// newPositionB = { x: 10, y: 0 }</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1020,7 +1183,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/coordinates/slope/getSlope.ts#L23">math/src/coordinates/slope/getSlope.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/coordinates/slope/getSlope.ts#L23">math/src/coordinates/slope/getSlope.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1039,7 +1202,8 @@ results = [
 <span class="hljs-keyword">const</span> <span class="hljs-keyword">from</span> = { <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span> };
 <span class="hljs-keyword">const</span> to = { <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span> };
 <span class="hljs-keyword">const</span> slope = getSlope(<span class="hljs-keyword">from</span>, to);
-<span class="hljs-comment">// slope = 1.5</span></code></pre>
+<span class="hljs-comment">// slope = 1.5</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1050,322 +1214,6 @@ results = [
 								</li>
 								<li>
 									<h5>to: <span class="tsd-signature-type">CoordinatesXY</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Decimals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="decimaladjust" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Adjust</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Adjust<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/decimals/_helpers/decimalAdjust.ts#L8">math/src/decimals/_helpers/decimalAdjust.ts:8</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Helper for rounding with decimal points.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>number: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>func: <span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>number: <span class="tsd-signature-type">number</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="decimalceil" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Ceil</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Ceil<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/decimals/decimalCeil.ts#L20">math/src/decimals/decimalCeil.ts:20</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Round up a number to nearest decimal places.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { decimalCeil } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
-
-<span class="hljs-keyword">const</span> two = decimalCeil(<span class="hljs-number">13.345</span>, <span class="hljs-number">2</span>);
-<span class="hljs-comment">// two = 13.35</span>
-
-<span class="hljs-keyword">const</span> three = decimalCeil(<span class="hljs-number">13.1111</span>, <span class="hljs-number">3</span>);
-<span class="hljs-comment">// three = 13.112</span></code></pre>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>number: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="decimalfloor" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Floor</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Floor<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/decimals/decimalFloor.ts#L20">math/src/decimals/decimalFloor.ts:20</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Round down a number to nearest decimal places.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { decimalFloor } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
-
-<span class="hljs-keyword">const</span> two = decimalFloor(<span class="hljs-number">13.345</span>, <span class="hljs-number">2</span>);
-<span class="hljs-comment">// two = 13.34</span>
-
-<span class="hljs-keyword">const</span> three = decimalFloor(<span class="hljs-number">13.1111</span>, <span class="hljs-number">3</span>);
-<span class="hljs-comment">// three = 13.111</span></code></pre>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>number: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="decimalround" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Round</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Round<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/decimals/decimalRound.ts#L20">math/src/decimals/decimalRound.ts:20</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Round a number to nearest decimal places.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { decimalRound } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
-
-<span class="hljs-keyword">const</span> two = decimalRound(<span class="hljs-number">13.3689</span>, <span class="hljs-number">2</span>);
-<span class="hljs-comment">// two = 13.37</span>
-
-<span class="hljs-keyword">const</span> three = decimalRound(-<span class="hljs-number">13.1124</span>, <span class="hljs-number">3</span>);
-<span class="hljs-comment">// three = -13.112</span></code></pre>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>number: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="decimaltrunc" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> decimal<wbr>Trunc</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">decimal<wbr>Trunc<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/decimals/decimalTrunc.ts#L24">math/src/decimals/decimalTrunc.ts:24</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Trunc a number to nearest decimal places.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { decimalTrunc } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
-
-<span class="hljs-keyword">const</span> two = decimalTrunc(<span class="hljs-number">13.3689</span>, <span class="hljs-number">2</span>);
-<span class="hljs-comment">// two = 13.36</span>
-
-<span class="hljs-keyword">const</span> three = decimalTrunc(-<span class="hljs-number">13.111111</span>, <span class="hljs-number">3</span>);
-<span class="hljs-comment">// three = -13.111</span>
-
-<span class="hljs-keyword">const</span> four = decimalTrunc(-<span class="hljs-number">13.9999999</span>, <span class="hljs-number">3</span>);
-<span class="hljs-comment">// four = -13.9999</span></code></pre>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>number: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="isnumberround" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Number<wbr>Round</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Number<wbr>Round<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/decimals/isNumberRound.ts#L18">math/src/decimals/isNumberRound.ts:18</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Check if a number is rounded to the desired amount of decimal places.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isNumberRound } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
-
-<span class="hljs-keyword">const</span> two = isNumberRound(<span class="hljs-number">13.37</span>, <span class="hljs-number">2</span>);
-<span class="hljs-comment">// two = true</span>
-
-<span class="hljs-keyword">const</span> three = isNumberRound(<span class="hljs-number">13.375</span>, <span class="hljs-number">2</span>);
-<span class="hljs-comment">// three = false</span></code></pre>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>number: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="truncnumber" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> trunc<wbr>Number</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">trunc<wbr>Number<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/decimals/truncNumber.ts#L21">math/src/decimals/truncNumber.ts:21</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Remove decimals from a number and get the integer.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>remarks</dt>
-									<dd><p>Unless you are supporting Internet Explorer, you should use the native <code>Math.trunc</code></p>
-									</dd>
-									<dt>example</dt>
-									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { truncNumber } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
-
-<span class="hljs-keyword">const</span> down = truncNumber(<span class="hljs-number">13.37</span>);
-<span class="hljs-comment">// down = 13</span>
-
-<span class="hljs-keyword">const</span> up = truncNumber(-<span class="hljs-number">1.123</span>);
-<span class="hljs-comment">// up = -1</span></code></pre>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>number: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -1385,7 +1233,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/circle/getCircleCircumference.ts#L15">math/src/geometry/circle/getCircleCircumference.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/circle/getCircleCircumference.ts#L15">math/src/geometry/circle/getCircleCircumference.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1398,7 +1246,8 @@ results = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCircleCircumference } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> circumference = getCircleCircumference(<span class="hljs-number">100</span>);
-<span class="hljs-comment">// circumference = 628.3185307179587</span></code></pre>
+<span class="hljs-comment">// circumference = 628.3185307179587</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1422,7 +1271,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/circle/getCircleSurface.ts#L15">math/src/geometry/circle/getCircleSurface.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/circle/getCircleSurface.ts#L15">math/src/geometry/circle/getCircleSurface.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1435,7 +1284,8 @@ results = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCircleSurface } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> surface = getCircleSurface(<span class="hljs-number">10</span>);
-<span class="hljs-comment">// surface = 314.1592653589793</span></code></pre>
+<span class="hljs-comment">// surface = 314.1592653589793</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1459,7 +1309,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/circle/getPointsOnCircle.ts#L46">math/src/geometry/circle/getPointsOnCircle.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/circle/getPointsOnCircle.ts#L46">math/src/geometry/circle/getPointsOnCircle.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1489,7 +1339,8 @@ points = [
         x: -86.60254037844388,
         y: 49.99999999999999,
     },
-]</span></code></pre>
+]</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1527,7 +1378,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/cone/getConeSurface.ts#L22">math/src/geometry/cone/getConeSurface.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/cone/getConeSurface.ts#L22">math/src/geometry/cone/getConeSurface.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1545,7 +1396,8 @@ points = [
 <span class="hljs-comment">// surface = 942.4777960769379</span>
 
 <span class="hljs-keyword">const</span> surfaceWithoutBottom = getConeSurface(radius, height, <span class="hljs-literal">true</span>);
-<span class="hljs-comment">// surface = 628.3185307179587</span></code></pre>
+<span class="hljs-comment">// surface = 628.3185307179587</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1575,7 +1427,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/cone/getConeVolume.ts#L19">math/src/geometry/cone/getConeVolume.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/cone/getConeVolume.ts#L19">math/src/geometry/cone/getConeVolume.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1590,7 +1442,8 @@ points = [
 <span class="hljs-keyword">const</span> radius = <span class="hljs-number">10</span>;
 <span class="hljs-keyword">const</span> height = <span class="hljs-number">20</span>;
 <span class="hljs-keyword">const</span> volume = getConeVolume(radius, height);
-<span class="hljs-comment">// volume = 2094.3951023931954</span></code></pre>
+<span class="hljs-comment">// volume = 2094.3951023931954</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1620,7 +1473,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/cuboid/getCuboidSurface.ts#L18">math/src/geometry/cuboid/getCuboidSurface.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/cuboid/getCuboidSurface.ts#L18">math/src/geometry/cuboid/getCuboidSurface.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1636,7 +1489,8 @@ points = [
 <span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
 <span class="hljs-keyword">const</span> z = <span class="hljs-number">30</span>;
 <span class="hljs-keyword">const</span> surface = getCuboidSurface(x, y, z);
-<span class="hljs-comment">// surface = 2200</span></code></pre>
+<span class="hljs-comment">// surface = 2200</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1666,7 +1520,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/cuboid/getCuboidVolume.ts#L18">math/src/geometry/cuboid/getCuboidVolume.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/cuboid/getCuboidVolume.ts#L18">math/src/geometry/cuboid/getCuboidVolume.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1682,7 +1536,8 @@ points = [
 <span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
 <span class="hljs-keyword">const</span> z = <span class="hljs-number">30</span>;
 <span class="hljs-keyword">const</span> surface = getCuboidVolume(x, y, z);
-<span class="hljs-comment">// surface = 6000</span></code></pre>
+<span class="hljs-comment">// surface = 6000</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1715,7 +1570,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/cylinder/getCylinderSurface.ts#L22">math/src/geometry/cylinder/getCylinderSurface.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/cylinder/getCylinderSurface.ts#L22">math/src/geometry/cylinder/getCylinderSurface.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1733,7 +1588,8 @@ points = [
 <span class="hljs-comment">// volume = 1884.9555921538758</span>
 
 <span class="hljs-keyword">const</span> volumeWithoutEnds = getCylinderSurface(radius, height, <span class="hljs-literal">true</span>);
-<span class="hljs-comment">// volume = 1256.6370614359173</span></code></pre>
+<span class="hljs-comment">// volume = 1256.6370614359173</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1763,7 +1619,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/cylinder/getCylinderVolume.ts#L17">math/src/geometry/cylinder/getCylinderVolume.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/cylinder/getCylinderVolume.ts#L17">math/src/geometry/cylinder/getCylinderVolume.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1778,7 +1634,8 @@ points = [
 <span class="hljs-keyword">const</span> radius = <span class="hljs-number">10</span>;
 <span class="hljs-keyword">const</span> height = <span class="hljs-number">20</span>;
 <span class="hljs-keyword">const</span> volume = getCylinderVolume(radius, height);
-<span class="hljs-comment">// volume = 6283.185307179587</span></code></pre>
+<span class="hljs-comment">// volume = 6283.185307179587</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1808,7 +1665,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/rectangle/getRectanglePerimeter.ts#L17">math/src/geometry/rectangle/getRectanglePerimeter.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/rectangle/getRectanglePerimeter.ts#L17">math/src/geometry/rectangle/getRectanglePerimeter.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1823,7 +1680,8 @@ points = [
 <span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
 <span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
 <span class="hljs-keyword">const</span> perimeter = getRectanglePerimeter(x, y);
-<span class="hljs-comment">// perimeter = 60</span></code></pre>
+<span class="hljs-comment">// perimeter = 60</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1850,7 +1708,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/rectangle/getRectangleSurface.ts#L17">math/src/geometry/rectangle/getRectangleSurface.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/rectangle/getRectangleSurface.ts#L17">math/src/geometry/rectangle/getRectangleSurface.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1865,7 +1723,8 @@ points = [
 <span class="hljs-keyword">const</span> x = <span class="hljs-number">10</span>;
 <span class="hljs-keyword">const</span> y = <span class="hljs-number">20</span>;
 <span class="hljs-keyword">const</span> surface = getRectangleSurface(x, y);
-<span class="hljs-comment">// surface = 200</span></code></pre>
+<span class="hljs-comment">// surface = 200</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1895,7 +1754,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/sphere/getSphereSurface.ts#L15">math/src/geometry/sphere/getSphereSurface.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/sphere/getSphereSurface.ts#L15">math/src/geometry/sphere/getSphereSurface.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1908,7 +1767,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getSphereSurface } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> surface = getSphereSurface(<span class="hljs-number">10</span>);
-<span class="hljs-comment">// surface = 1256.6370614359173</span></code></pre>
+<span class="hljs-comment">// surface = 1256.6370614359173</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1932,7 +1792,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/sphere/getSphereVolume.ts#L15">math/src/geometry/sphere/getSphereVolume.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/sphere/getSphereVolume.ts#L15">math/src/geometry/sphere/getSphereVolume.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1945,7 +1805,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getSphereVolume } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> volume = getSphereVolume(<span class="hljs-number">10</span>);
-<span class="hljs-comment">// volume = 4188.790204786391</span></code></pre>
+<span class="hljs-comment">// volume = 4188.790204786391</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -1972,7 +1833,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/triangle/getTrianglePerimeter.ts#L18">math/src/geometry/triangle/getTrianglePerimeter.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/triangle/getTrianglePerimeter.ts#L18">math/src/geometry/triangle/getTrianglePerimeter.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1988,7 +1849,8 @@ points = [
 <span class="hljs-keyword">const</span> b = <span class="hljs-number">15</span>;
 <span class="hljs-keyword">const</span> c = <span class="hljs-number">20</span>;
 <span class="hljs-keyword">const</span> perimeter = getTrianglePerimeter(a, b, c);
-<span class="hljs-comment">// perimeter = 45</span></code></pre>
+<span class="hljs-comment">// perimeter = 45</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2018,7 +1880,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/geometry/triangle/getTriangleSurface.ts#L20">math/src/geometry/triangle/getTriangleSurface.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/geometry/triangle/getTriangleSurface.ts#L20">math/src/geometry/triangle/getTriangleSurface.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2034,7 +1896,8 @@ points = [
 <span class="hljs-keyword">const</span> b = <span class="hljs-number">15</span>;
 <span class="hljs-keyword">const</span> c = <span class="hljs-number">20</span>;
 <span class="hljs-keyword">const</span> surface = getTriangleSurface(a, b, c);
-<span class="hljs-comment">// surface = 205.3959590644373</span></code></pre>
+<span class="hljs-comment">// surface = 205.3959590644373</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2067,7 +1930,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/percentage/getPercentage.ts#L60">math/src/percentage/getPercentage.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/percentage/getPercentage.ts#L60">math/src/percentage/getPercentage.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2083,7 +1946,8 @@ points = [
 <span class="hljs-keyword">const</span> whole = <span class="hljs-number">50</span>;
 
 <span class="hljs-keyword">const</span> percentage = getPercentage({ part, whole });
-<span class="hljs-comment">// percentage = 10</span></code></pre>
+<span class="hljs-comment">// percentage = 10</span>
+</code></pre>
 									</dd>
 									<dt>example</dt>
 									<dd><p><strong>Get part:</strong></p>
@@ -2093,7 +1957,8 @@ points = [
 <span class="hljs-keyword">const</span> percentage = <span class="hljs-number">10</span>;
 
 <span class="hljs-keyword">const</span> part = getPercentage({ whole, percentage });
-<span class="hljs-comment">// part = 5</span></code></pre>
+<span class="hljs-comment">// part = 5</span>
+</code></pre>
 									</dd>
 									<dt>example</dt>
 									<dd><p><strong>Get whole:</strong></p>
@@ -2103,7 +1968,8 @@ points = [
 <span class="hljs-keyword">const</span> percentage = <span class="hljs-number">10</span>;
 
 <span class="hljs-keyword">const</span> whole = getPercentage({ part, percentage });
-<span class="hljs-comment">// whole = 50</span></code></pre>
+<span class="hljs-comment">// whole = 50</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2138,7 +2004,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/percentage/getPercentageIncrease.ts#L30">math/src/percentage/getPercentageIncrease.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/percentage/getPercentageIncrease.ts#L30">math/src/percentage/getPercentageIncrease.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2154,7 +2020,8 @@ points = [
 <span class="hljs-keyword">const</span> finalValue = <span class="hljs-number">100</span>;
 
 <span class="hljs-keyword">const</span> increase = getPercentageIncrease(startingValue, finalValue);
-<span class="hljs-comment">// increase = 900</span></code></pre>
+<span class="hljs-comment">// increase = 900</span>
+</code></pre>
 									</dd>
 									<dt>example</dt>
 									<dd><p><strong>Percentage decrease:</strong></p>
@@ -2164,7 +2031,8 @@ points = [
 <span class="hljs-keyword">const</span> finalValue = <span class="hljs-number">10</span>;
 
 <span class="hljs-keyword">const</span> increase = getPercentageIncrease(startingValue, finalValue);
-<span class="hljs-comment">// increase = -90</span></code></pre>
+<span class="hljs-comment">// increase = -90</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2194,7 +2062,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/radians/degreesToRadians.ts#L16">math/src/radians/degreesToRadians.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/radians/degreesToRadians.ts#L16">math/src/radians/degreesToRadians.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2208,7 +2076,8 @@ points = [
 
 <span class="hljs-keyword">const</span> degrees = <span class="hljs-number">360</span>;
 <span class="hljs-keyword">const</span> radians = degreesToRadians(degrees);
-<span class="hljs-comment">// radians = 6.283185307179586</span></code></pre>
+<span class="hljs-comment">// radians = 6.283185307179586</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2232,7 +2101,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/radians/radiansToDegrees.ts#L16">math/src/radians/radiansToDegrees.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/radians/radiansToDegrees.ts#L16">math/src/radians/radiansToDegrees.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2246,7 +2115,8 @@ points = [
 
 <span class="hljs-keyword">const</span> radians = <span class="hljs-number">100</span>;
 <span class="hljs-keyword">const</span> degrees = radiansToDegrees(degrees);
-<span class="hljs-comment">// degrees = 5729.5779513082325</span></code></pre>
+<span class="hljs-comment">// degrees = 5729.5779513082325</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2273,7 +2143,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/range/clamp.ts#L24">math/src/range/clamp.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/range/clamp.ts#L24">math/src/range/clamp.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2294,7 +2164,8 @@ points = [
 <span class="hljs-comment">// largeNumber = 75</span>
 
 <span class="hljs-keyword">const</span> mediumNumber = clamp(<span class="hljs-number">50</span>, <span class="hljs-number">25</span>, <span class="hljs-number">75</span>);
-<span class="hljs-comment">// mediumNumber = 50</span></code></pre>
+<span class="hljs-comment">// mediumNumber = 50</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2324,7 +2195,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/range/getRange.ts#L19">math/src/range/getRange.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/range/getRange.ts#L19">math/src/range/getRange.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2339,7 +2210,8 @@ points = [
 
 <span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">15</span>, <span class="hljs-number">16</span>, <span class="hljs-number">23</span>, <span class="hljs-number">42</span>];
 <span class="hljs-keyword">const</span> range = getRange(numbers);
-<span class="hljs-comment">// range = 38</span></code></pre>
+<span class="hljs-comment">// range = 38</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2363,7 +2235,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/range/isInRange.ts#L32">math/src/range/isInRange.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/range/isInRange.ts#L32">math/src/range/isInRange.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2390,7 +2262,8 @@ points = [
 <span class="hljs-comment">// multiRangeNumber1 = false</span>
 
 <span class="hljs-keyword">const</span> multiRangeNumber2 = isInRange(<span class="hljs-number">10</span>, [<span class="hljs-number">5</span>, <span class="hljs-number">15</span>], [<span class="hljs-number">20</span>, <span class="hljs-number">30</span>]);
-<span class="hljs-comment">// multiRangeNumber2 = true</span></code></pre>
+<span class="hljs-comment">// multiRangeNumber2 = true</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2417,7 +2290,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/range/keepOutsideRange.ts#L39">math/src/range/keepOutsideRange.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/range/keepOutsideRange.ts#L39">math/src/range/keepOutsideRange.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2441,7 +2314,8 @@ points = [
 <span class="hljs-comment">// smallOutsideNumber = 1</span>
 
 <span class="hljs-keyword">const</span> largeOutsideNumber = keepOutsideRange(<span class="hljs-number">100</span>, <span class="hljs-number">25</span>, <span class="hljs-number">75</span>);
-<span class="hljs-comment">// largeOutsideNumber = 100</span></code></pre>
+<span class="hljs-comment">// largeOutsideNumber = 100</span>
+</code></pre>
 									</dd>
 									<dt>example</dt>
 									<dd><p><strong>When the number is the midpoint in the range:</strong></p>
@@ -2451,7 +2325,8 @@ points = [
 <span class="hljs-comment">// roundUp = 10</span>
 
 <span class="hljs-keyword">const</span> roundDown = keepOutsideRange(<span class="hljs-number">5</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-literal">true</span>);
-<span class="hljs-comment">// roundDown = 0</span></code></pre>
+<span class="hljs-comment">// roundDown = 0</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2476,6 +2351,408 @@ points = [
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Rounding</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="ceildecimals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ceil<wbr>Decimals</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">ceil<wbr>Decimals<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/rounding/ceilDecimals.ts#L20">math/src/rounding/ceilDecimals.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Round up a number to nearest decimal places.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ceilDecimals } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> two = ceilDecimals(<span class="hljs-number">13.345</span>, <span class="hljs-number">2</span>);
+<span class="hljs-comment">// two = 13.35</span>
+
+<span class="hljs-keyword">const</span> three = ceilDecimals(<span class="hljs-number">13.1111</span>, <span class="hljs-number">3</span>);
+<span class="hljs-comment">// three = 13.112</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="ceiltomultipleof" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ceil<wbr>ToMultiple<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">ceil<wbr>ToMultiple<wbr>Of<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, nearest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/rounding/ceilToMultipleOf.ts#L20">math/src/rounding/ceilToMultipleOf.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Round up a number to the next number multiple of X.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ceilToMultipleOf } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> five = ceilToMultipleOf(<span class="hljs-number">13.345</span>, <span class="hljs-number">5</span>);
+<span class="hljs-comment">// five = 15</span>
+
+<span class="hljs-keyword">const</span> ten = ceilToMultipleOf(<span class="hljs-number">11</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// ten = 20</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>nearest: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="floordecimals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> floor<wbr>Decimals</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">floor<wbr>Decimals<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/rounding/floorDecimals.ts#L20">math/src/rounding/floorDecimals.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Round down a number to nearest decimal places.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { floorDecimals } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> two = floorDecimals(<span class="hljs-number">13.345</span>, <span class="hljs-number">2</span>);
+<span class="hljs-comment">// two = 13.34</span>
+
+<span class="hljs-keyword">const</span> three = floorDecimals(<span class="hljs-number">13.1111</span>, <span class="hljs-number">3</span>);
+<span class="hljs-comment">// three = 13.111</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="floortomultipleof" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> floor<wbr>ToMultiple<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">floor<wbr>ToMultiple<wbr>Of<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, nearest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/rounding/floorToMultipleOf.ts#L20">math/src/rounding/floorToMultipleOf.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Round down a number to the next number multiple of X.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { floorToMultipleOf } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> five = floorToMultipleOf(<span class="hljs-number">13.345</span>, <span class="hljs-number">5</span>);
+<span class="hljs-comment">// five = 10</span>
+
+<span class="hljs-keyword">const</span> ten = floorToMultipleOf(<span class="hljs-number">11</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// ten = 10</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>nearest: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isnumberround" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Number<wbr>Round</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Number<wbr>Round<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/rounding/isNumberRound.ts#L18">math/src/rounding/isNumberRound.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Check if a number is rounded to the desired amount of decimal places.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isNumberRound } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> two = isNumberRound(<span class="hljs-number">13.37</span>, <span class="hljs-number">2</span>);
+<span class="hljs-comment">// two = true</span>
+
+<span class="hljs-keyword">const</span> three = isNumberRound(<span class="hljs-number">13.375</span>, <span class="hljs-number">2</span>);
+<span class="hljs-comment">// three = false</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="rounddecimals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> round<wbr>Decimals</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">round<wbr>Decimals<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/rounding/roundDecimals.ts#L20">math/src/rounding/roundDecimals.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Round a number to nearest decimal places.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { roundDecimals } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> two = roundDecimals(<span class="hljs-number">13.3689</span>, <span class="hljs-number">2</span>);
+<span class="hljs-comment">// two = 13.37</span>
+
+<span class="hljs-keyword">const</span> three = roundDecimals(-<span class="hljs-number">13.1124</span>, <span class="hljs-number">3</span>);
+<span class="hljs-comment">// three = -13.112</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="roundtomultipleof" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> round<wbr>ToMultiple<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">round<wbr>ToMultiple<wbr>Of<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, nearest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/rounding/roundToMultipleOf.ts#L20">math/src/rounding/roundToMultipleOf.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Round down a number to the next number multiple of X.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { roundToMultipleOf } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> five = roundToMultipleOf(<span class="hljs-number">13.345</span>, <span class="hljs-number">5</span>);
+<span class="hljs-comment">// five = 15</span>
+
+<span class="hljs-keyword">const</span> ten = roundToMultipleOf(<span class="hljs-number">11</span>, <span class="hljs-number">10</span>);
+<span class="hljs-comment">// ten = 10</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>nearest: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="truncdecimals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> trunc<wbr>Decimals</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">trunc<wbr>Decimals<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/rounding/truncDecimals.ts#L24">math/src/rounding/truncDecimals.ts:24</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Trunc a number to nearest decimal places.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { truncDecimals } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> two = truncDecimals(<span class="hljs-number">13.3689</span>, <span class="hljs-number">2</span>);
+<span class="hljs-comment">// two = 13.36</span>
+
+<span class="hljs-keyword">const</span> three = truncDecimals(-<span class="hljs-number">13.111111</span>, <span class="hljs-number">3</span>);
+<span class="hljs-comment">// three = -13.111</span>
+
+<span class="hljs-keyword">const</span> four = truncDecimals(-<span class="hljs-number">13.9999999</span>, <span class="hljs-number">3</span>);
+<span class="hljs-comment">// four = -13.9999</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>decimalPlaces: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="truncnumber" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> trunc<wbr>Number</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">trunc<wbr>Number<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/rounding/truncNumber.ts#L21">math/src/rounding/truncNumber.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove decimals from a number and get the integer.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>remarks</dt>
+									<dd><p>Unless you are supporting Internet Explorer, you should use the native <code>Math.trunc</code></p>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { truncNumber } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> down = truncNumber(<span class="hljs-number">13.37</span>);
+<span class="hljs-comment">// down = 13</span>
+
+<span class="hljs-keyword">const</span> up = truncNumber(-<span class="hljs-number">1.123</span>);
+<span class="hljs-comment">// up = -1</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>number: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Temperature</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="celsiustodelisle" class="tsd-anchor"></a>
@@ -2487,7 +2764,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/celsiusToDelisle.ts#L15">math/src/temperature/celsiusToDelisle.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/celsiusToDelisle.ts#L15">math/src/temperature/celsiusToDelisle.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2500,7 +2777,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToDelisle } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> delisle = celsiusToDelisle(<span class="hljs-number">100</span>);
-<span class="hljs-comment">// delisle = 0</span></code></pre>
+<span class="hljs-comment">// delisle = 0</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2524,7 +2802,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/celsiusToFahrenheit.ts#L15">math/src/temperature/celsiusToFahrenheit.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/celsiusToFahrenheit.ts#L15">math/src/temperature/celsiusToFahrenheit.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2537,7 +2815,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToFahrenheit } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> fahrenheit = celsiusToFahrenheit(<span class="hljs-number">100</span>);
-<span class="hljs-comment">// fahrenheit = 212</span></code></pre>
+<span class="hljs-comment">// fahrenheit = 212</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2561,7 +2840,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/celsiusToKelvin.ts#L15">math/src/temperature/celsiusToKelvin.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/celsiusToKelvin.ts#L15">math/src/temperature/celsiusToKelvin.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2574,7 +2853,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToKelvin } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> kelvin = celsiusToKelvin(<span class="hljs-number">100</span>);
-<span class="hljs-comment">// kelvin = 373.15</span></code></pre>
+<span class="hljs-comment">// kelvin = 373.15</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2598,7 +2878,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/celsiusToNewton.ts#L15">math/src/temperature/celsiusToNewton.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/celsiusToNewton.ts#L15">math/src/temperature/celsiusToNewton.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2611,7 +2891,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToNewton } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> newton = celsiusToNewton(<span class="hljs-number">100</span>);
-<span class="hljs-comment">// newton = 33</span></code></pre>
+<span class="hljs-comment">// newton = 33</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2635,7 +2916,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/celsiusToRankine.ts#L17">math/src/temperature/celsiusToRankine.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/celsiusToRankine.ts#L17">math/src/temperature/celsiusToRankine.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2648,7 +2929,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToRankine } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> rankine = celsiusToRankine(<span class="hljs-number">10</span>);
-<span class="hljs-comment">// rankine = 509.67</span></code></pre>
+<span class="hljs-comment">// rankine = 509.67</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2672,7 +2954,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/celsiusToReaumur.ts#L15">math/src/temperature/celsiusToReaumur.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/celsiusToReaumur.ts#L15">math/src/temperature/celsiusToReaumur.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2685,7 +2967,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToReaumur } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> reaumur = celsiusToReaumur(<span class="hljs-number">100</span>);
-<span class="hljs-comment">// reaumur = 80</span></code></pre>
+<span class="hljs-comment">// reaumur = 80</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2709,7 +2992,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/celsiusToRoemer.ts#L15">math/src/temperature/celsiusToRoemer.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/celsiusToRoemer.ts#L15">math/src/temperature/celsiusToRoemer.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2722,7 +3005,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { celsiusToRoemer } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> roemer = celsiusToRoemer(<span class="hljs-number">100</span>);
-<span class="hljs-comment">// roemer = 60</span></code></pre>
+<span class="hljs-comment">// roemer = 60</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2746,7 +3030,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/delisleToCelsius.ts#L15">math/src/temperature/delisleToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/delisleToCelsius.ts#L15">math/src/temperature/delisleToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2759,7 +3043,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { delisleToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> celsius = delisleToCelsius(<span class="hljs-number">0</span>);
-<span class="hljs-comment">// celsius = 100</span></code></pre>
+<span class="hljs-comment">// celsius = 100</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2783,7 +3068,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/fahrenheitToCelsius.ts#L15">math/src/temperature/fahrenheitToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/fahrenheitToCelsius.ts#L15">math/src/temperature/fahrenheitToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2796,7 +3081,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { fahrenheitToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> celsius = fahrenheitToCelsius(<span class="hljs-number">212</span>);
-<span class="hljs-comment">// celsius = 100</span></code></pre>
+<span class="hljs-comment">// celsius = 100</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2820,7 +3106,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/kelvinToCelsius.ts#L15">math/src/temperature/kelvinToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/kelvinToCelsius.ts#L15">math/src/temperature/kelvinToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2833,7 +3119,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { kelvinToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> celsius = kelvinToCelsius(<span class="hljs-number">373.15</span>);
-<span class="hljs-comment">// celsius = 100</span></code></pre>
+<span class="hljs-comment">// celsius = 100</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2857,7 +3144,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/newtonToCelsius.ts#L15">math/src/temperature/newtonToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/newtonToCelsius.ts#L15">math/src/temperature/newtonToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2870,7 +3157,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { newtonToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> celsius = newtonToCelsius(<span class="hljs-number">33</span>);
-<span class="hljs-comment">// celsius = 100</span></code></pre>
+<span class="hljs-comment">// celsius = 100</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2894,7 +3182,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/rankineToCelsius.ts#L17">math/src/temperature/rankineToCelsius.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/rankineToCelsius.ts#L17">math/src/temperature/rankineToCelsius.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2907,7 +3195,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { rankineToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> celsius = rankineToCelsius(<span class="hljs-number">509.67</span>);
-<span class="hljs-comment">// celsius = 10</span></code></pre>
+<span class="hljs-comment">// celsius = 10</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2931,7 +3220,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/reaumurToCelsius.ts#L15">math/src/temperature/reaumurToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/reaumurToCelsius.ts#L15">math/src/temperature/reaumurToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2944,7 +3233,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { reaumurToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> celsius = reaumurToCelsius(<span class="hljs-number">80</span>);
-<span class="hljs-comment">// celsius = 100</span></code></pre>
+<span class="hljs-comment">// celsius = 100</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -2968,7 +3258,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/temperature/roemerToCelsius.ts#L15">math/src/temperature/roemerToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/temperature/roemerToCelsius.ts#L15">math/src/temperature/roemerToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2981,7 +3271,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { roemerToCelsius } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> celsius = roemerToCelsius(<span class="hljs-number">60</span>);
-<span class="hljs-comment">// celsius = 100</span></code></pre>
+<span class="hljs-comment">// celsius = 100</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -3008,7 +3299,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/time/getDuration.ts#L18">math/src/time/getDuration.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/time/getDuration.ts#L18">math/src/time/getDuration.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3023,7 +3314,8 @@ points = [
 										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getDuration } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
 
 <span class="hljs-keyword">const</span> duration = getDuration(<span class="hljs-number">10</span>, <span class="hljs-number">100</span>);
-<span class="hljs-comment">// duration = 10</span></code></pre>
+<span class="hljs-comment">// duration = 10</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -3042,7 +3334,7 @@ points = [
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="gettimedifference" class="tsd-anchor"></a>
-					<h3>get<wbr>Time<wbr>Difference</h3>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Time<wbr>Difference</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Time<wbr>Difference<span class="tsd-signature-symbol">(</span>fromTimestampMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toTimestampMs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">GetTimeDifferenceReturn</span></li>
 					</ul>
@@ -3050,7 +3342,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/49ef19b/packages/math/src/time/getTimeDifference.ts#L47">math/src/time/getTimeDifference.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/a74d391/packages/math/src/time/getTimeDifference.ts#L47">math/src/time/getTimeDifference.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3078,7 +3370,8 @@ data = {
         &quot;onlyMilliseconds&quot;: 10299456412
     }
 }
-*\/</span></code></pre>
+*\/</span>
+</code></pre>
 									</dd>
 								</dl>
 							</div>
@@ -3087,13 +3380,17 @@ data = {
 								<li>
 									<h5>fromTimestampMs: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>A timestamp in milliseconds</p>
+										<div class="lead">
+											<p>A timestamp in milliseconds</p>
+										</div>
 									</div>
 								</li>
 								<li>
 									<h5>toTimestampMs: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>A timestamp in milliseconds</p>
+										<div class="lead">
+											<p>A timestamp in milliseconds</p>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -3155,6 +3452,12 @@ data = {
 								<a href="math.html#addnumbers" class="tsd-kind-icon">add<wbr>Numbers</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#ceildecimals" class="tsd-kind-icon">ceil<wbr>Decimals</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#ceiltomultipleof" class="tsd-kind-icon">ceil<wbr>ToMultiple<wbr>Of</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#celsiustodelisle" class="tsd-kind-icon">celsius<wbr>ToDelisle</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -3179,19 +3482,10 @@ data = {
 								<a href="math.html#clamp" class="tsd-kind-icon">clamp</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="math.html#decimaladjust" class="tsd-kind-icon">decimal<wbr>Adjust</a>
+								<a href="math.html#converttocoordinates" class="tsd-kind-icon">convert<wbr>ToCoordinates</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="math.html#decimalceil" class="tsd-kind-icon">decimal<wbr>Ceil</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="math.html#decimalfloor" class="tsd-kind-icon">decimal<wbr>Floor</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="math.html#decimalround" class="tsd-kind-icon">decimal<wbr>Round</a>
-							</li>
-							<li class=" tsd-kind-function tsd-parent-kind-module">
-								<a href="math.html#decimaltrunc" class="tsd-kind-icon">decimal<wbr>Trunc</a>
+								<a href="math.html#countdecimals" class="tsd-kind-icon">count<wbr>Decimals</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#degreestoradians" class="tsd-kind-icon">degrees<wbr>ToRadians</a>
@@ -3201,6 +3495,12 @@ data = {
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#fahrenheittocelsius" class="tsd-kind-icon">fahrenheit<wbr>ToCelsius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#floordecimals" class="tsd-kind-icon">floor<wbr>Decimals</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#floortomultipleof" class="tsd-kind-icon">floor<wbr>ToMultiple<wbr>Of</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#getalldistances" class="tsd-kind-icon">get<wbr>All<wbr>Distances</a>
@@ -3216,6 +3516,9 @@ data = {
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#getcirclesurface" class="tsd-kind-icon">get<wbr>Circle<wbr>Surface</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getclosest" class="tsd-kind-icon">get<wbr>Closest</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#getclosestangles" class="tsd-kind-icon">get<wbr>Closest<wbr>Angles</a>
@@ -3333,6 +3636,15 @@ data = {
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#roemertocelsius" class="tsd-kind-icon">roemer<wbr>ToCelsius</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#rounddecimals" class="tsd-kind-icon">round<wbr>Decimals</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#roundtomultipleof" class="tsd-kind-icon">round<wbr>ToMultiple<wbr>Of</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#truncdecimals" class="tsd-kind-icon">trunc<wbr>Decimals</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#truncnumber" class="tsd-kind-icon">trunc<wbr>Number</a>
