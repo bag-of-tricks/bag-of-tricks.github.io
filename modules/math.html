@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>math | baggie - v1.2.6</title>
-	<meta name="description" content="Documentation for baggie - v1.2.6">
+	<title>math | baggie - v1.2.8</title>
+	<meta name="description" content="Documentation for baggie - v1.2.8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v1.2.6</a>
+					<a href="../index.html" class="title">baggie - v1.2.8</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -202,7 +202,9 @@ yarn add @baggie/math
 							<h3>Percentage</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getpercentage" class="tsd-kind-icon">get<wbr>Percentage</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getpercentagebetween" class="tsd-kind-icon">get<wbr>Percentage<wbr>Between</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getpercentageincrease" class="tsd-kind-icon">get<wbr>Percentage<wbr>Increase</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getpositionbetween" class="tsd-kind-icon">get<wbr>Position<wbr>Between</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section">
@@ -216,6 +218,7 @@ yarn add @baggie/math
 							<h3>Range</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#clamp" class="tsd-kind-icon">clamp</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#convertrangeposition" class="tsd-kind-icon">convert<wbr>Range<wbr>Position</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#getrange" class="tsd-kind-icon">get<wbr>Range</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#isinrange" class="tsd-kind-icon">is<wbr>InRange</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="math.html#keepoutsiderange" class="tsd-kind-icon">keep<wbr>Outside<wbr>Range</a></li>
@@ -270,13 +273,13 @@ yarn add @baggie/math
 					<a name="addnumbers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> add<wbr>Numbers</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Numbers<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Numbers<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/arithmetic/addNumbers.ts#L19">math/src/arithmetic/addNumbers.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/arithmetic/addNumbers.ts#L17">math/src/arithmetic/addNumbers.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -298,7 +301,7 @@ yarn add @baggie/math
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>numbers: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>An array of numbers to add together</p>
@@ -320,7 +323,7 @@ yarn add @baggie/math
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/arithmetic/countDecimals.ts#L15">math/src/arithmetic/countDecimals.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/arithmetic/countDecimals.ts#L15">math/src/arithmetic/countDecimals.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -352,13 +355,13 @@ yarn add @baggie/math
 					<a name="getclosest" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Closest</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/arithmetic/getClosest.ts#L24">math/src/arithmetic/getClosest.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/arithmetic/getClosest.ts#L22">math/src/arithmetic/getClosest.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,7 +392,7 @@ yarn add @baggie/math
 									<h5>target: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>array: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -403,13 +406,13 @@ yarn add @baggie/math
 					<a name="getmean" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Mean</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Mean<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Mean<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/average/getMean.ts#L22">math/src/average/getMean.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/average/getMean.ts#L21">math/src/average/getMean.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -433,7 +436,7 @@ yarn add @baggie/math
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>numbers: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -444,13 +447,13 @@ yarn add @baggie/math
 					<a name="getmedian" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Median</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Median<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Median<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/average/getMedian.ts#L22">math/src/average/getMedian.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/average/getMedian.ts#L21">math/src/average/getMedian.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -474,7 +477,7 @@ yarn add @baggie/math
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>numbers: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -485,13 +488,13 @@ yarn add @baggie/math
 					<a name="getmode" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Mode</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Mode<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>frequency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>mode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Mode<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>frequency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>mode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/average/getMode.ts#L22">math/src/average/getMode.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/average/getMode.ts#L20">math/src/average/getMode.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -516,7 +519,7 @@ yarn add @baggie/math
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>numbers: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>frequency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>mode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
@@ -536,7 +539,7 @@ yarn add @baggie/math
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/distance/getAllDistances.ts#L89">math/src/coordinates/distance/getAllDistances.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/distance/getAllDistances.ts#L89">math/src/coordinates/distance/getAllDistances.ts:89</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -637,7 +640,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/distance/getDistance.ts#L20">math/src/coordinates/distance/getDistance.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/distance/getDistance.ts#L20">math/src/coordinates/distance/getDistance.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -681,7 +684,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/distance/getDistanceOnEarth.ts#L21">math/src/coordinates/distance/getDistanceOnEarth.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/distance/getDistanceOnEarth.ts#L21">math/src/coordinates/distance/getDistanceOnEarth.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -725,7 +728,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/distance/getDistanceOnSphere.ts#L22">math/src/coordinates/distance/getDistanceOnSphere.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/distance/getDistanceOnSphere.ts#L22">math/src/coordinates/distance/getDistanceOnSphere.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -773,7 +776,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/distance/getPointBetween.ts#L21">math/src/coordinates/distance/getPointBetween.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/distance/getPointBetween.ts#L21">math/src/coordinates/distance/getPointBetween.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -824,7 +827,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/convertToCoordinates.ts#L34">math/src/coordinates/convertToCoordinates.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/convertToCoordinates.ts#L34">math/src/coordinates/convertToCoordinates.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -874,7 +877,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/angle/getAngle.ts#L32">math/src/coordinates/angle/getAngle.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/angle/getAngle.ts#L32">math/src/coordinates/angle/getAngle.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -928,13 +931,13 @@ results = [
 					<a name="getclosestangles" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Closest<wbr>Angles</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<wbr>Angles<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, angles<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Closest<wbr>Angles<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, angles<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/angle/getClosestAngles.ts#L25">math/src/coordinates/angle/getClosestAngles.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/angle/getClosestAngles.ts#L23">math/src/coordinates/angle/getClosestAngles.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -966,7 +969,7 @@ results = [
 									<h5>target: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>angles: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>angles: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -983,7 +986,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/angle/isAngleInRange.ts#L26">math/src/coordinates/angle/isAngleInRange.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/angle/isAngleInRange.ts#L26">math/src/coordinates/angle/isAngleInRange.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1036,7 +1039,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/bounds/getBounds.ts#L24">math/src/coordinates/bounds/getBounds.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/bounds/getBounds.ts#L24">math/src/coordinates/bounds/getBounds.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1083,7 +1086,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/radius/isInsideRadius.ts#L24">math/src/coordinates/radius/isInsideRadius.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/radius/isInsideRadius.ts#L24">math/src/coordinates/radius/isInsideRadius.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1131,7 +1134,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/radius/keepInsideRadius.ts#L26">math/src/coordinates/radius/keepInsideRadius.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/radius/keepInsideRadius.ts#L26">math/src/coordinates/radius/keepInsideRadius.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1183,7 +1186,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/coordinates/slope/getSlope.ts#L23">math/src/coordinates/slope/getSlope.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/coordinates/slope/getSlope.ts#L23">math/src/coordinates/slope/getSlope.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1233,7 +1236,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/circle/getCircleCircumference.ts#L15">math/src/geometry/circle/getCircleCircumference.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/circle/getCircleCircumference.ts#L15">math/src/geometry/circle/getCircleCircumference.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1271,7 +1274,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/circle/getCircleSurface.ts#L15">math/src/geometry/circle/getCircleSurface.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/circle/getCircleSurface.ts#L15">math/src/geometry/circle/getCircleSurface.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1309,7 +1312,7 @@ results = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/circle/getPointsOnCircle.ts#L47">math/src/geometry/circle/getPointsOnCircle.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/circle/getPointsOnCircle.ts#L47">math/src/geometry/circle/getPointsOnCircle.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1378,7 +1381,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/cone/getConeSurface.ts#L22">math/src/geometry/cone/getConeSurface.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/cone/getConeSurface.ts#L22">math/src/geometry/cone/getConeSurface.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1427,7 +1430,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/cone/getConeVolume.ts#L19">math/src/geometry/cone/getConeVolume.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/cone/getConeVolume.ts#L19">math/src/geometry/cone/getConeVolume.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1473,7 +1476,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/cuboid/getCuboidSurface.ts#L18">math/src/geometry/cuboid/getCuboidSurface.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/cuboid/getCuboidSurface.ts#L18">math/src/geometry/cuboid/getCuboidSurface.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1520,7 +1523,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/cuboid/getCuboidVolume.ts#L18">math/src/geometry/cuboid/getCuboidVolume.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/cuboid/getCuboidVolume.ts#L18">math/src/geometry/cuboid/getCuboidVolume.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1570,7 +1573,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/cylinder/getCylinderSurface.ts#L22">math/src/geometry/cylinder/getCylinderSurface.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/cylinder/getCylinderSurface.ts#L22">math/src/geometry/cylinder/getCylinderSurface.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1619,7 +1622,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/cylinder/getCylinderVolume.ts#L17">math/src/geometry/cylinder/getCylinderVolume.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/cylinder/getCylinderVolume.ts#L17">math/src/geometry/cylinder/getCylinderVolume.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1665,7 +1668,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/rectangle/getRectanglePerimeter.ts#L17">math/src/geometry/rectangle/getRectanglePerimeter.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/rectangle/getRectanglePerimeter.ts#L17">math/src/geometry/rectangle/getRectanglePerimeter.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1708,7 +1711,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/rectangle/getRectangleSurface.ts#L17">math/src/geometry/rectangle/getRectangleSurface.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/rectangle/getRectangleSurface.ts#L17">math/src/geometry/rectangle/getRectangleSurface.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1754,7 +1757,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/sphere/getSphereSurface.ts#L15">math/src/geometry/sphere/getSphereSurface.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/sphere/getSphereSurface.ts#L15">math/src/geometry/sphere/getSphereSurface.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1792,7 +1795,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/sphere/getSphereVolume.ts#L15">math/src/geometry/sphere/getSphereVolume.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/sphere/getSphereVolume.ts#L15">math/src/geometry/sphere/getSphereVolume.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1833,7 +1836,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/triangle/getTrianglePerimeter.ts#L18">math/src/geometry/triangle/getTrianglePerimeter.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/triangle/getTrianglePerimeter.ts#L18">math/src/geometry/triangle/getTrianglePerimeter.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1880,7 +1883,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/geometry/triangle/getTriangleSurface.ts#L20">math/src/geometry/triangle/getTriangleSurface.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/geometry/triangle/getTriangleSurface.ts#L20">math/src/geometry/triangle/getTriangleSurface.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1930,7 +1933,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/percentage/getPercentage.ts#L60">math/src/percentage/getPercentage.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/percentage/getPercentage.ts#L60">math/src/percentage/getPercentage.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1995,6 +1998,56 @@ points = [
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getpercentagebetween" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Percentage<wbr>Between</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Percentage<wbr>Between<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/percentage/getPercentageBetween.ts#L21">math/src/percentage/getPercentageBetween.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the position between two numbers as a percentage.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getPercentageBetween } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> percentage = getPercentageBetween(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">5</span>);
+<span class="hljs-comment">// percentage = 0.5</span>
+
+<span class="hljs-keyword">const</span> percentage = getPercentageBetween(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>);
+<span class="hljs-comment">// percentage = 1</span>
+
+<span class="hljs-keyword">const</span> percentage = getPercentageBetween(-<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>);
+<span class="hljs-comment">// percentage = 0.5</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>position: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="getpercentageincrease" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Percentage<wbr>Increase</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -2004,7 +2057,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/percentage/getPercentageIncrease.ts#L30">math/src/percentage/getPercentageIncrease.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/percentage/getPercentageIncrease.ts#L30">math/src/percentage/getPercentageIncrease.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2049,6 +2102,56 @@ points = [
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getpositionbetween" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Position<wbr>Between</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Position<wbr>Between<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, percentage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/percentage/getPositionBetween.ts#L21">math/src/percentage/getPositionBetween.ts:21</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the position between two numbers from a percentage.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getPositionBetween } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> position = getPositionBetween(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">0.5</span>);
+<span class="hljs-comment">// position = 5</span>
+
+<span class="hljs-keyword">const</span> position = getPositionBetween(<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">0.5</span>);
+<span class="hljs-comment">// position = 15</span>
+
+<span class="hljs-keyword">const</span> position = getPositionBetween(-<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0.5</span>);
+<span class="hljs-comment">// position = 0</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>to: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>percentage: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Radians</h2>
@@ -2062,7 +2165,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/radians/degreesToRadians.ts#L16">math/src/radians/degreesToRadians.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/radians/degreesToRadians.ts#L16">math/src/radians/degreesToRadians.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2101,7 +2204,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/radians/radiansToDegrees.ts#L16">math/src/radians/radiansToDegrees.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/radians/radiansToDegrees.ts#L16">math/src/radians/radiansToDegrees.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2143,7 +2246,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/range/clamp.ts#L24">math/src/range/clamp.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/range/clamp.ts#L24">math/src/range/clamp.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2186,16 +2289,87 @@ points = [
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="getrange" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Range</h3>
+					<a name="convertrangeposition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>Range<wbr>Position</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Range<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Range<wbr>Position<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span>, output<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/range/getRange.ts#L19">math/src/range/getRange.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/range/convertRangePosition.ts#L29">math/src/range/convertRangePosition.ts:29</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert the position in a range to the position in another range.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { convertRangePosition } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/math&quot;</span>;
+
+<span class="hljs-keyword">const</span> inputRange = {
+    <span class="hljs-attr">from</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">to</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-attr">position</span>: <span class="hljs-number">5</span>,
+};
+
+<span class="hljs-keyword">const</span> outputRange = {
+    <span class="hljs-attr">from</span>: -<span class="hljs-number">10</span>,
+    <span class="hljs-attr">to</span>: <span class="hljs-number">0</span>,
+};
+
+<span class="hljs-keyword">const</span> newPosition = convertRangePosition(inputRange, outputRange);
+<span class="hljs-comment">// newPosition = -5</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-symbol">{ </span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>output: <span class="tsd-signature-symbol">{ </span>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>from<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>to<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="getrange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Range</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Range<span class="tsd-signature-symbol">(</span>numbers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/range/getRange.ts#L17">math/src/range/getRange.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2218,7 +2392,7 @@ points = [
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>numbers: <a href="typescript.html#nonemptyarray" class="tsd-signature-type">NonEmptyArray</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>numbers: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -2235,7 +2409,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/range/isInRange.ts#L32">math/src/range/isInRange.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/range/isInRange.ts#L32">math/src/range/isInRange.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2290,7 +2464,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/range/keepOutsideRange.ts#L39">math/src/range/keepOutsideRange.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/range/keepOutsideRange.ts#L39">math/src/range/keepOutsideRange.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2362,7 +2536,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/rounding/ceilDecimals.ts#L20">math/src/rounding/ceilDecimals.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/rounding/ceilDecimals.ts#L20">math/src/rounding/ceilDecimals.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2406,7 +2580,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/rounding/ceilToMultipleOf.ts#L20">math/src/rounding/ceilToMultipleOf.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/rounding/ceilToMultipleOf.ts#L20">math/src/rounding/ceilToMultipleOf.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2450,7 +2624,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/rounding/floorDecimals.ts#L20">math/src/rounding/floorDecimals.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/rounding/floorDecimals.ts#L20">math/src/rounding/floorDecimals.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2494,7 +2668,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/rounding/floorToMultipleOf.ts#L20">math/src/rounding/floorToMultipleOf.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/rounding/floorToMultipleOf.ts#L20">math/src/rounding/floorToMultipleOf.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2538,7 +2712,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/rounding/isNumberRound.ts#L18">math/src/rounding/isNumberRound.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/rounding/isNumberRound.ts#L18">math/src/rounding/isNumberRound.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2582,7 +2756,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/rounding/roundDecimals.ts#L20">math/src/rounding/roundDecimals.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/rounding/roundDecimals.ts#L20">math/src/rounding/roundDecimals.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2626,7 +2800,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/rounding/roundToMultipleOf.ts#L20">math/src/rounding/roundToMultipleOf.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/rounding/roundToMultipleOf.ts#L20">math/src/rounding/roundToMultipleOf.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2670,7 +2844,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/rounding/truncDecimals.ts#L24">math/src/rounding/truncDecimals.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/rounding/truncDecimals.ts#L24">math/src/rounding/truncDecimals.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2717,7 +2891,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/rounding/truncNumber.ts#L21">math/src/rounding/truncNumber.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/rounding/truncNumber.ts#L21">math/src/rounding/truncNumber.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2764,7 +2938,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/celsiusToDelisle.ts#L15">math/src/temperature/celsiusToDelisle.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/celsiusToDelisle.ts#L15">math/src/temperature/celsiusToDelisle.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2802,7 +2976,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/celsiusToFahrenheit.ts#L15">math/src/temperature/celsiusToFahrenheit.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/celsiusToFahrenheit.ts#L15">math/src/temperature/celsiusToFahrenheit.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2840,7 +3014,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/celsiusToKelvin.ts#L15">math/src/temperature/celsiusToKelvin.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/celsiusToKelvin.ts#L15">math/src/temperature/celsiusToKelvin.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2878,7 +3052,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/celsiusToNewton.ts#L15">math/src/temperature/celsiusToNewton.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/celsiusToNewton.ts#L15">math/src/temperature/celsiusToNewton.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2916,7 +3090,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/celsiusToRankine.ts#L17">math/src/temperature/celsiusToRankine.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/celsiusToRankine.ts#L17">math/src/temperature/celsiusToRankine.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2954,7 +3128,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/celsiusToReaumur.ts#L15">math/src/temperature/celsiusToReaumur.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/celsiusToReaumur.ts#L15">math/src/temperature/celsiusToReaumur.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2992,7 +3166,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/celsiusToRoemer.ts#L15">math/src/temperature/celsiusToRoemer.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/celsiusToRoemer.ts#L15">math/src/temperature/celsiusToRoemer.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3030,7 +3204,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/delisleToCelsius.ts#L15">math/src/temperature/delisleToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/delisleToCelsius.ts#L15">math/src/temperature/delisleToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3068,7 +3242,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/fahrenheitToCelsius.ts#L15">math/src/temperature/fahrenheitToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/fahrenheitToCelsius.ts#L15">math/src/temperature/fahrenheitToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3106,7 +3280,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/kelvinToCelsius.ts#L15">math/src/temperature/kelvinToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/kelvinToCelsius.ts#L15">math/src/temperature/kelvinToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3144,7 +3318,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/newtonToCelsius.ts#L15">math/src/temperature/newtonToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/newtonToCelsius.ts#L15">math/src/temperature/newtonToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3182,7 +3356,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/rankineToCelsius.ts#L17">math/src/temperature/rankineToCelsius.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/rankineToCelsius.ts#L17">math/src/temperature/rankineToCelsius.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3220,7 +3394,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/reaumurToCelsius.ts#L15">math/src/temperature/reaumurToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/reaumurToCelsius.ts#L15">math/src/temperature/reaumurToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3258,7 +3432,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/temperature/roemerToCelsius.ts#L15">math/src/temperature/roemerToCelsius.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/temperature/roemerToCelsius.ts#L15">math/src/temperature/roemerToCelsius.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3299,7 +3473,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/time/getDuration.ts#L18">math/src/time/getDuration.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/time/getDuration.ts#L18">math/src/time/getDuration.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3342,7 +3516,7 @@ points = [
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/13193b3/packages/math/src/time/getTimeDifference.ts#L47">math/src/time/getTimeDifference.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/math/src/time/getTimeDifference.ts#L47">math/src/time/getTimeDifference.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3482,6 +3656,9 @@ data = {
 								<a href="math.html#clamp" class="tsd-kind-icon">clamp</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#convertrangeposition" class="tsd-kind-icon">convert<wbr>Range<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#converttocoordinates" class="tsd-kind-icon">convert<wbr>ToCoordinates</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -3566,6 +3743,9 @@ data = {
 								<a href="math.html#getpercentage" class="tsd-kind-icon">get<wbr>Percentage</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getpercentagebetween" class="tsd-kind-icon">get<wbr>Percentage<wbr>Between</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#getpercentageincrease" class="tsd-kind-icon">get<wbr>Percentage<wbr>Increase</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
@@ -3573,6 +3753,9 @@ data = {
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#getpointsoncircle" class="tsd-kind-icon">get<wbr>Points<wbr>OnCircle</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="math.html#getpositionbetween" class="tsd-kind-icon">get<wbr>Position<wbr>Between</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="math.html#getrange" class="tsd-kind-icon">get<wbr>Range</a>
