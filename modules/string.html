@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>string | baggie - v1.2.8</title>
-	<meta name="description" content="Documentation for baggie - v1.2.8">
+	<title>string | baggie - v0.0.1</title>
+	<meta name="description" content="Documentation for baggie - v0.0.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -22,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v1.2.8</a>
+					<a href="../index.html" class="title">baggie - v0.0.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">baggie - v0.0.1</a>
 				</li>
 				<li>
 					<a href="string.html">string</a>
@@ -77,11 +78,11 @@
 					<a href="#🚀-installation" id="🚀-installation" style="color: inherit; text-decoration: none;">
 						<h2>🚀 Installation</h2>
 					</a>
-					<pre><code class="language-bash"><span class="hljs-comment">#npm</span>
-npm install @baggie/string --save
+					<pre><code class="language-bash"><span style="color: #008000">#npm</span>
+<span style="color: #000000">npm install @baggie/string --save</span>
 
-<span class="hljs-comment">#yarn</span>
-yarn add @baggie/string
+<span style="color: #008000">#yarn</span>
+<span style="color: #000000">yarn add @baggie/string</span>
 </code></pre>
 				</div>
 			</section>
@@ -144,13 +145,13 @@ yarn add @baggie/string
 					<a name="capitalizefirstletter" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> capitalize<wbr>First<wbr>Letter</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">capitalize<wbr>First<wbr>Letter<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">]</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>locale<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lowerCaseEverythingElse<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">capitalize<wbr>First<wbr>Letter<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>locale<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lowerCaseEverythingElse<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/convert/capitalizeFirstLetter.ts#L22">string/src/convert/capitalizeFirstLetter.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/convert/capitalizeFirstLetter.ts#L22">string/src/convert/capitalizeFirstLetter.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -160,17 +161,17 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { capitalizeFirstLetter } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">capitalizeFirstLetter</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span> = <span class="hljs-string">&quot;this IS a text&quot;</span>;
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">string</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;this IS a text&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> capitalized = capitalizeFirstLetter(<span class="hljs-built_in">string</span>);
-<span class="hljs-comment">// capitalized = &quot;This IS a string&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">capitalized</span><span style="color: #000000"> = </span><span style="color: #795E26">capitalizeFirstLetter</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">);</span>
+<span style="color: #008000">// capitalized = &quot;This IS a string&quot;</span>
 
-<span class="hljs-keyword">const</span> lowerCaseEverythingElse = capitalizeFirstLetter(<span class="hljs-built_in">string</span>, {
-    <span class="hljs-attr">lowerCaseEverythingElse</span>: <span class="hljs-literal">true</span>,
-});
-<span class="hljs-comment">// lowerCaseEverythingElse = &quot;This is a string&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">lowerCaseEverythingElse</span><span style="color: #000000"> = </span><span style="color: #795E26">capitalizeFirstLetter</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">, {</span>
+<span style="color: #000000">    </span><span style="color: #001080">lowerCaseEverythingElse:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
+<span style="color: #000000">});</span>
+<span style="color: #008000">// lowerCaseEverythingElse = &quot;This is a string&quot;</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -178,10 +179,18 @@ yarn add @baggie/string
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">]</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>locale<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lowerCaseEverythingElse<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-symbol">{ </span>locale<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lowerCaseEverythingElse<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> locale<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> lower<wbr>Case<wbr>Everything<wbr>Else<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -192,13 +201,13 @@ yarn add @baggie/string
 					<a name="convertemailstolinks" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>Emails<wbr>ToLinks</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">convert<wbr>Emails<wbr>ToLinks<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, subject<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Emails<wbr>ToLinks<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, subject<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/convert/convertEmailsToLinks.ts#L8">string/src/convert/convertEmailsToLinks.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/convert/convertEmailsToLinks.ts#L8">string/src/convert/convertEmailsToLinks.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,7 +221,7 @@ yarn add @baggie/string
 									<h5>string: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> subject: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>subject: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -223,13 +232,13 @@ yarn add @baggie/string
 					<a name="converttodate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>ToDate</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">convert<wbr>ToDate<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DateObject</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>ToDate<span class="tsd-signature-symbol">(</span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DateObject</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/convert/convertToDate.ts#L44">string/src/convert/convertToDate.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/convert/convertToDate.ts#L44">string/src/convert/convertToDate.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -240,26 +249,26 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { convertToDate } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">convertToDate</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> stringDate = convertToDate(<span class="hljs-string">&quot;31-01-2020&quot;</span>);
-<span class="hljs-comment">// stringDate = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">stringDate</span><span style="color: #000000"> = </span><span style="color: #795E26">convertToDate</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;31-01-2020&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// stringDate = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
 
-<span class="hljs-keyword">const</span> objectDate = convertToDate({
-    <span class="hljs-attr">day</span>: <span class="hljs-number">31</span>,
-    <span class="hljs-attr">month</span>: <span class="hljs-number">1</span>,
-    <span class="hljs-attr">year</span>: <span class="hljs-number">2020</span>
-});
-<span class="hljs-comment">// objectDate = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">objectDate</span><span style="color: #000000"> = </span><span style="color: #795E26">convertToDate</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">day:</span><span style="color: #000000"> </span><span style="color: #098658">31</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">month:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">year:</span><span style="color: #000000"> </span><span style="color: #098658">2020</span>
+<span style="color: #000000">});</span>
+<span style="color: #008000">// objectDate = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
 
-<span class="hljs-keyword">const</span> invalidDate = convertToDate(<span class="hljs-string">&quot;99-01-2020&quot;</span>);
-<span class="hljs-comment">// invalidDate = false</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">invalidDate</span><span style="color: #000000"> = </span><span style="color: #795E26">convertToDate</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;99-01-2020&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// invalidDate = false</span>
 
-<span class="hljs-keyword">const</span> monthBeforeDay = convertToDate(<span class="hljs-string">&quot;01/31/2020&quot;</span>, { <span class="hljs-attr">monthBeforeDay</span>: <span class="hljs-literal">true</span> });
-<span class="hljs-comment">// invalidDate = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">monthBeforeDay</span><span style="color: #000000"> = </span><span style="color: #795E26">convertToDate</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;01/31/2020&quot;</span><span style="color: #000000">, { </span><span style="color: #001080">monthBeforeDay:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// invalidDate = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
 
-<span class="hljs-keyword">const</span> zeroBasedMonth = convertToDate(<span class="hljs-string">&quot;31/00/2020&quot;</span>, { <span class="hljs-attr">zeroBasedMonth</span>: <span class="hljs-literal">true</span> });
-<span class="hljs-comment">// zeroBasedMonth = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">zeroBasedMonth</span><span style="color: #000000"> = </span><span style="color: #795E26">convertToDate</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;31/00/2020&quot;</span><span style="color: #000000">, { </span><span style="color: #001080">zeroBasedMonth:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// zeroBasedMonth = Fri Jan 31 2020 00:00:00 GMT+0100 (Central European Standard Time)</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -273,7 +282,7 @@ yarn add @baggie/string
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">Options</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -287,7 +296,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/convert/getEmailsFromString.ts#L19">string/src/convert/getEmailsFromString.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/convert/getEmailsFromString.ts#L19">string/src/convert/getEmailsFromString.ts:19</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,12 +306,12 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getEmailsFromString } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getEmailsFromString</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span> = <span class="hljs-string">&quot;My private email is mail@private.com, but my business email is mail@business.com.&quot;</span>;
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">string</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;My private email is mail@private.com, but my business email is mail@business.com.&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> foundEmails = getEmailsFromString(<span class="hljs-built_in">string</span>);
-<span class="hljs-comment">// foundEmails = [&quot;mail@private.com&quot;, &quot;mail@business.com&quot;]</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">foundEmails</span><span style="color: #000000"> = </span><span style="color: #795E26">getEmailsFromString</span><span style="color: #000000">(</span><span style="color: #001080">string</span><span style="color: #000000">);</span>
+<span style="color: #008000">// foundEmails = [&quot;mail@private.com&quot;, &quot;mail@business.com&quot;]</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -321,13 +330,13 @@ yarn add @baggie/string
 					<a name="getvimeoid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Vimeo<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Vimeo<wbr>Id<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Vimeo<wbr>Id<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/convert/getVimeoId.ts#L21">string/src/convert/getVimeoId.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/convert/getVimeoId.ts#L21">string/src/convert/getVimeoId.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -337,14 +346,14 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getVimeoId } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getVimeoId</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> vimeoUrl = <span class="hljs-string">&quot;https://vimeo.com/265700921&quot;</span>;
-<span class="hljs-keyword">const</span> vimeoId = getVimeoId(vimeoUrl);
-<span class="hljs-comment">// vimeoId = &quot;265700921&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">vimeoUrl</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;https://vimeo.com/265700921&quot;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">vimeoId</span><span style="color: #000000"> = </span><span style="color: #795E26">getVimeoId</span><span style="color: #000000">(</span><span style="color: #001080">vimeoUrl</span><span style="color: #000000">);</span>
+<span style="color: #008000">// vimeoId = &quot;265700921&quot;</span>
 
-<span class="hljs-keyword">const</span> noVimeoId = getVimeoId(<span class="hljs-string">&quot;http://google.com&quot;</span>);
-<span class="hljs-comment">// noYouTubeId = &quot;&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">noVimeoId</span><span style="color: #000000"> = </span><span style="color: #795E26">getVimeoId</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;http://google.com&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// noYouTubeId = &quot;&quot;</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -355,7 +364,7 @@ yarn add @baggie/string
 									<h5>url: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -363,13 +372,13 @@ yarn add @baggie/string
 					<a name="getyoutubeid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>You<wbr>Tube<wbr>Id</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>You<wbr>Tube<wbr>Id<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>You<wbr>Tube<wbr>Id<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/convert/getYouTubeId.ts#L21">string/src/convert/getYouTubeId.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/convert/getYouTubeId.ts#L21">string/src/convert/getYouTubeId.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -379,14 +388,14 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getYouTubeId } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getYouTubeId</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> youTubeUrl = <span class="hljs-string">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>;
-<span class="hljs-keyword">const</span> youTubeId = getYouTubeId(youTubeUrl);
-<span class="hljs-comment">// youTubeId = &quot;dQw4w9WgXcQ&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">youTubeUrl</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">youTubeId</span><span style="color: #000000"> = </span><span style="color: #795E26">getYouTubeId</span><span style="color: #000000">(</span><span style="color: #001080">youTubeUrl</span><span style="color: #000000">);</span>
+<span style="color: #008000">// youTubeId = &quot;dQw4w9WgXcQ&quot;</span>
 
-<span class="hljs-keyword">const</span> noYouTubeId = getYouTubeId(<span class="hljs-string">&quot;http://google.com&quot;</span>);
-<span class="hljs-comment">// noYouTubeId = &quot;&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">noYouTubeId</span><span style="color: #000000"> = </span><span style="color: #795E26">getYouTubeId</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;http://google.com&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// noYouTubeId = &quot;&quot;</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -397,7 +406,7 @@ yarn add @baggie/string
 									<h5>url: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -411,7 +420,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/convert/stripTagsFromString.ts#L22">string/src/convert/stripTagsFromString.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/convert/stripTagsFromString.ts#L22">string/src/convert/stripTagsFromString.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -421,15 +430,15 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { stripTagsFromString } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">stripTagsFromString</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> markup = <span class="hljs-string">&quot;&lt;p&gt;&lt;b&gt;Bold move.&lt;/b&gt;&lt;br/&gt;Paragraph.&lt;/p&gt;&lt;!-- comment --&gt;:)&quot;</span>;
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">markup</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;&lt;p&gt;&lt;b&gt;Bold move.&lt;/b&gt;&lt;br/&gt;Paragraph.&lt;/p&gt;&lt;!-- comment --&gt;:)&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> stripped = stripTagsFromString(markup);
-<span class="hljs-comment">// stripped = &quot;Bold move.Paragraph.:)&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">stripped</span><span style="color: #000000"> = </span><span style="color: #795E26">stripTagsFromString</span><span style="color: #000000">(</span><span style="color: #001080">markup</span><span style="color: #000000">);</span>
+<span style="color: #008000">// stripped = &quot;Bold move.Paragraph.:)&quot;</span>
 
-<span class="hljs-keyword">const</span> spacedAndTrimmed = stripTagsFromString(markup, <span class="hljs-string">&quot; &quot;</span>).trim();
-<span class="hljs-comment">// spacedAndTrimmed = &quot;Bold move. Paragraph. :)&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">spacedAndTrimmed</span><span style="color: #000000"> = </span><span style="color: #795E26">stripTagsFromString</span><span style="color: #000000">(</span><span style="color: #001080">markup</span><span style="color: #000000">, </span><span style="color: #A31515">&quot; &quot;</span><span style="color: #000000">).</span><span style="color: #795E26">trim</span><span style="color: #000000">();</span>
+<span style="color: #008000">// spacedAndTrimmed = &quot;Bold move. Paragraph. :)&quot;</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -440,7 +449,7 @@ yarn add @baggie/string
 									<h5>markup: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> replaceWith: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
+									<h5>replaceWith: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;&quot;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -453,10 +462,10 @@ yarn add @baggie/string
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="passwordspecialcharactersdefault" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> password<wbr>Special<wbr>Characters<wbr>Default</h3>
-					<div class="tsd-signature tsd-kind-icon">password<wbr>Special<wbr>Characters<wbr>Default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"!#$%&amp;&#x27;()*+,./:;&lt;&#x3D;&gt;?@[]\^_&#x60;{|}~¨-"</span><span class="tsd-signature-symbol"> = &quot;!#$%&amp;&#x27;()*+,./:;&lt;&#x3D;&gt;?@[]\^_&#x60;{|}~¨-&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">password<wbr>Special<wbr>Characters<wbr>Default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;!#$%&amp;&#x27;()*+,./:;&lt;&#x3D;&gt;?@[]\\^_&#x60;{|}~¨-&quot;</span><span class="tsd-signature-symbol"> = &quot;!#$%&amp;&#x27;()*+,./:;&lt;&#x3D;&gt;?@[]\\^_&#x60;{|}~¨-&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/regex/getPasswordRegex.ts#L9">string/src/regex/getPasswordRegex.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/regex/getPasswordRegex.ts#L9">string/src/regex/getPasswordRegex.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -476,7 +485,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/regex/getCprRegex.ts#L23">string/src/regex/getCprRegex.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/regex/getCprRegex.ts#L23">string/src/regex/getCprRegex.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -492,11 +501,11 @@ yarn add @baggie/string
 									</dd>
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getCprRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getCprRegex</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> cpr = <span class="hljs-string">&quot;1706862134&quot;</span>;
-<span class="hljs-keyword">const</span> isCprValid = cprRegex.test(cpr);
-<span class="hljs-comment">// isCprValid = true</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">cpr</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;1706862134&quot;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">isCprValid</span><span style="color: #000000"> = </span><span style="color: #001080">cprRegex</span><span style="color: #000000">.</span><span style="color: #795E26">test</span><span style="color: #000000">(</span><span style="color: #001080">cpr</span><span style="color: #000000">);</span>
+<span style="color: #008000">// isCprValid = true</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -515,7 +524,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/regex/getEmailRegex.ts#L17">string/src/regex/getEmailRegex.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/regex/getEmailRegex.ts#L17">string/src/regex/getEmailRegex.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -525,12 +534,12 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getEmailRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getEmailRegex</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span> = <span class="hljs-string">&quot;My private email is mail@private.com, but my business email is mail@business.com.&quot;</span>;
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">string</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;My private email is mail@private.com, but my business email is mail@business.com.&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> emails = <span class="hljs-built_in">string</span>.match(getEmailRegex());
-<span class="hljs-comment">// emails = [&quot;mail@private.com&quot;, &quot;mail@business.com&quot;]</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">emails</span><span style="color: #000000"> = </span><span style="color: #001080">string</span><span style="color: #000000">.</span><span style="color: #795E26">match</span><span style="color: #000000">(</span><span style="color: #795E26">getEmailRegex</span><span style="color: #000000">());</span>
+<span style="color: #008000">// emails = [&quot;mail@private.com&quot;, &quot;mail@business.com&quot;]</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -538,7 +547,7 @@ yarn add @baggie/string
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> global: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+									<h5>global: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
@@ -555,7 +564,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/regex/getNewLineRegex.ts#L6">string/src/regex/getNewLineRegex.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/regex/getNewLineRegex.ts#L6">string/src/regex/getNewLineRegex.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -566,7 +575,7 @@ yarn add @baggie/string
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeWhitespace: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>includeWhitespace: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
@@ -577,13 +586,13 @@ yarn add @baggie/string
 					<a name="getpasswordregex" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Password<wbr>Regex</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Password<wbr>Regex<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type">PasswordOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Password<wbr>Regex<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">PasswordOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RegExp</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/regex/getPasswordRegex.ts#L32">string/src/regex/getPasswordRegex.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/regex/getPasswordRegex.ts#L32">string/src/regex/getPasswordRegex.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -610,7 +619,7 @@ yarn add @baggie/string
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type">PasswordOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">PasswordOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
@@ -627,7 +636,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/regex/getTagsRegex.ts#L16">string/src/regex/getTagsRegex.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/regex/getTagsRegex.ts#L16">string/src/regex/getTagsRegex.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -637,11 +646,11 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getTagsRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getTagsRegex</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> markup = <span class="hljs-string">&quot;&lt;p&gt;&lt;b&gt;Bold move.&lt;/b&gt;&lt;br/&gt;Paragraph.&lt;/p&gt;&lt;!-- comment --&gt; :)&quot;</span>;
-<span class="hljs-keyword">const</span> stripped = markup.replace(getTagsRegex(), <span class="hljs-string">&quot;&quot;</span>);
-<span class="hljs-comment">// stripped = &quot;Bold move.Paragraph. :)&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">markup</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;&lt;p&gt;&lt;b&gt;Bold move.&lt;/b&gt;&lt;br/&gt;Paragraph.&lt;/p&gt;&lt;!-- comment --&gt; :)&quot;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">stripped</span><span style="color: #000000"> = </span><span style="color: #001080">markup</span><span style="color: #000000">.</span><span style="color: #795E26">replace</span><span style="color: #000000">(</span><span style="color: #795E26">getTagsRegex</span><span style="color: #000000">(), </span><span style="color: #A31515">&quot;&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// stripped = &quot;Bold move.Paragraph. :)&quot;</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -649,7 +658,7 @@ yarn add @baggie/string
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> groupSequentialTags: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>groupSequentialTags: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">RegExp</span></h4>
@@ -666,7 +675,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/regex/getVimeoIdRegex.ts#L16">string/src/regex/getVimeoIdRegex.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/regex/getVimeoIdRegex.ts#L16">string/src/regex/getVimeoIdRegex.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -676,11 +685,11 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getVimeoIdRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getVimeoIdRegex</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> vimeoUrl = <span class="hljs-string">&quot;https://vimeo.com/265700921&quot;</span>;
-<span class="hljs-keyword">const</span> vimeoId = vimeoUrl.match(getVimeoIdRegex())[<span class="hljs-number">1</span>];
-<span class="hljs-comment">// vimeoId = &quot;265700921&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">vimeoUrl</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;https://vimeo.com/265700921&quot;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">vimeoId</span><span style="color: #000000"> = </span><span style="color: #001080">vimeoUrl</span><span style="color: #000000">.</span><span style="color: #795E26">match</span><span style="color: #000000">(</span><span style="color: #795E26">getVimeoIdRegex</span><span style="color: #000000">())[</span><span style="color: #098658">1</span><span style="color: #000000">];</span>
+<span style="color: #008000">// vimeoId = &quot;265700921&quot;</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -699,7 +708,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/regex/getYouTubeIdRegex.ts#L20">string/src/regex/getYouTubeIdRegex.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/regex/getYouTubeIdRegex.ts#L20">string/src/regex/getYouTubeIdRegex.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -712,11 +721,11 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { getYouTubeIdRegex } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getYouTubeIdRegex</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> youTubeUrl = <span class="hljs-string">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span>;
-<span class="hljs-keyword">const</span> youTubeId = youTubeUrl.match(getYouTubeIdRegex())[<span class="hljs-number">1</span>];
-<span class="hljs-comment">// youTubeId = &quot;dQw4w9WgXcQ&quot;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">youTubeUrl</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">youTubeId</span><span style="color: #000000"> = </span><span style="color: #001080">youTubeUrl</span><span style="color: #000000">.</span><span style="color: #795E26">match</span><span style="color: #000000">(</span><span style="color: #795E26">getYouTubeIdRegex</span><span style="color: #000000">())[</span><span style="color: #098658">1</span><span style="color: #000000">];</span>
+<span style="color: #008000">// youTubeId = &quot;dQw4w9WgXcQ&quot;</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -738,7 +747,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/convert/convertNewLinesToBreaks.ts#L23">string/src/convert/convertNewLinesToBreaks.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/convert/convertNewLinesToBreaks.ts#L23">string/src/convert/convertNewLinesToBreaks.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -748,16 +757,16 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { convertNewLinesToBreaks } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">convertNewLinesToBreaks</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> original = <span class="hljs-string">`hello
-    friend`</span>;
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">original</span><span style="color: #000000"> = </span><span style="color: #A31515">`hello</span>
+<span style="color: #A31515">    friend`</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> parsed = convertNewLinesToBreaks(original);
-<span class="hljs-comment">// parsed1 = &quot;hello&lt;br /&gt;friend&quot;;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">parsed</span><span style="color: #000000"> = </span><span style="color: #795E26">convertNewLinesToBreaks</span><span style="color: #000000">(</span><span style="color: #001080">original</span><span style="color: #000000">);</span>
+<span style="color: #008000">// parsed1 = &quot;hello&lt;br /&gt;friend&quot;;</span>
 
-<span class="hljs-keyword">const</span> keepWhitespace = convertNewLinesToBreaks(original, <span class="hljs-literal">true</span>);
-<span class="hljs-comment">// keepWhitespace = &quot;hello&lt;br /&gt;    friend&quot;;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">keepWhitespace</span><span style="color: #000000"> = </span><span style="color: #795E26">convertNewLinesToBreaks</span><span style="color: #000000">(</span><span style="color: #001080">original</span><span style="color: #000000">, </span><span style="color: #0000FF">true</span><span style="color: #000000">);</span>
+<span style="color: #008000">// keepWhitespace = &quot;hello&lt;br /&gt;    friend&quot;;</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -768,7 +777,7 @@ yarn add @baggie/string
 									<h5>text: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> keepWhitespace: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>keepWhitespace: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -782,13 +791,13 @@ yarn add @baggie/string
 					<a name="iscprvalid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Cpr<wbr>Valid</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Cpr<wbr>Valid<span class="tsd-signature-symbol">(</span>cprNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span>, gender<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"f"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"female"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"m"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"male"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Cpr<wbr>Valid<span class="tsd-signature-symbol">(</span>cprNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span>, gender<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">&quot;f&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;female&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;m&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;male&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/validation/isCprValid.ts#L37">string/src/validation/isCprValid.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/validation/isCprValid.ts#L37">string/src/validation/isCprValid.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -810,17 +819,17 @@ yarn add @baggie/string
 									</dd>
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isCprValid } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">isCprValid</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> cprWithValidDate = <span class="hljs-string">&quot;300186-2134&quot;</span>;
-<span class="hljs-keyword">const</span> cprWithInvalidDate = <span class="hljs-string">&quot;300286-2134&quot;</span>;
-<span class="hljs-keyword">const</span> gender = <span class="hljs-string">&quot;female&quot;</span>;
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">cprWithValidDate</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;300186-2134&quot;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">cprWithInvalidDate</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;300286-2134&quot;</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">gender</span><span style="color: #000000"> = </span><span style="color: #A31515">&quot;female&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> validCpr = isCprValid(cprWithValidDate, gender);
-<span class="hljs-comment">// validCpr = false</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">validCpr</span><span style="color: #000000"> = </span><span style="color: #795E26">isCprValid</span><span style="color: #000000">(</span><span style="color: #001080">cprWithValidDate</span><span style="color: #000000">, </span><span style="color: #001080">gender</span><span style="color: #000000">);</span>
+<span style="color: #008000">// validCpr = false</span>
 
-<span class="hljs-keyword">const</span> invalidCpr = isCprValid(cprWithInvalidDate, gender);
-<span class="hljs-comment">// invalidCpr = false</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">invalidCpr</span><span style="color: #000000"> = </span><span style="color: #795E26">isCprValid</span><span style="color: #000000">(</span><span style="color: #001080">cprWithInvalidDate</span><span style="color: #000000">, </span><span style="color: #001080">gender</span><span style="color: #000000">);</span>
+<span style="color: #008000">// invalidCpr = false</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -831,7 +840,7 @@ yarn add @baggie/string
 									<h5>cprNumber: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> gender: <span class="tsd-signature-type">"f"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"female"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"m"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"male"</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> gender: <span class="tsd-signature-type">&quot;f&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;female&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;m&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;male&quot;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -848,7 +857,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/validation/isDateValid.ts#L44">string/src/validation/isDateValid.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/validation/isDateValid.ts#L44">string/src/validation/isDateValid.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -858,26 +867,26 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isDateValid } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">isDateValid</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> stringDate = isDateValid(<span class="hljs-string">&quot;31-01-2020&quot;</span>);
-<span class="hljs-comment">// stringDate = true</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">stringDate</span><span style="color: #000000"> = </span><span style="color: #795E26">isDateValid</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;31-01-2020&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// stringDate = true</span>
 
-<span class="hljs-keyword">const</span> objectDate = isDateValid({
-    <span class="hljs-attr">day</span>: <span class="hljs-number">31</span>,
-    <span class="hljs-attr">month</span>: <span class="hljs-number">1</span>,
-    <span class="hljs-attr">year</span>: <span class="hljs-number">2020</span>
-});
-<span class="hljs-comment">// objectDate = true</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">objectDate</span><span style="color: #000000"> = </span><span style="color: #795E26">isDateValid</span><span style="color: #000000">({</span>
+<span style="color: #000000">    </span><span style="color: #001080">day:</span><span style="color: #000000"> </span><span style="color: #098658">31</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">month:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">year:</span><span style="color: #000000"> </span><span style="color: #098658">2020</span>
+<span style="color: #000000">});</span>
+<span style="color: #008000">// objectDate = true</span>
 
-<span class="hljs-keyword">const</span> invalidDate = isDateValid(<span class="hljs-string">&quot;99-01-2020&quot;</span>);
-<span class="hljs-comment">// invalidDate = false</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">invalidDate</span><span style="color: #000000"> = </span><span style="color: #795E26">isDateValid</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;99-01-2020&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// invalidDate = false</span>
 
-<span class="hljs-keyword">const</span> monthBeforeDay = isDateValid(<span class="hljs-string">&quot;01/31/2020&quot;</span>, { <span class="hljs-attr">monthBeforeDay</span>: <span class="hljs-literal">true</span> });
-<span class="hljs-comment">// invalidDate = true</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">monthBeforeDay</span><span style="color: #000000"> = </span><span style="color: #795E26">isDateValid</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;01/31/2020&quot;</span><span style="color: #000000">, { </span><span style="color: #001080">monthBeforeDay:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// invalidDate = true</span>
 
-<span class="hljs-keyword">const</span> zeroBasedMonth = isDateValid(<span class="hljs-string">&quot;31/00/2020&quot;</span>, { <span class="hljs-attr">zeroBasedMonth</span>: <span class="hljs-literal">true</span> });
-<span class="hljs-comment">// zeroBasedMonth = true</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">zeroBasedMonth</span><span style="color: #000000"> = </span><span style="color: #795E26">isDateValid</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;31/00/2020&quot;</span><span style="color: #000000">, { </span><span style="color: #001080">zeroBasedMonth:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// zeroBasedMonth = true</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -905,7 +914,7 @@ yarn add @baggie/string
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/validation/isEmailValid.ts#L24">string/src/validation/isEmailValid.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/validation/isEmailValid.ts#L24">string/src/validation/isEmailValid.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -916,15 +925,15 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isEmailValid } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">isEmailValid</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> checkString = isEmailValid(<span class="hljs-string">&quot;test@test.com&quot;</span>);
-<span class="hljs-comment">// checkString = true</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">checkString</span><span style="color: #000000"> = </span><span style="color: #795E26">isEmailValid</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;test@test.com&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// checkString = true</span>
 
-<span class="hljs-keyword">const</span> emailInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;form input.email&quot;</span>);
-<span class="hljs-keyword">if</span> (isEmailValid(emailInput)) {
-    <span class="hljs-comment">// The entered email address is valid</span>
-}
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">emailInput</span><span style="color: #000000"> = </span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #795E26">querySelector</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;form input.email&quot;</span><span style="color: #000000">);</span>
+<span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #795E26">isEmailValid</span><span style="color: #000000">(</span><span style="color: #001080">emailInput</span><span style="color: #000000">)) {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// The entered email address is valid</span>
+<span style="color: #000000">}</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -943,13 +952,13 @@ yarn add @baggie/string
 					<a name="ispasswordvalid" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Password<wbr>Valid</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Password<wbr>Valid<span class="tsd-signature-symbol">(</span>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type">PasswordOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Password<wbr>Valid<span class="tsd-signature-symbol">(</span>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">PasswordOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/string/src/validation/isPasswordValid.ts#L28">string/src/validation/isPasswordValid.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/string/src/validation/isPasswordValid.ts#L28">string/src/validation/isPasswordValid.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -960,18 +969,18 @@ yarn add @baggie/string
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Basic usage:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { isPasswordValid } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/string&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">isPasswordValid</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/string&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> validPassword = isPasswordValid(<span class="hljs-string">&quot;abcABC_123&quot;</span>);
-<span class="hljs-comment">// validPassword = true</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">validPassword</span><span style="color: #000000"> = </span><span style="color: #795E26">isPasswordValid</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;abcABC_123&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// validPassword = true</span>
 
-<span class="hljs-keyword">const</span> invalidPassword = isPasswordValid(<span class="hljs-string">&quot;hey&quot;</span>);
-<span class="hljs-comment">// invalidPassword = false</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">invalidPassword</span><span style="color: #000000"> = </span><span style="color: #795E26">isPasswordValid</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;hey&quot;</span><span style="color: #000000">);</span>
+<span style="color: #008000">// invalidPassword = false</span>
 
-<span class="hljs-keyword">const</span> passwordInput = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;form input.password&quot;</span>);
-<span class="hljs-keyword">if</span> (isPasswordValid(passwordInput)) {
-    <span class="hljs-comment">// The entered password is valid</span>
-}
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">passwordInput</span><span style="color: #000000"> = </span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #795E26">querySelector</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;form input.password&quot;</span><span style="color: #000000">);</span>
+<span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #795E26">isPasswordValid</span><span style="color: #000000">(</span><span style="color: #001080">passwordInput</span><span style="color: #000000">)) {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// The entered password is valid</span>
+<span style="color: #000000">}</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -982,7 +991,7 @@ yarn add @baggie/string
 									<h5>password: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLInputElement</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type">PasswordOptions</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/string.passwordoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">PasswordOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -994,8 +1003,8 @@ yarn add @baggie/string
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="color.html">color</a>

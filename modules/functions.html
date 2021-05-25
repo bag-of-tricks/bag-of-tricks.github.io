@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>functions | baggie - v1.2.8</title>
-	<meta name="description" content="Documentation for baggie - v1.2.8">
+	<title>functions | baggie - v0.0.1</title>
+	<meta name="description" content="Documentation for baggie - v0.0.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -22,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v1.2.8</a>
+					<a href="../index.html" class="title">baggie - v0.0.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">baggie - v0.0.1</a>
 				</li>
 				<li>
 					<a href="functions.html">functions</a>
@@ -77,11 +78,11 @@
 					<a href="#🚀-installation" id="🚀-installation" style="color: inherit; text-decoration: none;">
 						<h2>🚀 Installation</h2>
 					</a>
-					<pre><code class="language-bash"><span class="hljs-comment">#npm</span>
-npm install @baggie/<span class="hljs-built_in">functions</span> --save
+					<pre><code class="language-bash"><span style="color: #008000">#npm</span>
+<span style="color: #000000">npm install @baggie/functions --save</span>
 
-<span class="hljs-comment">#yarn</span>
-yarn add @baggie/<span class="hljs-built_in">functions</span>
+<span style="color: #008000">#yarn</span>
+<span style="color: #000000">yarn add @baggie/functions</span>
 </code></pre>
 				</div>
 			</section>
@@ -89,6 +90,12 @@ yarn add @baggie/<span class="hljs-built_in">functions</span>
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section">
+							<h3>Arrays</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="functions.html#intersperse" class="tsd-kind-icon">intersperse</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section">
 							<h3>Cookie</h3>
 							<ul class="tsd-index-list">
@@ -115,18 +122,100 @@ yarn add @baggie/<span class="hljs-built_in">functions</span>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Cookie</h2>
+				<h2>Arrays</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="deletecookie" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> delete<wbr>Cookie</h3>
+					<a name="intersperse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> intersperse</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../interfaces/functions.cookieattributes.html" class="tsd-signature-type">CookieAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">intersperse<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, <span class="tsd-signature-symbol">...</span>insertion<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/functions/src/cookie/deleteCookie.ts#L11">functions/src/cookie/deleteCookie.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/arrays/intersperse.ts#L57">functions/src/arrays/intersperse.ts:57</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Insert new values between between all values in an array.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><p><strong>Basic usage:</strong></p>
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">intersperse</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/functions&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">numbers</span><span style="color: #000000"> = [</span>
+<span style="color: #000000">    </span><span style="color: #098658">5</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #098658">10</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #098658">15</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #098658">20</span><span style="color: #000000">,</span>
+<span style="color: #000000">];</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">newNumbers</span><span style="color: #000000"> = </span><span style="color: #795E26">intersperse</span><span style="color: #000000">(</span><span style="color: #001080">numbers</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">);</span>
+<span style="color: #008000">// newNumbers = [5, 1, 10, 1, 15, 1, 20]</span>
+</code></pre>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>Insert multiple:</strong></p>
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">intersperse</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/functions&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">numbers</span><span style="color: #000000"> = [</span>
+<span style="color: #000000">    </span><span style="color: #098658">5</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #098658">10</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #098658">15</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #098658">20</span><span style="color: #000000">,</span>
+<span style="color: #000000">];</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">newNumbersA</span><span style="color: #000000"> = </span><span style="color: #795E26">intersperse</span><span style="color: #000000">(</span><span style="color: #001080">numbers</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">);</span>
+<span style="color: #008000">// newNumbersA = [5, 1, 2, 10, 1, 2, 15, 1, 2, 20]</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">newNumbersB</span><span style="color: #000000"> = </span><span style="color: #795E26">intersperse</span><span style="color: #000000">(</span><span style="color: #001080">numbers</span><span style="color: #000000">, ...[</span><span style="color: #A31515">&quot;one&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;two&quot;</span><span style="color: #000000">]);</span>
+<span style="color: #008000">// newNumbersB = [5, &quot;one&quot;, &quot;two&quot;, 10, &quot;one&quot;, &quot;two&quot;, 15, &quot;one&quot;, &quot;two&quot;, 20]</span>
+</code></pre>
+									</dd>
+									<dt>example</dt>
+									<dd><p><strong>With a function:</strong></p>
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">intersperse</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/functions&quot;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">numbers</span><span style="color: #000000"> = [</span>
+<span style="color: #000000">    </span><span style="color: #098658">10</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #098658">20</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #098658">30</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #098658">40</span><span style="color: #000000">,</span>
+<span style="color: #000000">];</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">insertion</span><span style="color: #000000"> = ({ </span><span style="color: #001080">previous</span><span style="color: #000000">, </span><span style="color: #001080">next</span><span style="color: #000000"> }) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> </span><span style="color: #001080">previous</span><span style="color: #000000"> + (</span><span style="color: #001080">next</span><span style="color: #000000"> - </span><span style="color: #001080">previous</span><span style="color: #000000">) / </span><span style="color: #098658">2</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">newNumbers</span><span style="color: #000000"> = </span><span style="color: #795E26">intersperse</span><span style="color: #000000">(</span><span style="color: #001080">numbers</span><span style="color: #000000">, </span><span style="color: #001080">insertion</span><span style="color: #000000">);</span>
+<span style="color: #008000">// newNumbers = [10, 15, 20, 25, 30, 35, 40]</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>insertion: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Cookie</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="deletecookie" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> delete<wbr>Cookie</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../interfaces/functions.cookieattributes.html" class="tsd-signature-type" data-tsd-kind="Interface">CookieAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/cookie/deleteCookie.ts#L11">functions/src/cookie/deleteCookie.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -145,7 +234,7 @@ yarn add @baggie/<span class="hljs-built_in">functions</span>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> attributes: <a href="../interfaces/functions.cookieattributes.html" class="tsd-signature-type">CookieAttributes</a><span class="tsd-signature-symbol"> = {}</span></h5>
+									<h5>attributes: <a href="../interfaces/functions.cookieattributes.html" class="tsd-signature-type" data-tsd-kind="Interface">CookieAttributes</a><span class="tsd-signature-symbol"> = {}</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -162,7 +251,7 @@ yarn add @baggie/<span class="hljs-built_in">functions</span>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/functions/src/cookie/getCookie.ts#L13">functions/src/cookie/getCookie.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/cookie/getCookie.ts#L13">functions/src/cookie/getCookie.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,7 +268,7 @@ yarn add @baggie/<span class="hljs-built_in">functions</span>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dontParseCookie: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>dontParseCookie: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -190,13 +279,13 @@ yarn add @baggie/<span class="hljs-built_in">functions</span>
 					<a name="setcookie" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> set<wbr>Cookie</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../interfaces/functions.cookieattributes.html" class="tsd-signature-type">CookieAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Cookie<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, attributes<span class="tsd-signature-symbol">?: </span><a href="../interfaces/functions.cookieattributes.html" class="tsd-signature-type" data-tsd-kind="Interface">CookieAttributes</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/functions/src/cookie/setCookie.ts#L28">functions/src/cookie/setCookie.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/cookie/setCookie.ts#L28">functions/src/cookie/setCookie.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -213,7 +302,7 @@ yarn add @baggie/<span class="hljs-built_in">functions</span>
 									<h5>value: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../interfaces/functions.cookieattributes.html" class="tsd-signature-type">CookieAttributes</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> attributes: <a href="../interfaces/functions.cookieattributes.html" class="tsd-signature-type" data-tsd-kind="Interface">CookieAttributes</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -227,13 +316,13 @@ yarn add @baggie/<span class="hljs-built_in">functions</span>
 					<a name="foreach" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> for<wbr>Each</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>collection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Node</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">NodeList</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Window</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Document</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLCollection</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span>, iterator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, allowNullValues<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>collection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, iterator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, allowNullValues<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/functions/src/iterators/forEach.ts#L43">functions/src/iterators/forEach.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/iterators/forEach.ts#L43">functions/src/iterators/forEach.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -244,30 +333,30 @@ yarn add @baggie/<span class="hljs-built_in">functions</span>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><p><strong>Iterating through an array:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { forEach } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/functions&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">forEach</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/functions&quot;</span><span style="color: #000000">;</span>
 
-forEach([value1, value2, value3], <span class="hljs-function">(<span class="hljs-params">value, index</span>) =&gt;</span> {
-    <span class="hljs-comment">// Loop through the values in the array</span>
-});
+<span style="color: #795E26">forEach</span><span style="color: #000000">([</span><span style="color: #001080">value1</span><span style="color: #000000">, </span><span style="color: #001080">value2</span><span style="color: #000000">, </span><span style="color: #001080">value3</span><span style="color: #000000">], (</span><span style="color: #001080">value</span><span style="color: #000000">, </span><span style="color: #001080">index</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// Loop through the values in the array</span>
+<span style="color: #000000">});</span>
 </code></pre>
 									</dd>
 									<dt>example</dt>
 									<dd><p><strong>Iterating through an object:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { forEach } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/functions&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">forEach</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/functions&quot;</span><span style="color: #000000">;</span>
 
-forEach({<span class="hljs-string">&quot;key1&quot;</span>: value1, <span class="hljs-string">&quot;key2&quot;</span>: value2}, <span class="hljs-function">(<span class="hljs-params">value, key</span>) =&gt;</span> {
-    <span class="hljs-comment">// Loop through the values in the object</span>
-});
+<span style="color: #795E26">forEach</span><span style="color: #000000">({</span><span style="color: #A31515">&quot;key1&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #001080">value1</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;key2&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #001080">value2</span><span style="color: #000000">}, (</span><span style="color: #001080">value</span><span style="color: #000000">, </span><span style="color: #001080">key</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// Loop through the values in the object</span>
+<span style="color: #000000">});</span>
 </code></pre>
 									</dd>
 									<dt>example</dt>
 									<dd><p><strong>Iterating through a DOM-collection:</strong></p>
-										<pre><code class="language-ts"><span class="hljs-keyword">import</span> { forEach } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/functions&quot;</span>;
+										<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">forEach</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/functions&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> collection = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&quot;div&quot;</span>);
-forEach(collection, <span class="hljs-function"><span class="hljs-params">element</span> =&gt;</span> {
-    <span class="hljs-comment">// &quot;element&quot; is a reference to the current DOM-element.</span>
-});
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">collection</span><span style="color: #000000"> = </span><span style="color: #001080">document</span><span style="color: #000000">.</span><span style="color: #795E26">querySelectorAll</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;div&quot;</span><span style="color: #000000">);</span>
+<span style="color: #795E26">forEach</span><span style="color: #000000">(</span><span style="color: #001080">collection</span><span style="color: #000000">, </span><span style="color: #001080">element</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// &quot;element&quot; is a reference to the current DOM-element.</span>
+<span style="color: #000000">});</span>
 </code></pre>
 									</dd>
 									<dt>author</dt>
@@ -278,7 +367,7 @@ forEach(collection, <span class="hljs-function"><span class="hljs-params">elemen
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>collection: <span class="tsd-signature-type">Node</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">NodeList</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Window</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Document</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLCollection</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">any</span></h5>
+									<h5>collection: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
 									<h5>iterator: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
@@ -305,7 +394,7 @@ forEach(collection, <span class="hljs-function"><span class="hljs-params">elemen
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> allowNullValues: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>allowNullValues: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -317,8 +406,8 @@ forEach(collection, <span class="hljs-function"><span class="hljs-params">elemen
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="color.html">color</a>
@@ -376,6 +465,9 @@ forEach(collection, <span class="hljs-function"><span class="hljs-params">elemen
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="functions.html#getcookie" class="tsd-kind-icon">get<wbr>Cookie</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="functions.html#intersperse" class="tsd-kind-icon">intersperse</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="functions.html#setcookie" class="tsd-kind-icon">set<wbr>Cookie</a>

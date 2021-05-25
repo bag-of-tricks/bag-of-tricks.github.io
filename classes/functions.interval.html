@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Interval | baggie - v1.2.8</title>
-	<meta name="description" content="Documentation for baggie - v1.2.8">
+	<title>Interval | baggie - v0.0.1</title>
+	<meta name="description" content="Documentation for baggie - v0.0.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -22,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v1.2.8</a>
+					<a href="../index.html" class="title">baggie - v0.0.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">baggie - v0.0.1</a>
 				</li>
 				<li>
 					<a href="../modules/functions.html">functions</a>
@@ -73,27 +74,27 @@
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
 						<dd><p><strong>Basic usage:</strong></p>
-							<pre><code class="language-ts"><span class="hljs-keyword">import</span> { Interval } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/functions&quot;</span>;
+							<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Interval</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/functions&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-comment">// Create an interval timer that executes a function after 2 seconds</span>
-<span class="hljs-keyword">const</span> interval = <span class="hljs-keyword">new</span> Interval(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> {
-    <span class="hljs-built_in">window</span>.console.log(<span class="hljs-string">`<span class="hljs-subst">${a}</span>, <span class="hljs-subst">${b}</span>`</span>);
-}, <span class="hljs-number">2000</span>, <span class="hljs-string">&quot;Hello&quot;</span>, <span class="hljs-string">&quot;friend&quot;</span>);
+<span style="color: #008000">// Create an interval timer that executes a function after 2 seconds</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">interval</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Interval</span><span style="color: #000000">((</span><span style="color: #001080">a</span><span style="color: #000000">, </span><span style="color: #001080">b</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">window</span><span style="color: #000000">.</span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`</span><span style="color: #0000FF">${</span><span style="color: #001080">a</span><span style="color: #0000FF">}</span><span style="color: #A31515">, </span><span style="color: #0000FF">${</span><span style="color: #001080">b</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">);</span>
+<span style="color: #000000">}, </span><span style="color: #098658">2000</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;Hello&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;friend&quot;</span><span style="color: #000000">);</span>
 
-<span class="hljs-comment">// Start interval timer</span>
-interval.start();
+<span style="color: #008000">// Start interval timer</span>
+<span style="color: #001080">interval</span><span style="color: #000000">.</span><span style="color: #795E26">start</span><span style="color: #000000">();</span>
 
-<span class="hljs-comment">// Pause interval timer after 1 second</span>
-<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
-    interval.pause();
+<span style="color: #008000">// Pause interval timer after 1 second</span>
+<span style="color: #795E26">setTimeout</span><span style="color: #000000">(() </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">interval</span><span style="color: #000000">.</span><span style="color: #795E26">pause</span><span style="color: #000000">();</span>
 
-    <span class="hljs-comment">// And resume it after 3 seconds</span>
-    <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
-        interval.start();
-    }, <span class="hljs-number">3000</span>);
-}, <span class="hljs-number">1000</span>);
+<span style="color: #000000">    </span><span style="color: #008000">// And resume it after 3 seconds</span>
+<span style="color: #000000">    </span><span style="color: #795E26">setTimeout</span><span style="color: #000000">(() </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">        </span><span style="color: #001080">interval</span><span style="color: #000000">.</span><span style="color: #795E26">start</span><span style="color: #000000">();</span>
+<span style="color: #000000">    }, </span><span style="color: #098658">3000</span><span style="color: #000000">);</span>
+<span style="color: #000000">}, </span><span style="color: #098658">1000</span><span style="color: #000000">);</span>
 
-<span class="hljs-comment">// After 5 seconds the function will output &quot;Hello, friend&quot; to the console.</span>
+<span style="color: #008000">// After 5 seconds the function will output &quot;Hello, friend&quot; to the console.</span>
 </code></pre>
 						</dd>
 					</dl>
@@ -103,7 +104,7 @@ interval.start();
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="functions.timer.html" class="tsd-signature-type">Timer</a>
+						<a href="functions.timer.html" class="tsd-signature-type" data-tsd-kind="Class">Timer</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">Interval</span>
@@ -140,14 +141,14 @@ interval.start();
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Interval<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, timeoutMs<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, <span class="tsd-signature-symbol">...</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="functions.interval.html" class="tsd-signature-type">Interval</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Interval<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, timeoutMs<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, <span class="tsd-signature-symbol">...</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="functions.interval.html" class="tsd-signature-type" data-tsd-kind="Class">Interval</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="functions.timer.html">Timer</a>.<a href="functions.timer.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/functions/src/timers/interval.ts#L35">functions/src/timers/interval.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/timers/interval.ts#L35">functions/src/timers/interval.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -174,13 +175,13 @@ interval.start();
 									</ul>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeoutMs: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+									<h5>timeoutMs: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>parameters: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="functions.interval.html" class="tsd-signature-type">Interval</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="functions.interval.html" class="tsd-signature-type" data-tsd-kind="Class">Interval</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -198,7 +199,7 @@ interval.start();
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="functions.timer.html">Timer</a>.<a href="functions.timer.html#destroy">destroy</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/functions/src/timers/timer.ts#L79">functions/src/timers/timer.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/timers/timer.ts#L79">functions/src/timers/timer.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -216,7 +217,7 @@ interval.start();
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="functions.timer.html">Timer</a>.<a href="functions.timer.html#pause">pause</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/functions/src/timers/timer.ts#L54">functions/src/timers/timer.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/timers/timer.ts#L54">functions/src/timers/timer.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -234,7 +235,7 @@ interval.start();
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="functions.timer.html">Timer</a>.<a href="functions.timer.html#reset">reset</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/functions/src/timers/timer.ts#L69">functions/src/timers/timer.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/timers/timer.ts#L69">functions/src/timers/timer.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -252,7 +253,7 @@ interval.start();
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="functions.timer.html">Timer</a>.<a href="functions.timer.html#start">start</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/functions/src/timers/timer.ts#L59">functions/src/timers/timer.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/functions/src/timers/timer.ts#L59">functions/src/timers/timer.ts:59</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -264,8 +265,8 @@ interval.start();
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/color.html">color</a>
@@ -340,6 +341,9 @@ interval.start();
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="../modules/functions.html#getcookie" class="tsd-kind-icon">get<wbr>Cookie</a>
+							</li>
+							<li class=" tsd-kind-function tsd-parent-kind-module">
+								<a href="../modules/functions.html#intersperse" class="tsd-kind-icon">intersperse</a>
 							</li>
 							<li class=" tsd-kind-function tsd-parent-kind-module">
 								<a href="../modules/functions.html#setcookie" class="tsd-kind-icon">set<wbr>Cookie</a>

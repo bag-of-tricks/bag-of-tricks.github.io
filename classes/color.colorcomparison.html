@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ColorComparison | baggie - v1.2.8</title>
-	<meta name="description" content="Documentation for baggie - v1.2.8">
+	<title>ColorComparison | baggie - v0.0.1</title>
+	<meta name="description" content="Documentation for baggie - v0.0.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -22,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v1.2.8</a>
+					<a href="../index.html" class="title">baggie - v0.0.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">baggie - v0.0.1</a>
 				</li>
 				<li>
 					<a href="../modules/color.html">color</a>
@@ -80,34 +81,34 @@
 						</dd>
 						<dt>example</dt>
 						<dd><p><strong>Basic usage:</strong></p>
-							<pre><code class="language-ts"><span class="hljs-keyword">import</span> { ColorComparison } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/colors&quot;</span>;
+							<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">ColorComparison</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/colors&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> colors = <span class="hljs-keyword">new</span> ColorComparison([
-    { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> },
-    { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> },
-    { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">255</span> },
-    { <span class="hljs-attr">red</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">255</span> },
-    { <span class="hljs-attr">red</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> },
-]);
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">colors</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">ColorComparison</span><span style="color: #000000">([</span>
+<span style="color: #000000">    { </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> },</span>
+<span style="color: #000000">    { </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> },</span>
+<span style="color: #000000">    { </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000"> },</span>
+<span style="color: #000000">    { </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000"> },</span>
+<span style="color: #000000">    { </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> },</span>
+<span style="color: #000000">]);</span>
 
-colors.nearest({ <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">60</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">10</span> });
-<span class="hljs-comment">// = [{ red: 255, green: 0, blue: 0 }]</span>
+<span style="color: #001080">colors</span><span style="color: #000000">.</span><span style="color: #795E26">nearest</span><span style="color: #000000">({ </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">60</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">10</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// = [{ red: 255, green: 0, blue: 0 }]</span>
 
-colors.add({ <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> });
+<span style="color: #001080">colors</span><span style="color: #000000">.</span><span style="color: #795E26">add</span><span style="color: #000000">({ </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> });</span>
 
-colors.near({ <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">60</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">10</span> });
-<span class="hljs-comment">// = { red: 255, green: 50, blue: 0 }</span>
+<span style="color: #001080">colors</span><span style="color: #000000">.</span><span style="color: #795E26">near</span><span style="color: #000000">({ </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">60</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">10</span><span style="color: #000000"> });</span>
+<span style="color: #008000">// = { red: 255, green: 50, blue: 0 }</span>
 
-colors.farthest({ <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">50</span> }, <span class="hljs-number">2</span>);
-<span class="hljs-comment">// = [{ red: 0, green: 255, blue: 0 }, { red: 0, green: 255, blue: 255 }]</span>
+<span style="color: #001080">colors</span><span style="color: #000000">.</span><span style="color: #795E26">farthest</span><span style="color: #000000">({ </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">50</span><span style="color: #000000"> }, </span><span style="color: #098658">2</span><span style="color: #000000">);</span>
+<span style="color: #008000">// = [{ red: 0, green: 255, blue: 0 }, { red: 0, green: 255, blue: 255 }]</span>
 
-<span class="hljs-comment">// We can also remove all the colors and add new ones to it.</span>
-colors
-    .reset()
-    .add([
-        { <span class="hljs-attr">red</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">50</span> },
-        { <span class="hljs-attr">red</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">green</span>: <span class="hljs-number">255</span>, <span class="hljs-attr">blue</span>: <span class="hljs-number">0</span> }
-    ]);
+<span style="color: #008000">// We can also remove all the colors and add new ones to it.</span>
+<span style="color: #001080">colors</span>
+<span style="color: #000000">    .</span><span style="color: #795E26">reset</span><span style="color: #000000">()</span>
+<span style="color: #000000">    .</span><span style="color: #795E26">add</span><span style="color: #000000">([</span>
+<span style="color: #000000">        { </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">50</span><span style="color: #000000"> },</span>
+<span style="color: #000000">        { </span><span style="color: #001080">red:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">, </span><span style="color: #001080">green:</span><span style="color: #000000"> </span><span style="color: #098658">255</span><span style="color: #000000">, </span><span style="color: #001080">blue:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000"> }</span>
+<span style="color: #000000">    ]);</span>
 </code></pre>
 						</dd>
 					</dl>
@@ -150,13 +151,13 @@ colors
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Color<wbr>Comparison<span class="tsd-signature-symbol">(</span>colors<span class="tsd-signature-symbol">?: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="color.colorcomparison.html" class="tsd-signature-type">ColorComparison</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Color<wbr>Comparison<span class="tsd-signature-symbol">(</span>colors<span class="tsd-signature-symbol">?: </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="color.colorcomparison.html" class="tsd-signature-type" data-tsd-kind="Class">ColorComparison</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/color/src/comparison/colorComparison.ts#L57">color/src/comparison/colorComparison.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/color/src/comparison/colorComparison.ts#L57">color/src/comparison/colorComparison.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -167,10 +168,10 @@ colors
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> colors: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> colors: <a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="color.colorcomparison.html" class="tsd-signature-type">ColorComparison</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="color.colorcomparison.html" class="tsd-signature-type" data-tsd-kind="Class">ColorComparison</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -181,22 +182,22 @@ colors
 					<a name="add" class="tsd-anchor"></a>
 					<h3>add</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>colors<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>colors<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="color.colorcomparison.html" class="tsd-signature-type" data-tsd-kind="Class">ColorComparison</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/color/src/comparison/colorComparison.ts#L84">color/src/comparison/colorComparison.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/color/src/comparison/colorComparison.ts#L84">color/src/comparison/colorComparison.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>colors: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>colors: <a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="color.colorcomparison.html" class="tsd-signature-type" data-tsd-kind="Class">ColorComparison</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -204,28 +205,28 @@ colors
 					<a name="compare" class="tsd-anchor"></a>
 					<h3>compare</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sortFarthestToNearest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sortFarthestToNearest<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/color/src/comparison/colorComparison.ts#L96">color/src/comparison/colorComparison.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/color/src/comparison/colorComparison.ts#L96">color/src/comparison/colorComparison.ts:96</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>color: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a></h5>
+									<h5>color: <a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> amount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+									<h5>amount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> sortFarthestToNearest: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+									<h5>sortFarthestToNearest: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -233,25 +234,25 @@ colors
 					<a name="farthest" class="tsd-anchor"></a>
 					<h3>farthest</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">farthest<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">farthest<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/color/src/comparison/colorComparison.ts#L235">color/src/comparison/colorComparison.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/color/src/comparison/colorComparison.ts#L235">color/src/comparison/colorComparison.ts:235</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>color: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a></h5>
+									<h5>color: <a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> amount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+									<h5>amount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -259,25 +260,25 @@ colors
 					<a name="nearest" class="tsd-anchor"></a>
 					<h3>nearest</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">nearest<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">nearest<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a>, amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/color/src/comparison/colorComparison.ts#L231">color/src/comparison/colorComparison.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/color/src/comparison/colorComparison.ts#L231">color/src/comparison/colorComparison.ts:231</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>color: <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a></h5>
+									<h5>color: <a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> amount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+									<h5>amount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/color.rgba.html" class="tsd-signature-type">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type">CIELAB</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.rgba.html" class="tsd-signature-type" data-tsd-kind="Interface">RGBA</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/color.cielab.html" class="tsd-signature-type" data-tsd-kind="Interface">CIELAB</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -285,16 +286,16 @@ colors
 					<a name="reset" class="tsd-anchor"></a>
 					<h3>reset</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="color.colorcomparison.html" class="tsd-signature-type" data-tsd-kind="Class">ColorComparison</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/color/src/comparison/colorComparison.ts#L79">color/src/comparison/colorComparison.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/color/src/comparison/colorComparison.ts#L79">color/src/comparison/colorComparison.ts:79</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="color.colorcomparison.html" class="tsd-signature-type" data-tsd-kind="Class">ColorComparison</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -303,8 +304,8 @@ colors
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
 						<a href="../modules/color.html">color</a>

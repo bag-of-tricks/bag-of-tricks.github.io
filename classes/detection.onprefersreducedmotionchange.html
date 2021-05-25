@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OnPrefersReducedMotionChange | baggie - v1.2.8</title>
-	<meta name="description" content="Documentation for baggie - v1.2.8">
+	<title>OnPrefersReducedMotionChange | baggie - v0.0.1</title>
+	<meta name="description" content="Documentation for baggie - v0.0.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -22,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">baggie - v1.2.8</a>
+					<a href="../index.html" class="title">baggie - v0.0.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -49,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">baggie - v0.0.1</a>
 				</li>
 				<li>
 					<a href="../modules/detection.html">detection</a>
@@ -73,20 +74,20 @@
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
 						<dd><p><strong>Basic usage:</strong></p>
-							<pre><code class="language-ts"><span class="hljs-keyword">import</span> { OnPrefersReducedMotionChange } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@baggie/detection&quot;</span>;
+							<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">OnPrefersReducedMotionChange</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@baggie/detection&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> callback = <span class="hljs-function">(<span class="hljs-params">state: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
-    <span class="hljs-keyword">if</span> (state === <span class="hljs-literal">true</span>) {
-        <span class="hljs-comment">// User prefers reduced motion</span>
-    } <span class="hljs-keyword">else</span> {
-        <span class="hljs-comment">// User doesn&#x27;t prefer reduced motion</span>
-    }
-};
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #795E26">callback</span><span style="color: #000000"> = (</span><span style="color: #001080">state</span><span style="color: #000000">: </span><span style="color: #267F99">boolean</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">if</span><span style="color: #000000"> (</span><span style="color: #001080">state</span><span style="color: #000000"> === </span><span style="color: #0000FF">true</span><span style="color: #000000">) {</span>
+<span style="color: #000000">        </span><span style="color: #008000">// User prefers reduced motion</span>
+<span style="color: #000000">    } </span><span style="color: #AF00DB">else</span><span style="color: #000000"> {</span>
+<span style="color: #000000">        </span><span style="color: #008000">// User doesn&#039;t prefer reduced motion</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">};</span>
 
-<span class="hljs-keyword">const</span> reducedMotion = <span class="hljs-keyword">new</span> OnPrefersReducedMotionChange(callback);
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">reducedMotion</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">OnPrefersReducedMotionChange</span><span style="color: #000000">(</span><span style="color: #001080">callback</span><span style="color: #000000">);</span>
 
-<span class="hljs-comment">// Destroy the instance when you no longer need it</span>
-reducedMotion.destroy();
+<span style="color: #008000">// Destroy the instance when you no longer need it</span>
+<span style="color: #001080">reducedMotion</span><span style="color: #000000">.</span><span style="color: #795E26">destroy</span><span style="color: #000000">();</span>
 </code></pre>
 						</dd>
 					</dl>
@@ -130,14 +131,14 @@ reducedMotion.destroy();
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>OnPrefers<wbr>Reduced<wbr>Motion<wbr>Change<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="detection.onprefersreducedmotionchange.html" class="tsd-signature-type">OnPrefersReducedMotionChange</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>OnPrefers<wbr>Reduced<wbr>Motion<wbr>Change<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="detection.onprefersreducedmotionchange.html" class="tsd-signature-type" data-tsd-kind="Class">OnPrefersReducedMotionChange</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides OnMatchMediaChange.__constructor</p>
+								<p>Overrides OnMatchMediaChange.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/detection/src/mediaFeatures/onPrefersReducedMotionChange.ts#L27">detection/src/mediaFeatures/onPrefersReducedMotionChange.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/detection/src/mediaFeatures/onPrefersReducedMotionChange.ts#L27">detection/src/mediaFeatures/onPrefersReducedMotionChange.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -164,7 +165,7 @@ reducedMotion.destroy();
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="detection.onprefersreducedmotionchange.html" class="tsd-signature-type">OnPrefersReducedMotionChange</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="detection.onprefersreducedmotionchange.html" class="tsd-signature-type" data-tsd-kind="Class">OnPrefersReducedMotionChange</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -182,7 +183,7 @@ reducedMotion.destroy();
 							<aside class="tsd-sources">
 								<p>Inherited from OnMatchMediaChange.destroy</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/d0d2050/packages/detection/src/mediaFeatures/_helpers/onMatchMediaChange.helper.ts#L29">detection/src/mediaFeatures/_helpers/onMatchMediaChange.helper.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/bag-of-tricks/baggie/blob/90c43ec/packages/detection/src/mediaFeatures/_helpers/onMatchMediaChange.helper.ts#L29">detection/src/mediaFeatures/_helpers/onMatchMediaChange.helper.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -199,8 +200,8 @@ reducedMotion.destroy();
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/color.html">color</a>
